@@ -23,12 +23,10 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/notifications/pnotify.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/media/fancybox.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_multiselect.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/content_cards_content.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -482,14 +480,13 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Agregar</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Editar</a></li>
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link active">Departamentos</a></li>
-								<!--
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
+								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
 								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
@@ -498,10 +495,9 @@
 								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
 								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
 								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>/-->
+								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
 							</ul>
 						</li>
-						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
@@ -536,8 +532,7 @@
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>/-->
-
+						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
@@ -562,14 +557,14 @@
 								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
 								<li class="nav-item"><a href="content_page_footer.html" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="content_cards.html" class="nav-link">Cards</a></li>
-								<li class="nav-item"><a href="content_cards_content.html" class="nav-link">Card content</a></li>
+								<li class="nav-item"><a href="content_cards_content.html" class="nav-link active">Card content</a></li>
 								<li class="nav-item"><a href="content_cards_layouts.html" class="nav-link">Card layouts</a></li>
 								<li class="nav-item"><a href="content_cards_header.html" class="nav-link">Card header elements</a></li>
 								<li class="nav-item"><a href="content_cards_footer.html" class="nav-link">Card footer elements</a></li>
@@ -1213,7 +1208,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold"></span> - Multiselect</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Card Content</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1230,8 +1225,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_multiselect.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Multiselect</span>
+							<a href="content_cards_content.html" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Card content</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1268,1267 +1263,811 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar Departamento</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						The <code>No omitir ningun paso</strong>
-					</div>
-
-					<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th>edición</th>
-								<th>edición 2</th>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Departamento</th>
-								<th>Antiguedad</th>
-								<th>Estado</th>
-								<th class="text-center">Acciones</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Marta</td>
-								<td><a href="#">López</a></td>
-								<td>Contaduria</td>
-								<td>2 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Jackelyn</td>
-								<td>Juarez</td>
-								<td><a href="#">Piloto Aviador</a></td>
-								<td>3 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Aura</td>
-								<td>Gómez</td>
-								<td>Recepcionista</td>
-								<td>12 años</td>
-								<td><span class="badge badge-danger">Suspendida</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Natalie</td>
-								<td><a href="#">Alvarez</a></td>
-								<td>Limpieza</td>
-								<td>10 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Sharon</td>
-								<td>Aquino</td>
-								<td>Manofactura</td>
-								<td>5 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximo</td>
-								<td><a href="#"></a>Martinez</td>
-								<td><a href="#">licenciado</a></td>
-								<td>8 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Silvia</td>
-								<td><a href="#">Rodriguez</a></td>
-								<td>Tecnico en sistemas computacionales</td>
-								<td>14 años</td>
-								<td><span class="badge badge-danger">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Lizi</td>
-								<td><a href="#">Godinez</a></td>
-								<td>Comercio Internacional</td>
-								<td>6 meses</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Kendy</td>
-								<td>Ornelas</td>
-								<td>Marketing</td>
-								<td>4 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Chantal</td>
-								<td><a href="#">Morado</a></td>
-								<td>Librista</td>
-								<td>9 años y medio</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Delma</td>
-								<td>Bondas</td>
-								<td>Manager</td>
-								<td>2 años y medio</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Rolando</td>
-								<td>Salmos</td>
-								<td><a href="#">Diseñador</a></td>
-								<td>6 años y medio</td>
-								<td><span class="badge badge-secondary">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Coral</td>
-								<td>Wong</td>
-								<td>Programador</td>
-								<td>20 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximiliano</td>
-								<td>Morato</td>
-								<td>Tecnico en supervisión</td>
-								<td>1 mes</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Laura</td>
-								<td>Silva</td>
-								<td><a href="#">Medico</a></td>
-								<td>23 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
-			
-				<!-- Multiselect examples -->
+				<!-- Card image placement -->
 				<div class="mb-3">
 					<h6 class="mb-0 font-weight-semibold">
-						Empleados
+						Card image placement
 					</h6>
-					<span class="text-muted d-block">Different multiselect options</span>
+					<span class="text-muted d-block">Top, middle and bottom placements</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-4">
+
+						<!-- Top placement -->
 						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic examples</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+							<div class="card-img-actions">
+								<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay card-img-top">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
 							</div>
 
 							<div class="card-body">
+								<h5 class="card-title">Top placement</h5>
+								<p class="card-text">Default <code>top</code> placement - image always comes first in the card with text or other content below. Use <code>.card-img-top</code> image class to round top image corners.</p>
+							</div>
 
-								<!-- Default multiselect -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect -->
-
-
-								<!-- Default multiselect with selected options -->
-								<div class="form-group">
-									<label>Default selected options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect with selected options -->
-
-
-								<!-- Options with divider -->
-								<div class="form-group">
-									<label>Options with divider</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /options with divider -->
-
-
-								<!-- Option groups support -->
-								<div class="form-group">
-									<label>Option groups support</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /option groups support -->
-
-
-								<!-- Options with and without groups -->
-								<div class="form-group">
-									<label>Options with and without groups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="automata">Automata Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /options with and without groups -->
-
-
-								<!-- Dropdown with max height -->
-								<div class="form-group">
-									<label>Dropdown with max height</label>
-									<select class="form-control multiselect-max-height" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /dropdown with max height -->
-
-
-								<!-- Select All option -->
-								<div class="form-group">
-									<label>With <span class="font-weight-semibold">Select all</span> option</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option -->
-
-
-								<!-- Select All option selected -->
-								<div class="form-group">
-									<label>Select all option response</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese" selected>Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella" selected>Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option selected -->
-
-
-								<!-- Filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Filtering</span> option</label>
-									<select class="form-control multiselect-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /filtering options -->
-
-
-								<!-- Select All and filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Select All</span> and <span class="font-weight-semibold">Filtering</span> options</label>
-									<select class="form-control multiselect-select-all-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All and filtering options -->
-
-
-								<!-- Optgroups, filtering and select all -->
-								<div class="form-group">
-									<label>Full featured example</label>
-									<select class="form-control multiselect-full-featured" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /optgroups, filtering and select all -->
-
-
-								<!-- Disabled select -->
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control multiselect" multiple="multiple" disabled data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled select -->
-
-
-								<!-- Disabled options -->
-								<div class="form-group">
-									<label>Disabled options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" disabled selected>Tomatoes</option>
-										<option value="mozarella" disabled>Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled options -->
-
-
-								<!-- Disabled optgroups -->
-								<div class="form-group">
-									<label>Disabled optgroups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics" disabled>
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /disabled optgroups -->
-
-
-								<!-- Prevent deselect -->
-								<div class="form-group">
-									<label>Prevent deselect</label>
-									<select class="form-control multiselect-prevent-deselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /prevent deselect -->
-
+							<div class="card-footer bg-transparent d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
 							</div>
 						</div>
+						<!-- /top placement -->
+
+
+						<!-- Below card header -->
+						<div class="card">
+							<div class="card-header bg-transparent header-elements-inline">
+								<h6 class="card-title">Below card header</h6>
+								<div class="header-elements">
+									<span class="badge bg-danger">Paid</span>
+			                	</div>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<p class="card-text">Example of the card image, placed right after card header and before card content body. Image requires <code>.img-fluid</code> class for proper sizing.</p>
+							</div>
+
+							<div class="card-footer">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="Add comment...">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- /below card header -->
+
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-4">
+
+						<!-- Middle placement -->
 						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced usage</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+							<div class="card-body">
+								<h5 class="card-title">Middle placement</h5>
+								<p class="card-text">Example of <code>middle</code> placement - image placed between card content containers (card header, card body and card footer). Image requires <code>.img-fluid</code> class for proper sizing.</p>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25 am</span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 12 days</span>
+							</div>
+						</div>
+						<!-- /middle placement -->
+
+
+						<!-- Multiple titles -->
+						<div class="card">
+							<div class="card-header bg-light d-flex justify-content-between">
+								<span><i class="icon-user-check mr-2"></i> <a href="#">Eugene Kopyov</a></span>
+								<span class="text-muted">Added 2 hours ago</span>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
 							</div>
 
 							<div class="card-body">
+								<h6 class="card-title font-weight-semibold">Multiple titles</h6>
+								<p class="card-text">Another example of middle image placement - after header, before body that includes card title. Image also requires <code>.img-fluid</code> class.</p>
+							</div>
 
-								<!-- Within a group with addon -->
-								<div class="form-group">
-									<label>Within a group with addon</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="icon-android"></i>
-											</span>
-										</span>
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<ul class="list-inline mb-0 mr-2">
+									<li class="list-inline-item">
+										<a href="#" class="text-pink-400"><i class="icon-heart5"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="text-default"><i class="icon-bubble2"></i></a>
+									</li>
+								</ul>
 
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with addon -->
-
-
-								<!-- Within a group with button -->
-								<div class="form-group">
-									<label>Within a group with button</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<button class="btn btn-light" type="button">Action</button>
-										</span>
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button -->
-
-
-								<!-- Within a group with button dropdown -->
-								<div class="form-group">
-									<label>Within a group with button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button dropdown -->
-
-
-								<!-- Within a group with segmented button dropdown -->
-								<div class="form-group">
-									<label>Within a group with segmented button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light">Action</button>
-											<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with segmented button dropdown -->
-
-
-								<!-- Within a group with checkbox -->
-								<div class="form-group">
-									<label>Within a group with checkbox</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="checkbox" class="form-control-styled" name="input-addon-checkbox" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with checkbox -->
-
-
-								<!-- Within a group with radio -->
-								<div class="form-group">
-									<label>Within a group with radio</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="radio" class="form-control-styled" name="input-addon-radio" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with radio -->
-
-
-								<!-- Remove active option class -->
-								<div class="form-group">
-									<label>Remove active option class</label>
-									<select class="form-control multiselect-no-active-class" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /remove active option class -->
-
-
-								<!-- Alternative labels for options -->
-								<div class="form-group">
-									<label>Alternative labels for options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="analysis" label="An (Analysis)">Analysis</option>
-										<option value="algebra" label="LA (Linear Algebra)">Linear Algebra</option>
-										<option value="discrete" label="Discrete (Mathematics)">Discrete Mathematics</option>
-									</select>
-								</div>
-								<!-- /alternative labels for options -->
-
-
-								<!-- Limit options number -->
-								<div class="form-group">
-									<label>Limit options number</label>
-									<select class="form-control multiselect-number" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /limit options number -->
-
-
-								<!-- Custom empty text -->
-								<div class="form-group">
-									<label>Custom empty text</label>
-									<select class="form-control multiselect-nonselected-text" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom empty -->
-
-
-								<!-- As a link -->
-								<div class="form-group">
-									<label>As a link</label>
-									<select class="form-control multiselect-link" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /as a link -->
-
-
-								<!-- onChange notice -->
-								<div class="form-group">
-									<label>onChange notice</label>
-									<select class="form-control multiselect-onchange-notice" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange notice -->
-
-
-								<!-- onChange desktop notification -->
-								<div class="form-group">
-									<label>onChange desktop notification</label>
-									<select class="form-control multiselect-onchange-desktop" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange desktop notification -->
-
-
-								<!-- onDropdownShow event -->
-								<div class="form-group">
-									<label>onDropdownShow event</label>
-									<select class="form-control multiselect-show-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownShow event -->
-
-
-								<!-- onDropdownHide event -->
-								<div class="form-group">
-									<label>onDropdownHide event</label>
-									<select class="form-control multiselect-hide-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownHide event -->									
-
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
 							</div>
 						</div>
+						<!-- /multiple titles -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Bottom placement -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Bottom placement</h5>
+								<p class="card-text">Example of <code>bottom</code> placement - image always comes last in the card with text or other content above. Use <code>.card-img-bottom</code> image class to round bottom image corners.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between align-items-center">
+								<div class="text-muted"><i class="icon-spinner2 spinner mr-2"></i> Processing...</div>
+
+								<div class="progress w-100 w-sm-auto wmin-sm-200 mt-2 mt-sm-0" style="height: 0.375rem;">
+									<div class="progress-bar bg-indigo-400 progress-bar-striped progress-bar-animated" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /bottom placement -->
+
+
+						<!-- Multiple footers -->
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pb-0">
+								<span class="text-muted">23 430 followers</span>
+
+								<ul class="list-inline list-inline-condensed mb-0">
+									<li class="list-inline-item">
+										<a href="#" class="text-indigo-400"><i class="icon-thumbs-up2"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="text-danger"><i class="icon-thumbs-down2"></i></a>
+									</li>
+									<li class="list-inline-item ml-3">
+										<a href="#" class="text-muted"><i class="icon-flag4"></i></a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title font-weight-semibold">Multiple footers</h6>
+								<p class="card-text">In this example card image is on top, but content has multiple containers - use spacing utility classes to control vertical spacing of card content.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<a href="#" class="text-default"><i class="icon-bubble2 mr-2"></i> Comment</a>
+								<span class="text-muted"><i class="icon-eye mr-2"></i> 673</span>
+							</div>
+						</div>
+						<!-- /multiple footers -->
+
 					</div>
 				</div>
-				<!-- /multiselect examples -->
+				<!-- /card image placement -->
 
 
-				<!-- Sizing options -->
-				<div class="mb-3 mt-2">
+				<!-- Card image overlays -->
+				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Sizing options
+						Card image overlays
 					</h6>
-					<span class="text-muted d-block">Width and height sizing</span>
+					<span class="text-muted d-block">Link, zoom and overlay with actions</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-4">
+
+						<!-- Linked image -->
 						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Width sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
+							<a href="#">
+								<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+							</a>
 
 							<div class="card-body">
+								<h5 class="card-title">Linked image</h5>
+								<p class="card-text">By default, cards are designed to showcase linked images with minimal required markup, including default class for rounded corners.</p>
+							</div>
 
-								<!-- Full width -->
-								<div class="form-group">
-									<label>Full width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /full width -->
-
-
-								<!-- Fixed width -->
-								<div class="form-group">
-									<label>Fixed width</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="250" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /fixed width -->
-
-
-								<!-- Auto width -->
-								<div class="form-group">
-									<label>Auto width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="auto" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /auto width -->
-
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-half font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(43)</span>
+								</span>
 							</div>
 						</div>
+						<!-- /linked image -->
+
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-4">
+
+						<!-- Zooming -->
 						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Height sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+							<div class="card-img-actions">
+								<a href="../../../../global_assets/images/placeholders/placeholder.jpg" data-popup="lightbox">
+									<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+									<span class="card-img-actions-overlay card-img-top">
+										<i class="icon-plus3 icon-2x"></i>
+									</span>
+								</a>
 							</div>
 
 							<div class="card-body">
+								<h5 class="card-title">Zooming</h5>
+								<p class="card-text">Extend card image with simple zoomable lightbox. The icon is inserted directly in HTML and can be easily changed.</p>
+							</div>
 
-								<!-- Large button -->
-								<div class="form-group">
-									<label>Large select</label>
-									<select class="form-control form-control-lg multiselect" multiple="multiple" data-button-class="btn btn-light btn-lg" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /large button -->
-
-
-								<!-- Default button -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /default button -->
-
-
-								<!-- Small button -->
-								<div class="form-group">
-									<label>Small select</label>
-									<select class="form-control form-control-sm multiselect" multiple="multiple" data-button-class="btn btn-light btn-sm" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /small button -->
-
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated 2 hours ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(86)</span>
+								</span>
 							</div>
 						</div>
+						<!-- /zooming -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Overlay buttons -->
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="card-img-top img-fluid" src="../../../../global_assets/images/placeholders/placeholder.jpg" alt="">
+								<div class="card-img-actions-overlay card-img-top">
+									<a href="../../../../global_assets/images/placeholders/placeholder.jpg" class="btn btn-outline bg-white text-white border-white border-2" data-popup="lightbox">
+										Preview
+									</a>
+									<a href="#" class="btn btn-outline bg-white text-white border-white border-2 ml-2">
+										Details
+									</a>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Overlay buttons</h5>
+								<p class="card-text">Add as many buttons or links as you want, all of them will be vertically and horizontally centered. Supports all available styles.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Last updated yesterday</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(79)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /overlay buttons -->
+
 					</div>
 				</div>
-				<!-- /sizing options -->
+				<!-- /card image overlays -->
 
 
-				<!-- Color options -->
-				<div class="mb-3 mt-2">
+				<!-- Card video placement -->
+				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Other options
+						Card video options
 					</h6>
-					<span class="text-muted d-block">Contextual alternatives and other options</span>
+					<span class="text-muted d-block">Video container placements</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-4">
+
+						<!-- Top placement -->
 						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Contextual alternatives</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+							<div class="embed-responsive embed-responsive-16by9 card-img-top">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/173541384?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
 							</div>
 
 							<div class="card-body">
+								<h5 class="card-title">Top placement</h5>
+								<p class="card-text">Default <code>top</code> placement - video always comes first in the card with text or other content below. Use <code>.card-img-top</code> helper class to round top video container corners.</p>
+							</div>
 
-								<!-- Default -->
-								<div class="form-group">
-									<label>Default class</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /default -->
-
-
-								<!-- Primary -->
-								<div class="form-group">
-									<label>Primary class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-primary" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /primary -->
-
-
-								<!-- Danger -->
-								<div class="form-group">
-									<label>Danger class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-danger" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /danger -->
-
-
-								<!-- Success -->
-								<div class="form-group">
-									<label>Success class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-success" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /success -->
-
-
-								<!-- Warning -->
-								<div class="form-group">
-									<label>Warning class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-warning" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /warning -->
-
-
-								<!-- Info -->
-								<div class="form-group">
-									<label>Info class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-info" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /info -->
-
+							<div class="card-footer bg-transparent d-flex justify-content-between">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
 							</div>
 						</div>
+						<!-- /top placement -->
+
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-4">
+
+						<!-- Middle placement -->
 						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Other options</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+							<div class="card-body">
+								<h5 class="card-title">Middle placement</h5>
+								<p class="card-text">Example of <code>middle</code> placement - video placed between card content containers (header, body and footer). Middle option doesn't require any additional video container classes.</p>
 							</div>
 
-							<div class="card-body">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/173652088?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
+							</div>
 
-								<!-- Single select -->
-								<div class="form-group">
-									<label>Single select</label>
-									<select class="form-control multiselect" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /single select -->
-
-
-								<!-- Clickable optgroups -->
-								<div class="form-group">
-									<label>Clickable optgroups</label>
-									<select class="form-control multiselect-clickable-groups" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-										<optgroup label="Physics">
-											<option value="mechanics">Classical Mechanics</option>
-											<option value="magnetism">Electromagnetism</option>
-											<option value="quantum">Quantum Mechanics</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /clickable optgroups -->
-
-
-								<!-- Disable if empty -->
-								<div class="form-group">
-									<label>Disable if no options are given</label>
-									<select class="form-control multiselect-disable-empty" multiple="multiple" data-fouc></select>
-								</div>
-								<!-- /disable if empty -->
-
-
-								<!-- Custom button color -->
-								<div class="form-group">
-									<label>Custom button color</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-teal-400" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom button color -->
-
-
-								<!-- Custom menu color -->
-								<div class="form-group">
-									<label>Custom menu color</label>
-									<select class="form-control multiselect-menu-bg-color" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom menu color -->
-
-
-								<!-- Custom colors -->
-								<div class="form-group">
-									<label>Custom colors combination</label>
-									<select class="form-control multiselect-combine-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom colors -->
-
+							<div class="card-footer d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25 am</span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 12 days</span>
 							</div>
 						</div>
+						<!-- /middle placement -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Bottom placement -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Bottom placement</h5>
+								<p class="card-text">Example of <code>bottom</code> placement - video always comes last in the card with text or other content above. Use <code>.card-img-bottom</code> helper class to round bottom video container corners.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between align-items-center">
+								<div class="text-muted"><i class="icon-spinner2 spinner mr-2"></i> Uploading...</div>
+
+								<div class="progress w-100 w-sm-auto wmin-sm-200 mt-2 mt-sm-0" style="height: 0.375rem;">
+									<div class="progress-bar bg-success-400 progress-bar-striped progress-bar-animated" style="width: 60%;">
+										<span class="sr-only">60% Complete</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="embed-responsive embed-responsive-16by9 card-img-bottom">
+								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/127423845?title=0&byline=0&portrait=0" allowfullscreen frameborder="0" mozallowfullscreen></iframe>
+							</div>
+						</div>
+						<!-- /bottom placement -->
+
 					</div>
 				</div>
-				<!-- /color options -->
+				<!-- /card video placement -->
 
 
-				<!-- More complex examples -->
-				<div class="mb-3 mt-2">
+				<!-- Card text options -->
+				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Advanced examples
+						Card text options
 					</h6>
-					<span class="text-muted d-block">More complex multiselect examples</span>
+					<span class="text-muted d-block">Various text placement variations</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- White header and footer -->
+						<div class="card">
+							<div class="card-header bg-white d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#">#4323</a></span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 4 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">White header and footer</h6>
+								<p class="card-text">This example demonstrates how header and footer can handle multiple text containers. Both containers have white background color.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<span class="text-muted">Issued 23.12.2017</span>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /white header and footer -->
+
+
+						<!-- Dark header, transparent footer -->
+						<div class="card">
+							<div class="card-header bg-dark text-white d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Nov 12, 11:25am</span>
+								<span class="font-size-sm text-uppercase font-weight-semibold">Due in 12 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Dark header, transparent footer</h6>
+								<p class="card-text">You can easily mix header and footer styles on the fly just by adding utility classes to the footer and header containers.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<span class="text-muted">Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /dark header, transparent footer -->
+
+
+						<!-- Transparent header, white footer -->
+						<div class="card">
+							<div class="card-header d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Transparent header, white footer</h6>
+								<p class="card-text">This combination can be useful when your main content and actions need to be separated, but visually be a part of the card.</p>
+							</div>
+
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- /transparent header, white footer -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Grey header and footer -->
+						<div class="card">
+							<div class="card-header bg-light d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#">#5490</a></span>
+								<span class="font-size-sm text-uppercase text-success font-weight-semibold">Due in 3 days</span>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Grey header and footer</h6>
+								<p class="card-text">In this example header and footer have light grey background color. Grey color is default for the footer, but header requires <code>.bg-light</code> class.</p>
+							</div>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Issued 26.12.2017</span>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#">Edit</a></li>
+									<li class="list-inline-item"><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /grey header and footer -->
+
+
+						<!-- Transparent header, dark footer -->
+						<div class="card">
+							<div class="card-header d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase text-muted">Dec 28, 03:49am</span>
+								<span class="font-size-sm text-uppercase text-danger font-weight-semibold">Overdue</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Transparent header, dark footer</h6>
+								<p class="card-text">This example demonstrates transparent card header and dark card footer. Card title is placed inside card body content.</p>
+							</div>
+
+							<div class="card-footer bg-dark text-white d-flex justify-content-between">
+								<span>Last updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-full2 font-size-base text-orange-300"></i>
+									<i class="icon-star-empty3 font-size-base text-orange-300"></i>
+									<span class="opacity-75 ml-2">(53)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /transparent header, dark footer -->
+
+
+						<!-- Transparent header and footer -->
+						<div class="card">
+							<div class="card-header d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Transparent header and footer</h6>
+								<p class="card-text">If you need to extend the card with 2 extra areas with context info without separation, this combination might be very useful.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- /transparent header and footer -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Custom header and footer colors -->
+						<div class="card">
+							<div class="card-header bg-dark d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Invoice <a href="#" class="text-white">#2490</a></span>
+								<span class="font-size-sm text-uppercase font-weight-semibold">Due in 2 days</span>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Custom header and footer color</h6>
+								<p class="card-text">You can easily mix footer and header colors - just add color helper class to both containers and optional <code>.text-white</code> class to links.</p>
+							</div>
+
+							<div class="card-footer bg-dark d-flex justify-content-between">
+								<span class="opacity-75">Issued 26.12.2017</span>
+
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item"><a href="#" class="text-white">Edit</a></li>
+									<li class="list-inline-item"><a href="#" class="text-white">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /custom header and footer colors -->
+
+
+						<!-- Custom border color -->
+						<div class="card border-success">
+							<div class="card-header alpha-success border-success d-flex justify-content-between">
+								<span class="font-size-sm text-uppercase font-weight-semibold">Jan 3, 02:50am</span>
+								<span class="font-size-sm text-uppercase text-success-700 font-weight-semibold">Due in 5 days</span>
+							</div>
+							<div class="card-body">
+								<h6 class="card-title">Custom border color</h6>
+								<p class="card-text">If you want to highlight cards or content areas, add color helper classes to the card and/or card footer and header.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<span class="text-muted">Uploaded 4 days ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(452)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /custom border class -->
+
+
+						<!-- Grey header, transparent footer -->
+						<div class="card">
+							<div class="card-header bg-light d-sm-flex justify-content-sm-between align-items-sm-center">
+								<div>
+									<i class="icon-reading mr-2"></i> Hi, <strong>Eugene</strong>
+								</div>
+								<div class="mt-1 mt-sm-0">You have <a href="#">3 new messages</a></div>
+							</div>
+
+							<div class="card-body">
+								<h6 class="card-title">Grey header, transparent footer</h6>
+								<p class="card-text">And this combination is a perfect solution for displaying header with alternate content that is not really important, but nice to have.</p>
+							</div>
+
+							<div class="card-footer bg-transparent d-flex justify-content-between border-top-0 pt-0">
+								<div class="input-group">
+									<input type="text" class="form-control border-right-0" placeholder="What's new?">
+
+									<span class="input-group-append">
+										<button class="btn bg-blue" type="button"><i class="icon-paperplane"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- /grey header, transparent footer -->
+
+					</div>
+				</div>
+				<!-- /card text options -->
+
+
+				<!-- Card content alignment -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card content alignment
+					</h6>
+					<span class="text-muted d-block">Horizontal and vertical content alignment</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- Left alignment -->
+						<div class="card">
+							<div class="card-body">
+								<i class="icon-checkmark3 icon-2x text-success border-success border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Left alignment</h5>
+								<p class="mb-3">Left content alignment is the default option in left-to-right direction that doesn't require any extra utility classes.</p>
+
+								<a href="#" class="btn bg-success">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /left alignment -->
+
+
+						<!-- Top alignment -->
+						<div class="card text-center" style="min-height: 350px;">
+							<div class="card-body">
+								<i class="icon-checkmark3 icon-2x text-success border-success border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Top alignment</h5>
+								<p class="mb-3">Top content alignment is also the default option in LTR layout. Other vertical alignment options require flex utility classes.</p>
+
+								<a href="#" class="btn bg-success">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /top alignment -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Center alignment -->
+						<div class="card text-center">
+							<div class="card-body">
+								<i class="icon-cross2 icon-2x text-danger border-danger border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Center alignment</h5>
+								<p class="mb-3">Use <code>.text-center</code> alignment utility class to center content horizontally. Responsive options are also available</p>
+
+								<a href="#" class="btn bg-danger-400">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /center alignment -->
+
+
+						<!-- Middle alignment -->
+						<div class="card card-body justify-content-center text-center" style="min-height: 350px;">
+							<div>
+								<i class="icon-cross2 icon-2x text-danger border-danger border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Middle alignment</h5>
+								<p class="mb-3">Use <code>.justify-content-center</code> class to center content vertically. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-danger-400">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /middle alignment -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Right alignment -->
+						<div class="card text-right">
+							<div class="card-body">
+								<i class="icon-question7 icon-2x text-blue border-blue border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Right alignment</h5>
+								<p class="mb-3">Use <code>.text-right</code> alignment utility class to center content horizontally. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-blue">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /right alignment -->
+
+
+						<!-- Bottom alignment -->
+						<div class="card card-body justify-content-end text-center" style="min-height: 350px;">
+							<div>
+								<i class="icon-question7 icon-2x text-blue border-blue border-3 rounded-round p-3 mb-3"></i>
+								<h5 class="card-title">Bottom alignment</h5>
+								<p class="mb-3">Use <code>.justify-content-end</code> class to stick content to the bottom. Add optional breakpoints to enable responsiveness</p>
+
+								<a href="#" class="btn bg-blue">Read more <i class="icon-arrow-right14 ml-2"></i></a>
+							</div>
+						</div>
+						<!-- /bottom alignment -->
+
+					</div>
+				</div>
+				<!-- /card content alignment -->
+
+
+				<!-- Card table options -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card table options
+					</h6>
+					<span class="text-muted d-block">Various table placement options</span>
 				</div>
 
 				<div class="row">
 					<div class="col-md-6">
+
+						<!-- Card body + table -->
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Further examples</h5>
+								<h5 class="card-title">Card body + table</h5>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2539,161 +2078,141 @@
 							</div>
 
 							<div class="card-body">
+								Simple example of the table that comes right after card body container (default placement). Doesn't require any additional classes since default table style doesn't include horizontal borders.
+							</div>
 
-								<!-- Showing values -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Showing values</h6>
-									<p class="mb-3">Use "Select" and "Deselect" buttons to select or deselect cheese and tomatoes. Display selected or deselected options by using <code>$('.multiselect').val()</code> method.</p>
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 
-									<div class="input-group">
-										<select class="form-control multiselect-display-values" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
+							<div class="card-footer bg-light d-flex justify-content-between">
+								<div>
+									<div class="list-icons">
+				                		<a href="#" class="list-icons-item"><i class="icon-file-eye"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-pdf"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-excel"></i></a>
+				                	</div>
+			                	</div>
 
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-display-values-select">Select</button>
-											<button type="button" class="btn btn-light multiselect-display-values-deselect">Deselect</button>
-										</div>
-									</div>
-
-									<div class="values-area mt-2"></div>
-								</div>
-								<!-- /showing values -->
-
-
-								<!-- Toggle selection -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Toggle selection</h6>
-									<p class="mb-3">Use the button to toggle the selection. Don't forget to include <code>$.uniform.update();</code> to update checkboxes or radios state dynamically.</p>
-									<div class="input-group">
-										<select class="form-control multiselect-toggle-selection" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-toggle-selection-button">Select All</button>
-										</div>
-									</div>
-								</div>
-								<!-- /toggle selection -->
-
-
-								<!-- Order options -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Order options</h6>
-									<p class="mb-3">Record the order the options are selected. When selecting an item an ordering number will be incremented and saved within the option.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-order-options" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-order-options-button">Order</button>
-										</div>
-									</div>
-								</div>
-								<!-- /order options -->
-
-
-								<!-- Simulate selections -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Simulate selections</h6>
-									<p class="mb-3">Simulate single selections using checkboxes. The behavior will be similar to a multiselect with radio buttons.</p>
-
-									<select class="form-control multiselect-simulate-selections" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /simulate selections -->
-
-
-								<!-- Close dropdown automatically -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Close dropdown automatically</h6>
-									<p class="mb-3">Close dropdown after 3 selections automatically.</p>
-
-									<select class="form-control multiselect-close-dropdown" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /close dropdown automatically -->
-
-
-								<!-- Reset button -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Reset button</h6>
-									<p class="mb-3">Using a reset button together with a multiselect. Select options then click Reset button to reset selections.</p>
-
-									<form class="input-group" id="multiselect-reset-form">
-										<select class="form-control multiselect-reset" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="reset" class="btn bg-blue">Reset</button>
-										</div>
-									</form>
-								</div>
-								<!-- /reset button -->
-
-
-								<!-- Templates -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Multiselect templates</h6>
-									<p class="mb-3">The templates can be overriden using the <code>templates</code> configuration option. The example below uses a <code>red</code> border color for dividers.</p>
-
-									<select class="form-control multiselect-templates" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option data-role="divider"></option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /templates -->
-
+								<ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
+									<li class="list-inline-item"><a href="#">Download</a></li>
+									<li class="list-inline-item"><a href="#">Upload</a></li>
+								</ul>
 							</div>
 						</div>
+						<!-- /card body + table -->
+
+
+						<!-- Table + card body -->
+						<div class="card">
+							<div class="card-header bg-transparent header-elements-inline">
+								<h5 class="card-title">Table + card body</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="card-body">
+								In this example card body container comes after table - by default all table cells have top border, in this specific case card body includes top border for better visual content separation.
+							</div>
+
+							<div class="card-footer bg-light d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left py-sm-2">
+								<div>3290 entries found</div>
+
+								<ul class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between mt-2 mt-sm-0">
+									<li class="page-item disabled"><a href="#" class="page-link">← Older</a></li>
+									<li class="page-item"><a href="#" class="page-link">Newer →</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /table + card body -->
+
 					</div>
 
 					<div class="col-md-6">
+
+						<!-- Combined table styles -->
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiselect methods</h5>
+								<h5 class="card-title">Combined table styles</h5>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2704,181 +2223,292 @@
 							</div>
 
 							<div class="card-body">
+								In this example table combines all default table styles: stripes, borders and row highlight. As always, all tables require base <code>.table</code> class for proper styling that matches Limitless theme.
+							</div>
 
-								<!-- Destroy method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Destroy method</h6>
-									<p class="mb-3">This method is used to destroy the plugin on the given element - meaning unbinding the plugin.</p>
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 
-									<div class="input-group">
-										<select class="form-control multiselect-method-destroy" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
+							<div class="card-footer bg-white d-flex justify-content-between">
+								<div>
+									<div class="list-icons">
+				                		<a href="#" class="list-icons-item"><i class="icon-file-eye"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-pdf"></i></a>
+				                		<a href="#" class="list-icons-item ml-1"><i class="icon-file-excel"></i></a>
+				                	</div>
+			                	</div>
 
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-create-button">Create</button>
-											<button type="button" class="btn bg-danger multiselect-destroy-button">Destroy</button>
-										</div>
-									</div>
-								</div>
-								<!-- /destroy method -->
-
-
-								<!-- Refresh method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Refresh method</h6>
-									<p class="mb-3">This method is used to refresh the checked checkboxes based on the currently selected options within the select. Click <strong>'Select'</strong>, then click <strong>refresh</strong>. The plugin will update the checkboxes.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-refresh" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-button">Select</button>
-											<button type="button" class="btn btn-light multiselect-deselect-button">Deselect</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-refresh-button"><i class="icon-reload-alt"></i></button>
-										</div>
-									</div>
-								</div>
-								<!-- /refresh method -->
-
-
-								<!-- Rebuild method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Rebuild method</h6>
-									<p class="mb-3">Rebuilds the whole dropdown menu. All selected options will remain selected (if still existent!). Click <strong>Add</strong> button and then click <strong>Rebuild</strong> button, open dropdown and you'll notice new options added to the bottom of the list.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-rebuild" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-add-button">Add</button>
-											<button type="button" class="btn btn-light multiselect-delete-button">Delete</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-rebuild-button"><i class="icon-reload-alt"></i></button>
-										</div>
-									</div>
-								</div>
-								<!-- /rebuild method -->
-
-
-								<!-- Select method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Select method</h6>
-									<p class="mb-3">Selects an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-select" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-cheese-button">Cheese</button>
-											<button type="button" class="btn btn-light multiselect-select-onions-button">Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /select method -->
-
-
-								<!-- Deselect method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Deselect method</h6>
-									<p class="mb-3">Deselect an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-deselect" multiple="multiple" data-fouc>
-											<option value="cheese" selected>Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions" selected>Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-deselect-cheese-button">Deselect Cheese</button>
-											<button type="button" class="btn btn-light multiselect-deselect-onions-button">Deselect Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /deselect method -->
-
-
-								<!-- Disable method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable method</h6>
-									<p class="mb-3">Disable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-disable" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-danger multiselect-disable1-button">Disable</button>
-											<button type="button" class="btn btn-light multiselect-enable1-button">Enable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /disable method -->
-
-
-								<!-- Enable method -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Enable method</h6>
-									<p class="mb-3">Enable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-enable" multiple="multiple" disabled data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-enable2-button">Enable</button>
-											<button type="button" class="btn btn-light multiselect-disable2-button">Disable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /enable method -->
-
+								<ul class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0">
+									<li class="list-inline-item"><a href="#">Download</a></li>
+									<li class="list-inline-item"><a href="#">Upload</a></li>
+								</ul>
 							</div>
 						</div>
+						<!-- /combined table styles -->
+
+
+						<!-- Table at the bottom -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Table at the bottom</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								This element's order can be handy if you need to show the table at the very bottom of the card, below all other content containers - header, body and footer. You can of course add other content below.
+							</div>
+
+							<div class="card-footer bg-light d-sm-flex justify-content-sm-between align-items-sm-center text-center text-sm-left py-sm-2">
+								<div>5332 entries found</div>
+
+								<ul class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between mt-2 mt-sm-0">
+									<li class="page-item disabled"><a href="#" class="page-link">← Older</a></li>
+									<li class="page-item"><a href="#" class="page-link">Newer →</a></li>
+								</ul>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Username</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Eugene</td>
+											<td>Kopyov</td>
+											<td>@Kopyov</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Victoria</td>
+											<td>Baker</td>
+											<td>@Vicky</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>James</td>
+											<td>Alexander</td>
+											<td>@Alex</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Franklin</td>
+											<td>Morrison</td>
+											<td>@Frank</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /table at the bottom -->
+
 					</div>
 				</div>
-				<!-- /more complex examples -->
+				<!-- /card table options -->
+
+
+				<!-- Card navigation options -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Card navigation options
+					</h6>
+					<span class="text-muted d-block">Adapted navigation list for cards</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- Text list group -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Text list group</h5>
+								<p class="card-text">Create lists of content in a card with a flush list group. Use <code>.list-group-flush</code> class to remove borders and rounded corners.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<li class="list-group-item">
+									Sheared coasted so concurrent
+									<span class="badge badge-dark ml-auto">New</span>
+								</li>
+								<li class="list-group-item">
+									Goodness instead gull vulture
+									<span class="badge bg-pink-400 badge-pill ml-auto">38</span>
+								</li>
+								<li class="list-group-item">
+									Devilish yellow unsafe jerkily
+									<span class="badge bg-indigo-400 ml-auto">Fixed</span>
+								</li>
+								<li class="list-group-item">
+									Relentless ouch essentially
+									<span class="badge bg-success badge-pill ml-auto">40</span>
+								</li>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated 3 mins ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-full2 font-size-base text-warning-300"></i>
+									<i class="icon-star-half font-size-base text-warning-300"></i>
+									<span class="text-muted ml-2">(12)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /text list group -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Linked list group -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Linked list group</h5>
+								<p class="card-text">Actionable list group items with hover, disabled, and active states. Use flex utility classes if your list items contain badges, text etc.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<a href="#" class="list-group-item list-group-item-action">
+									<span class="font-weight-semibold">
+										<i class="icon-grid mr-2"></i>
+										Basic components
+									</span>
+									<span class="badge bg-success ml-auto">New</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action active">
+									<span class="font-weight-semibold">
+										<i class="icon-alignment-unalign mr-2"></i>
+										Data tables extensions
+									</span>
+									<span class="badge bg-indigo-400 badge-pill ml-auto">38</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action">
+									<span class="font-weight-semibold">
+										<i class="icon-cube3 mr-2"></i>
+										Application pages
+									</span>
+									<span class="badge bg-pink-400 ml-auto">Fixed</span>
+								</a>
+								<a href="#" class="list-group-item list-group-item-action disabled">
+									<span class="font-weight-semibold">
+										<i class="icon-transmission mr-2"></i>
+										Horizontal navigation
+									</span>
+									<span class="badge bg-dark badge-pill ml-auto">40</span>
+								</a>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated 2 hours ago</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-empty3 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(86)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /linked list group -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Multi column -->
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Multi column</h5>
+								<p class="card-text">Simple example of list nav with multiple columns. Use a set of responsive flex and spacing utility classes for proper positioning and spacing.</p>
+							</div>
+
+							<ul class="list-group list-group-flush border-top">
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Full name:</span>
+									<div class="ml-auto">Victoria Anna Davidson</div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Phone number:</span>
+									<div class="ml-auto">+31 641 266545</div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Corporate email:</span>
+									<div class="ml-auto"><a href="#">corporate@domain.com</a></div>
+								</li>
+								<li class="list-group-item">
+									<span class="font-weight-semibold">Personal email:</span>
+									<div class="ml-auto"><a href="#">personal@domain.com</a></div>
+								</li>
+							</ul>
+
+							<div class="card-footer d-flex justify-content-between">
+								<span class="text-muted">Updated yesterday</span>
+								<span>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<i class="icon-star-full2 font-size-base text-warning"></i>
+									<span class="text-muted ml-2">(79)</span>
+								</span>
+							</div>
+						</div>
+						<!-- /multi column -->
+
+					</div>
+				</div>
+				<!-- /card navigation options -->
 
 			</div>
 			<!-- /content area -->

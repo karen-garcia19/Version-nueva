@@ -22,13 +22,8 @@
 	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
 	<!-- /core JS files -->
 
-	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/notifications/pnotify.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-
+	<!-- Theme JS files -->	
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_multiselect.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -482,14 +477,13 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Agregar</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Editar</a></li>
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link active">Departamentos</a></li>
-								<!--
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
+								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
 								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
@@ -498,10 +492,9 @@
 								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
 								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
 								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>/-->
+								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
 							</ul>
 						</li>
-						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
@@ -536,8 +529,7 @@
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>/-->
-
+						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
@@ -562,7 +554,7 @@
 								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
 								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
@@ -577,7 +569,7 @@
 								<li class="nav-item-divider"></li>
 								<li class="nav-item"><a href="content_text_styling.html" class="nav-link">Text styling</a></li>
 								<li class="nav-item"><a href="content_typography.html" class="nav-link">Typography</a></li>
-								<li class="nav-item"><a href="content_helpers.html" class="nav-link">Helper classes</a></li>
+								<li class="nav-item"><a href="content_helpers.html" class="nav-link active">Helper classes</a></li>
 								<li class="nav-item"><a href="content_helpers_flex.html" class="nav-link">Flex utilities</a></li>
 								<li class="nav-item"><a href="content_syntax_highlighter.html" class="nav-link">Syntax highlighter</a></li>
 								<li class="nav-item"><a href="content_grid.html" class="nav-link">Grid system</a></li>
@@ -1213,7 +1205,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold"></span> - Multiselect</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Content</span> - Helper Classes</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1230,8 +1222,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_multiselect.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Multiselect</span>
+							<a href="content_helpers.html" class="breadcrumb-item">Content</a>
+							<span class="breadcrumb-item active">Helper classes</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1268,10 +1260,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
+				<!-- Helper classes -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar Departamento</h5>
+						<h5 class="card-title">Helper classes</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1282,1603 +1274,446 @@
 					</div>
 
 					<div class="card-body">
-						The <code>No omitir ningun paso</strong>
+						Besides basic typography classes, helper classes are an extra set of additional predefined classes, that can be applied to different content or layout elements and components. Helper classes are custom additions mostly, written especially for current layout, except common BS helpers. Below is a summarized table with all available classes, descriptions and content type. Flex utilities are moved to a separate page and include various examples.
 					</div>
 
-					<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th>edición</th>
-								<th>edición 2</th>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Departamento</th>
-								<th>Antiguedad</th>
-								<th>Estado</th>
-								<th class="text-center">Acciones</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Marta</td>
-								<td><a href="#">López</a></td>
-								<td>Contaduria</td>
-								<td>2 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Borders</span></td>
+								</tr>
+								<tr>
+									<td><code>.border-0</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Use this class to remove <strong>all</strong> borders from an element</td>
+								</tr>
+								<tr>
+									<td><code>.border-[side]-0</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Use this class to remove specific borders. Available <strong>[side]</strong> options: <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code>.</td>
+								</tr>
+								<tr>
+									<td><code>.border-width-0</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Sets border width to 0. Useful for inheriting other border properties</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td><code>.border</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds a border to an element with pre-defined BS's default width and color properties</td>
+								</tr>
+								<tr>
+									<td><code>.border-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds the border to an element. Available <strong>[size]</strong> options: <code>1</code> - default border width (1px); <code>2</code> - double width (2px); <code>3</code> - tripple width (3px)</td>
+								</tr>
+								<tr>
+									<td><code>.border-[side]-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Same as <code>.border-[size]</code>, but for specific <strong>[side]</strong>: <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code></td>
+								</tr>
+								<tr class="table-border-solid">
+									<td><code>.border-[color]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Changes color of all element's borders. Supports all available color classes, including <code>transparent</code> option</td>
+								</tr>
+								<tr>
+									<td><code>.border-[side]-[color]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>If you need to change color of some specific border, use this class combination. Options for <strong>[side]</strong>: <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code></td>
+								</tr>
+								<tr class="table-border-solid">
+									<td><code>.rounded</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Rounds all borders. Default value is defined in <code>$border-radius</code> variable</td>
+								</tr>
+								<tr>
+									<td><code>.rounded-[side]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Rounds borders of specific <strong>[side]</strong>: <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code></td>
+								</tr>
+								<tr>
+									<td><code>.rounded-0</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Removes rounded corners from all borders</td>
+								</tr>
+								<tr>
+									<td><code>.rounded-[side]-0</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Removes rounded corners from specific <strong>[side]</strong>: <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code></td>
+								</tr>
+								<tr>
+									<td><code>.rounded-round</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds <code>100px</code> border radius to all borders</td>
+								</tr>
+								<tr>
+									<td><code>.rounded-[side]-round</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds <code>100px</code> border radius to specific <strong>[side]</strong>: <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code></td>
+								</tr>
+								<tr>
+									<td><code>.rounded-circle</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds <code>50%</code> border radius to all borders</td>
+								</tr>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Jackelyn</td>
-								<td>Juarez</td>
-								<td><a href="#">Piloto Aviador</a></td>
-								<td>3 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Transformations</span></td>
+								</tr>
+								<tr>
+									<td><code>.rotate-[value]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Rotates element <strong>clockwise</strong>. Options for <strong>[value]</strong>: <code>45</code>, <code>90</code>, <code>180</code> degrees</td>
+								</tr>
+								<tr>
+									<td><code>.rotate-[value]-inverse</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Same as <code>.rotate-[value]</code>, but rotation is counterclockwise. Options for <strong>[value]</strong> are the same as well</td>
+								</tr>
+								<tr>
+									<td><code>.spinner</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds infinite clockwise rotation</td>
+								</tr>
+								<tr>
+									<td><code>.spinner-reverse</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds infinite counterclockwise rotation</td>
+								</tr>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Aura</td>
-								<td>Gómez</td>
-								<td>Recepcionista</td>
-								<td>12 años</td>
-								<td><span class="badge badge-danger">Suspendida</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Positioning</span></td>
+								</tr>
+								<tr>
+									<td><code>.position-[value]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Changes element's positiion. Available options for <strong>[value]</strong>: <code>relative</code>, <code>static</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code></td>
+								</tr>
+								<tr>
+									<td><code>.fixed-[top, bottom]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Position an element at the top (bottom) of the viewport, from edge to edge</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td><code>.top-[0, auto]</code></td>
+									<td class="text-muted">All except static</td>
+									<td>Resets <code>top</code> property for fixed, absolute and relative opsitions</td>
+								</tr>
+								<tr>
+									<td><code>.bottom-[0, auto]</code></td>
+									<td class="text-muted">All except static</td>
+									<td>Resets <code>bottom</code> property for fixed, absolute and relative opsitions</td>
+								</tr>
+								<tr>
+									<td><code>.left-[0, auto]</code></td>
+									<td class="text-muted">All except static</td>
+									<td>Resets <code>left</code> property for fixed, absolute and relative opsitions</td>
+								</tr>
+								<tr>
+									<td><code>.right-[0, auto]</code></td>
+									<td class="text-muted">All except static</td>
+									<td>Resets <code>right</code> property for fixed, absolute and relative opsitions</td>
+								</tr>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Natalie</td>
-								<td><a href="#">Alvarez</a></td>
-								<td>Limpieza</td>
-								<td>10 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Alignment</span></td>
+								</tr>
+								<tr>
+									<td><code>.float-[side]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Element floating. Options for <strong>[side]</strong>: <code>left</code>, <code>right</code> sides</td>
+								</tr>
+								<tr>
+									<td><code>.float-[breakpoint]-[side]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of element floating. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.float-none</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Removes floating</td>
+								</tr>
+								<tr>
+									<td><code>.clearfix</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Easily clear floats by adding <code>.clearfix</code> to the element</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td><code>.text-[side]</code></td>
+									<td class="text-muted">Inline element, text</td>
+									<td>Element alignment. Options for <strong>[side]</strong>: <code>left</code>, <code>center</code>, <code>right</code> sides</td>
+								</tr>
+								<tr>
+									<td><code>.text-[breakpoint]-[side]</code></td>
+									<td class="text-muted">Inline element, text</td>
+									<td>Responsive variations of element alignment. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td><code>.align-[value]</code></td>
+									<td class="text-muted">Inline element, table</td>
+									<td>Vertical alignment. Options for <strong>[value]</strong>: <code>baseline</code>, <code>top</code>, <code>middle</code>, <code>bottom</code>, <code>text-top</code> and <code>text-bottom</code></td>
+								</tr>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Sharon</td>
-								<td>Aquino</td>
-								<td>Manofactura</td>
-								<td>5 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Images</span></td>
+								</tr>
+								<tr>
+									<td><code>.img-fluid</code></td>
+									<td class="text-muted">Images only</td>
+									<td>Applies max-width: 100%; and height: auto; to the image so that it scales nicely to the parent element</td>
+								</tr>
+								<tr>
+									<td><code>.img-thumbnail</code></td>
+									<td class="text-muted">Images only</td>
+									<td>Adds grey frame with white background color</td>
+								</tr>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximo</td>
-								<td><a href="#"></a>Martinez</td>
-								<td><a href="#">licenciado</a></td>
-								<td>8 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Sizing</span></td>
+								</tr>
+								<tr>
+									<td><code>.wmin-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Sets a minimum width of the element in pixels. Available options for <strong>[size]</strong>: <code>200</code>, <code>250</code>, <code>300</code>, <code>350</code>, <code>400</code>, <code>450</code>, <code>500</code>, <code>550</code>, <code>600</code> pixels</td>
+								</tr>
+								<tr>
+									<td><code>.wmin-[breakpoint]-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of width utilities. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.w-[25, 50, 75, 100]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Sets a <strong>width</strong> of the element in percents</td>
+								</tr>
+								<tr>
+									<td><code>.w-auto</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Sets the <strong>width</strong> of an element to <code>auto</code> (width reset)</td>
+								</tr>
+								<tr>
+									<td><code>.w-[breakpoint]-auto</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of width reset utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.h-[25, 50, 75, 100]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Sets a <strong>height</strong> of the element in percents</td>
+								</tr>
+								<tr>
+									<td><code>.h-auto</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Sets the <strong>height</strong> of an element to <code>auto</code> (height reset)</td>
+								</tr>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Silvia</td>
-								<td><a href="#">Rodriguez</a></td>
-								<td>Tecnico en sistemas computacionales</td>
-								<td>14 años</td>
-								<td><span class="badge badge-danger">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Lizi</td>
-								<td><a href="#">Godinez</a></td>
-								<td>Comercio Internacional</td>
-								<td>6 meses</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Kendy</td>
-								<td>Ornelas</td>
-								<td>Marketing</td>
-								<td>4 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Chantal</td>
-								<td><a href="#">Morado</a></td>
-								<td>Librista</td>
-								<td>9 años y medio</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Delma</td>
-								<td>Bondas</td>
-								<td>Manager</td>
-								<td>2 años y medio</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Rolando</td>
-								<td>Salmos</td>
-								<td><a href="#">Diseñador</a></td>
-								<td>6 años y medio</td>
-								<td><span class="badge badge-secondary">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Coral</td>
-								<td>Wong</td>
-								<td>Programador</td>
-								<td>20 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximiliano</td>
-								<td>Morato</td>
-								<td>Tecnico en supervisión</td>
-								<td>1 mes</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Laura</td>
-								<td>Silva</td>
-								<td><a href="#">Medico</a></td>
-								<td>23 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
-			
-				<!-- Multiselect examples -->
-				<div class="mb-3">
-					<h6 class="mb-0 font-weight-semibold">
-						Empleados
-					</h6>
-					<span class="text-muted d-block">Different multiselect options</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic examples</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-
-								<!-- Default multiselect -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect -->
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Visibility</span></td>
+								</tr>
+								<tr>
+									<td><code>.overflow-[value]</code></td>
+									<td class="text-muted">Containers</td>
+									<td>Content overflow utility. Available options for <strong>[value]</strong>: <code>hidden</code> - hides content, <code>visible</code> - shows content, <strong>auto</strong> - makes content scrollable</td>
+								</tr>
+								<tr>
+									<td><code>.visible</code></td>
+									<td class="text-muted">Containers</td>
+									<td>Makes the element invisible for the user, but visible for screen readers</td>
+								</tr>
+								<tr>
+									<td><code>.invisible</code></td>
+									<td class="text-muted">Containers</td>
+									<td>Can be used to toggle only the visibility of an element, meaning its display is not modified and the element can still affect the flow of the document</td>
+								</tr>
+								<tr>
+									<td><code>.text-hide</code></td>
+									<td class="text-muted">Text only</td>
+									<td>Helps replace an element's text content with a background image</td>
+								</tr>
+								<tr>
+									<td><code>.sr-only</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Hides an element to all devices except screen readers</td>
+								</tr>
 
 
-								<!-- Default multiselect with selected options -->
-								<div class="form-group">
-									<label>Default selected options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect with selected options -->
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Display</span></td>
+								</tr>
+								<tr>
+									<td><code>.d-block</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Displays an element as a block element</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-block</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>d-block</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.d-inline-block</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Displays an element as an inline-level block container</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-inline-block</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>d-inline-block</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.d-inline</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Displays an element as an inline container</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-inline</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>d-inline</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.d-table</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Displays an element as a table element</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-table</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>d-table</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.d-table-cell</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Displays an element as a table cell element</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-table-cell</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>d-table-cell</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.d-flex</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Displays an element as a block-level flex container</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-flex</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>d-flex</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.d-inline-flex</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Displays an element as an inline-level flex container</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-inline-flex</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>d-inline-flex</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.d-none</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Hides the element (has no effect on layout)</td>
+								</tr>
+								<tr>
+									<td><code>.d-[breakpoint]-none</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>d-none</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
 
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Spacing</span></td>
+								</tr>
+								<tr>
+									<td><code>.m-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds <code>margin</code> property to <strong>all</strong> sides. Available <strong>[size]</strong> are: <code>0</code>, <code>1</code> ~ 5px, <code>2</code> ~ 10px, <code>3</code> ~ 20px, <code>4</code> ~ 30px, <code>5</code> ~ 40px, <code>auto</code></td>
+								</tr>
+								<tr>
+									<td><code>.m-[breakpoint]-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>.m-[size]</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.m[l,r,t,b,x,y]-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds <code>margin</code> property to the specific side: <code>l</code> - left, <code>r</code> - right, <code>t</code> - top, <code>b</code> - bottom, <code>x</code> - horizontal, <code>y</code> - vertical. Options for the size are the same</td>
+								</tr>
+								<tr>
+									<td><code>.m[l,r,t,b]-[breakpoint]-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Same as for <code>.m-[breakpoint]-[size]</code>, except <code>x</code> and <code>y</code> options</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td><code>.p-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds <code>padding</code> property to <strong>all</strong> sides. Available <strong>[size]</strong> are: <code>0</code>, <code>1</code> ~ 5px, <code>2</code> ~ 10px, <code>3</code> ~ 20px, <code>4</code> ~ 30px, <code>5</code> ~ 40px, <code>auto</code></td>
+								</tr>
+								<tr>
+									<td><code>.p-[breakpoint]-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Responsive variations of <code>.p-[size]</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xlg</code> screen sizes</td>
+								</tr>
+								<tr>
+									<td><code>.p[l,r,t,b,x,y]-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Adds <code>padding</code> property to the specific side: <code>l</code> - left, <code>r</code> - right, <code>t</code> - top, <code>b</code> - bottom, <code>x</code> - horizontal, <code>y</code> - vertical. Options for the size are the same</td>
+								</tr>
+								<tr>
+									<td><code>.p[l,r,t,b]-[breakpoint]-[size]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Same as for <code>.p-[breakpoint]-[size]</code>, except <code>x</code> and <code>y</code> options</td>
+								</tr>
+								<tr class="table-border-solid">
+									<td><code>.ml-2</code></td>
+									<td class="text-muted">Inline elements</td>
+									<td>Adds extra <code>left</code> margin to the element (mostly for icons and badges)</td>
+								</tr>
+								<tr>
+									<td><code>.mr-2</code></td>
+									<td class="text-muted">Inline elements</td>
+									<td>Adds extra <code>right</code> margin to the element (mostly for icons and badges)</td>
+								</tr>
 
-								<!-- Options with divider -->
-								<div class="form-group">
-									<label>Options with divider</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /options with divider -->
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Text</span></td>
+								</tr>
+								<tr>
+									<td><code>.font-size-[value]</code></td>
+									<td class="text-muted">Text</td>
+									<td>Sets/overrides font size. Available <strong>[value]</strong> options: <code>base</code> ~ 13px, <code>xs</code> ~ 11px; <code>sm</code> - 12px, <code>lg</code> ~ 14px</td>
+								</tr>
+								<tr>
+									<td><code>.line-height-[value]</code></td>
+									<td class="text-muted">Text</td>
+									<td>Makes it 20px despite the font size. Available <strong>[value]</strong> options: <code>base</code>, <code>xs</code>; <code>sm</code>, <code>lg</code></td>
+								</tr>
 
-
-								<!-- Option groups support -->
-								<div class="form-group">
-									<label>Option groups support</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /option groups support -->
-
-
-								<!-- Options with and without groups -->
-								<div class="form-group">
-									<label>Options with and without groups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="automata">Automata Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /options with and without groups -->
-
-
-								<!-- Dropdown with max height -->
-								<div class="form-group">
-									<label>Dropdown with max height</label>
-									<select class="form-control multiselect-max-height" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /dropdown with max height -->
-
-
-								<!-- Select All option -->
-								<div class="form-group">
-									<label>With <span class="font-weight-semibold">Select all</span> option</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option -->
-
-
-								<!-- Select All option selected -->
-								<div class="form-group">
-									<label>Select all option response</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese" selected>Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella" selected>Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option selected -->
-
-
-								<!-- Filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Filtering</span> option</label>
-									<select class="form-control multiselect-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /filtering options -->
-
-
-								<!-- Select All and filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Select All</span> and <span class="font-weight-semibold">Filtering</span> options</label>
-									<select class="form-control multiselect-select-all-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All and filtering options -->
-
-
-								<!-- Optgroups, filtering and select all -->
-								<div class="form-group">
-									<label>Full featured example</label>
-									<select class="form-control multiselect-full-featured" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /optgroups, filtering and select all -->
-
-
-								<!-- Disabled select -->
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control multiselect" multiple="multiple" disabled data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled select -->
-
-
-								<!-- Disabled options -->
-								<div class="form-group">
-									<label>Disabled options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" disabled selected>Tomatoes</option>
-										<option value="mozarella" disabled>Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled options -->
-
-
-								<!-- Disabled optgroups -->
-								<div class="form-group">
-									<label>Disabled optgroups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics" disabled>
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /disabled optgroups -->
-
-
-								<!-- Prevent deselect -->
-								<div class="form-group">
-									<label>Prevent deselect</label>
-									<select class="form-control multiselect-prevent-deselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /prevent deselect -->
-
-							</div>
-						</div>
+								<tr class="table-border-double table-active">
+									<td colspan="3"><span class="font-weight-semibold">Misc</span></td>
+								</tr>
+								<tr>
+									<td><code>.cursor-[value]</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Changes cursor style. Available <strong>[value]</strong> options: <code>move</code>, <code>pointer</code> and <code>default</code> styles</td>
+								</tr>
+								<tr>
+									<td><code>.shadow-0</code></td>
+									<td class="text-muted">Any element</td>
+									<td>Removes shadow from element</td>
+								</tr>
+								<tr>
+									<td><code>[data-fouc]</code></td>
+									<td class="text-muted">jQuery plugins</td>
+									<td>This is an attribute that partially helps to fix <a href="https://en.wikipedia.org/wiki/Flash_of_unstyled_content" target="_blank">FOUC</a> issue. It sets <code>opacity</code> to <code>0</code> and other properties to match styled component size. So that you won't see unstyled content flashing when plugin gets initialized.</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced usage</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-
-								<!-- Within a group with addon -->
-								<div class="form-group">
-									<label>Within a group with addon</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="icon-android"></i>
-											</span>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with addon -->
-
-
-								<!-- Within a group with button -->
-								<div class="form-group">
-									<label>Within a group with button</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<button class="btn btn-light" type="button">Action</button>
-										</span>
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button -->
-
-
-								<!-- Within a group with button dropdown -->
-								<div class="form-group">
-									<label>Within a group with button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button dropdown -->
-
-
-								<!-- Within a group with segmented button dropdown -->
-								<div class="form-group">
-									<label>Within a group with segmented button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light">Action</button>
-											<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with segmented button dropdown -->
-
-
-								<!-- Within a group with checkbox -->
-								<div class="form-group">
-									<label>Within a group with checkbox</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="checkbox" class="form-control-styled" name="input-addon-checkbox" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with checkbox -->
-
-
-								<!-- Within a group with radio -->
-								<div class="form-group">
-									<label>Within a group with radio</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="radio" class="form-control-styled" name="input-addon-radio" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with radio -->
-
-
-								<!-- Remove active option class -->
-								<div class="form-group">
-									<label>Remove active option class</label>
-									<select class="form-control multiselect-no-active-class" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /remove active option class -->
-
-
-								<!-- Alternative labels for options -->
-								<div class="form-group">
-									<label>Alternative labels for options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="analysis" label="An (Analysis)">Analysis</option>
-										<option value="algebra" label="LA (Linear Algebra)">Linear Algebra</option>
-										<option value="discrete" label="Discrete (Mathematics)">Discrete Mathematics</option>
-									</select>
-								</div>
-								<!-- /alternative labels for options -->
-
-
-								<!-- Limit options number -->
-								<div class="form-group">
-									<label>Limit options number</label>
-									<select class="form-control multiselect-number" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /limit options number -->
-
-
-								<!-- Custom empty text -->
-								<div class="form-group">
-									<label>Custom empty text</label>
-									<select class="form-control multiselect-nonselected-text" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom empty -->
-
-
-								<!-- As a link -->
-								<div class="form-group">
-									<label>As a link</label>
-									<select class="form-control multiselect-link" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /as a link -->
-
-
-								<!-- onChange notice -->
-								<div class="form-group">
-									<label>onChange notice</label>
-									<select class="form-control multiselect-onchange-notice" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange notice -->
-
-
-								<!-- onChange desktop notification -->
-								<div class="form-group">
-									<label>onChange desktop notification</label>
-									<select class="form-control multiselect-onchange-desktop" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange desktop notification -->
-
-
-								<!-- onDropdownShow event -->
-								<div class="form-group">
-									<label>onDropdownShow event</label>
-									<select class="form-control multiselect-show-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownShow event -->
-
-
-								<!-- onDropdownHide event -->
-								<div class="form-group">
-									<label>onDropdownHide event</label>
-									<select class="form-control multiselect-hide-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownHide event -->									
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /multiselect examples -->
-
-
-				<!-- Sizing options -->
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Sizing options
-					</h6>
-					<span class="text-muted d-block">Width and height sizing</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Width sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-
-								<!-- Full width -->
-								<div class="form-group">
-									<label>Full width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /full width -->
-
-
-								<!-- Fixed width -->
-								<div class="form-group">
-									<label>Fixed width</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="250" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /fixed width -->
-
-
-								<!-- Auto width -->
-								<div class="form-group">
-									<label>Auto width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="auto" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /auto width -->
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Height sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-
-								<!-- Large button -->
-								<div class="form-group">
-									<label>Large select</label>
-									<select class="form-control form-control-lg multiselect" multiple="multiple" data-button-class="btn btn-light btn-lg" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /large button -->
-
-
-								<!-- Default button -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /default button -->
-
-
-								<!-- Small button -->
-								<div class="form-group">
-									<label>Small select</label>
-									<select class="form-control form-control-sm multiselect" multiple="multiple" data-button-class="btn btn-light btn-sm" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /small button -->
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /sizing options -->
-
-
-				<!-- Color options -->
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Other options
-					</h6>
-					<span class="text-muted d-block">Contextual alternatives and other options</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Contextual alternatives</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-
-								<!-- Default -->
-								<div class="form-group">
-									<label>Default class</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /default -->
-
-
-								<!-- Primary -->
-								<div class="form-group">
-									<label>Primary class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-primary" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /primary -->
-
-
-								<!-- Danger -->
-								<div class="form-group">
-									<label>Danger class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-danger" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /danger -->
-
-
-								<!-- Success -->
-								<div class="form-group">
-									<label>Success class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-success" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /success -->
-
-
-								<!-- Warning -->
-								<div class="form-group">
-									<label>Warning class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-warning" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /warning -->
-
-
-								<!-- Info -->
-								<div class="form-group">
-									<label>Info class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-info" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /info -->
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Other options</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-
-								<!-- Single select -->
-								<div class="form-group">
-									<label>Single select</label>
-									<select class="form-control multiselect" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /single select -->
-
-
-								<!-- Clickable optgroups -->
-								<div class="form-group">
-									<label>Clickable optgroups</label>
-									<select class="form-control multiselect-clickable-groups" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-										<optgroup label="Physics">
-											<option value="mechanics">Classical Mechanics</option>
-											<option value="magnetism">Electromagnetism</option>
-											<option value="quantum">Quantum Mechanics</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /clickable optgroups -->
-
-
-								<!-- Disable if empty -->
-								<div class="form-group">
-									<label>Disable if no options are given</label>
-									<select class="form-control multiselect-disable-empty" multiple="multiple" data-fouc></select>
-								</div>
-								<!-- /disable if empty -->
-
-
-								<!-- Custom button color -->
-								<div class="form-group">
-									<label>Custom button color</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-teal-400" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom button color -->
-
-
-								<!-- Custom menu color -->
-								<div class="form-group">
-									<label>Custom menu color</label>
-									<select class="form-control multiselect-menu-bg-color" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom menu color -->
-
-
-								<!-- Custom colors -->
-								<div class="form-group">
-									<label>Custom colors combination</label>
-									<select class="form-control multiselect-combine-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom colors -->
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /color options -->
-
-
-				<!-- More complex examples -->
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Advanced examples
-					</h6>
-					<span class="text-muted d-block">More complex multiselect examples</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Further examples</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-
-								<!-- Showing values -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Showing values</h6>
-									<p class="mb-3">Use "Select" and "Deselect" buttons to select or deselect cheese and tomatoes. Display selected or deselected options by using <code>$('.multiselect').val()</code> method.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-display-values" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-display-values-select">Select</button>
-											<button type="button" class="btn btn-light multiselect-display-values-deselect">Deselect</button>
-										</div>
-									</div>
-
-									<div class="values-area mt-2"></div>
-								</div>
-								<!-- /showing values -->
-
-
-								<!-- Toggle selection -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Toggle selection</h6>
-									<p class="mb-3">Use the button to toggle the selection. Don't forget to include <code>$.uniform.update();</code> to update checkboxes or radios state dynamically.</p>
-									<div class="input-group">
-										<select class="form-control multiselect-toggle-selection" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-toggle-selection-button">Select All</button>
-										</div>
-									</div>
-								</div>
-								<!-- /toggle selection -->
-
-
-								<!-- Order options -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Order options</h6>
-									<p class="mb-3">Record the order the options are selected. When selecting an item an ordering number will be incremented and saved within the option.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-order-options" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-order-options-button">Order</button>
-										</div>
-									</div>
-								</div>
-								<!-- /order options -->
-
-
-								<!-- Simulate selections -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Simulate selections</h6>
-									<p class="mb-3">Simulate single selections using checkboxes. The behavior will be similar to a multiselect with radio buttons.</p>
-
-									<select class="form-control multiselect-simulate-selections" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /simulate selections -->
-
-
-								<!-- Close dropdown automatically -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Close dropdown automatically</h6>
-									<p class="mb-3">Close dropdown after 3 selections automatically.</p>
-
-									<select class="form-control multiselect-close-dropdown" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /close dropdown automatically -->
-
-
-								<!-- Reset button -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Reset button</h6>
-									<p class="mb-3">Using a reset button together with a multiselect. Select options then click Reset button to reset selections.</p>
-
-									<form class="input-group" id="multiselect-reset-form">
-										<select class="form-control multiselect-reset" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="reset" class="btn bg-blue">Reset</button>
-										</div>
-									</form>
-								</div>
-								<!-- /reset button -->
-
-
-								<!-- Templates -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Multiselect templates</h6>
-									<p class="mb-3">The templates can be overriden using the <code>templates</code> configuration option. The example below uses a <code>red</code> border color for dividers.</p>
-
-									<select class="form-control multiselect-templates" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option data-role="divider"></option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /templates -->
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiselect methods</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-
-								<!-- Destroy method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Destroy method</h6>
-									<p class="mb-3">This method is used to destroy the plugin on the given element - meaning unbinding the plugin.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-destroy" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-create-button">Create</button>
-											<button type="button" class="btn bg-danger multiselect-destroy-button">Destroy</button>
-										</div>
-									</div>
-								</div>
-								<!-- /destroy method -->
-
-
-								<!-- Refresh method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Refresh method</h6>
-									<p class="mb-3">This method is used to refresh the checked checkboxes based on the currently selected options within the select. Click <strong>'Select'</strong>, then click <strong>refresh</strong>. The plugin will update the checkboxes.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-refresh" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-button">Select</button>
-											<button type="button" class="btn btn-light multiselect-deselect-button">Deselect</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-refresh-button"><i class="icon-reload-alt"></i></button>
-										</div>
-									</div>
-								</div>
-								<!-- /refresh method -->
-
-
-								<!-- Rebuild method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Rebuild method</h6>
-									<p class="mb-3">Rebuilds the whole dropdown menu. All selected options will remain selected (if still existent!). Click <strong>Add</strong> button and then click <strong>Rebuild</strong> button, open dropdown and you'll notice new options added to the bottom of the list.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-rebuild" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-add-button">Add</button>
-											<button type="button" class="btn btn-light multiselect-delete-button">Delete</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-rebuild-button"><i class="icon-reload-alt"></i></button>
-										</div>
-									</div>
-								</div>
-								<!-- /rebuild method -->
-
-
-								<!-- Select method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Select method</h6>
-									<p class="mb-3">Selects an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-select" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-cheese-button">Cheese</button>
-											<button type="button" class="btn btn-light multiselect-select-onions-button">Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /select method -->
-
-
-								<!-- Deselect method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Deselect method</h6>
-									<p class="mb-3">Deselect an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-deselect" multiple="multiple" data-fouc>
-											<option value="cheese" selected>Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions" selected>Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-deselect-cheese-button">Deselect Cheese</button>
-											<button type="button" class="btn btn-light multiselect-deselect-onions-button">Deselect Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /deselect method -->
-
-
-								<!-- Disable method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable method</h6>
-									<p class="mb-3">Disable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-disable" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-danger multiselect-disable1-button">Disable</button>
-											<button type="button" class="btn btn-light multiselect-enable1-button">Enable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /disable method -->
-
-
-								<!-- Enable method -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Enable method</h6>
-									<p class="mb-3">Enable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-enable" multiple="multiple" disabled data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-enable2-button">Enable</button>
-											<button type="button" class="btn btn-light multiselect-disable2-button">Disable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /enable method -->
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /more complex examples -->
+	            </div>
+	            <!-- /helper classes -->
 
 			</div>
 			<!-- /content area -->

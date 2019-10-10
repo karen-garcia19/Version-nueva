@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
 	<!-- Global stylesheets -->
@@ -24,11 +24,10 @@
 
 	<!-- Theme JS files -->
 	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/notifications/pnotify.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_multiselect.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/components_media.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -482,14 +481,13 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Agregar</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Editar</a></li>
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link active">Departamentos</a></li>
-								<!--
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
+								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
 								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
@@ -498,10 +496,9 @@
 								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
 								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
 								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>/-->
+								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
 							</ul>
 						</li>
-						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
@@ -536,13 +533,12 @@
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>/-->
-
+						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.html" class="nav-link">Modals</a></li>
@@ -558,7 +554,7 @@
 								<li class="nav-item"><a href="components_badges.html" class="nav-link">Badges</a></li>
 								<li class="nav-item"><a href="components_progress.html" class="nav-link">Progress</a></li>
 								<li class="nav-item"><a href="components_breadcrumbs.html" class="nav-link">Breadcrumbs</a></li>
-								<li class="nav-item"><a href="components_media.html" class="nav-link">Media objects</a></li>
+								<li class="nav-item"><a href="components_media.html" class="nav-link active">Media objects</a></li>
 								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
 							</ul>
 						</li>
@@ -1213,7 +1209,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold"></span> - Multiselect</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Components</span> - Media Objects</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1230,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_multiselect.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Multiselect</span>
+							<a href="components_media.html" class="breadcrumb-item">Components</a>
+							<span class="breadcrumb-item active">Media objects</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1268,415 +1264,22 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar Departamento</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						The <code>No omitir ningun paso</strong>
-					</div>
-
-					<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th>edición</th>
-								<th>edición 2</th>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Departamento</th>
-								<th>Antiguedad</th>
-								<th>Estado</th>
-								<th class="text-center">Acciones</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Marta</td>
-								<td><a href="#">López</a></td>
-								<td>Contaduria</td>
-								<td>2 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Jackelyn</td>
-								<td>Juarez</td>
-								<td><a href="#">Piloto Aviador</a></td>
-								<td>3 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Aura</td>
-								<td>Gómez</td>
-								<td>Recepcionista</td>
-								<td>12 años</td>
-								<td><span class="badge badge-danger">Suspendida</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Natalie</td>
-								<td><a href="#">Alvarez</a></td>
-								<td>Limpieza</td>
-								<td>10 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Sharon</td>
-								<td>Aquino</td>
-								<td>Manofactura</td>
-								<td>5 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximo</td>
-								<td><a href="#"></a>Martinez</td>
-								<td><a href="#">licenciado</a></td>
-								<td>8 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Silvia</td>
-								<td><a href="#">Rodriguez</a></td>
-								<td>Tecnico en sistemas computacionales</td>
-								<td>14 años</td>
-								<td><span class="badge badge-danger">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Lizi</td>
-								<td><a href="#">Godinez</a></td>
-								<td>Comercio Internacional</td>
-								<td>6 meses</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Kendy</td>
-								<td>Ornelas</td>
-								<td>Marketing</td>
-								<td>4 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Chantal</td>
-								<td><a href="#">Morado</a></td>
-								<td>Librista</td>
-								<td>9 años y medio</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Delma</td>
-								<td>Bondas</td>
-								<td>Manager</td>
-								<td>2 años y medio</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Rolando</td>
-								<td>Salmos</td>
-								<td><a href="#">Diseñador</a></td>
-								<td>6 años y medio</td>
-								<td><span class="badge badge-secondary">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Coral</td>
-								<td>Wong</td>
-								<td>Programador</td>
-								<td>20 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximiliano</td>
-								<td>Morato</td>
-								<td>Tecnico en supervisión</td>
-								<td>1 mes</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Laura</td>
-								<td>Silva</td>
-								<td><a href="#">Medico</a></td>
-								<td>23 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
-			
-				<!-- Multiselect examples -->
+				<!-- List layouts title -->
 				<div class="mb-3">
 					<h6 class="mb-0 font-weight-semibold">
-						Empleados
+						List layouts
 					</h6>
-					<span class="text-muted d-block">Different multiselect options</span>
+					<span class="text-muted d-block">Media list and media object layouts</span>
 				</div>
+				<!-- /list layouts title -->
 
+
+				<!-- Default lists -->
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic examples</h5>
+								<h6 class="card-title">Left media list</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1687,236 +1290,46 @@
 							</div>
 
 							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
 
-								<!-- Default multiselect -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect -->
+										<div class="media-body">
+											<h6 class="media-title">Walking away fallaciously</h6>
+											Wise that some and before yellow thus yikes mandrill one luxuriantly other fashionably much
+										</div>
+									</li>
 
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
 
-								<!-- Default multiselect with selected options -->
-								<div class="form-group">
-									<label>Default selected options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect with selected options -->
+										<div class="media-body">
+											<h6 class="media-title">Recklessly won</h6>
+											Awkwardly thus when much according forwardly far grizzly adversely guilty hey below and did
+										</div>
+									</li>
 
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
 
-								<!-- Options with divider -->
-								<div class="form-group">
-									<label>Options with divider</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /options with divider -->
-
-
-								<!-- Option groups support -->
-								<div class="form-group">
-									<label>Option groups support</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /option groups support -->
-
-
-								<!-- Options with and without groups -->
-								<div class="form-group">
-									<label>Options with and without groups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="automata">Automata Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /options with and without groups -->
-
-
-								<!-- Dropdown with max height -->
-								<div class="form-group">
-									<label>Dropdown with max height</label>
-									<select class="form-control multiselect-max-height" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /dropdown with max height -->
-
-
-								<!-- Select All option -->
-								<div class="form-group">
-									<label>With <span class="font-weight-semibold">Select all</span> option</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option -->
-
-
-								<!-- Select All option selected -->
-								<div class="form-group">
-									<label>Select all option response</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese" selected>Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella" selected>Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option selected -->
-
-
-								<!-- Filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Filtering</span> option</label>
-									<select class="form-control multiselect-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /filtering options -->
-
-
-								<!-- Select All and filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Select All</span> and <span class="font-weight-semibold">Filtering</span> options</label>
-									<select class="form-control multiselect-select-all-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All and filtering options -->
-
-
-								<!-- Optgroups, filtering and select all -->
-								<div class="form-group">
-									<label>Full featured example</label>
-									<select class="form-control multiselect-full-featured" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /optgroups, filtering and select all -->
-
-
-								<!-- Disabled select -->
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control multiselect" multiple="multiple" disabled data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled select -->
-
-
-								<!-- Disabled options -->
-								<div class="form-group">
-									<label>Disabled options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" disabled selected>Tomatoes</option>
-										<option value="mozarella" disabled>Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled options -->
-
-
-								<!-- Disabled optgroups -->
-								<div class="form-group">
-									<label>Disabled optgroups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics" disabled>
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /disabled optgroups -->
-
-
-								<!-- Prevent deselect -->
-								<div class="form-group">
-									<label>Prevent deselect</label>
-									<select class="form-control multiselect-prevent-deselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /prevent deselect -->
-
+										<div class="media-body">
+											<h6 class="media-title">Fired or unlocked</h6>
+											Much contemptible squid crud the dear less hazy naturally hey a much twitched yet hey slovenly
+										</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -1924,7 +1337,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced usage</h5>
+								<h6 class="card-title">Right media list</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1935,276 +1348,327 @@
 							</div>
 
 							<div class="card-body">
-
-								<!-- Within a group with addon -->
-								<div class="form-group">
-									<label>Within a group with addon</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="icon-android"></i>
-											</span>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with addon -->
-
-
-								<!-- Within a group with button -->
-								<div class="form-group">
-									<label>Within a group with button</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<button class="btn btn-light" type="button">Action</button>
-										</span>
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button -->
-
-
-								<!-- Within a group with button dropdown -->
-								<div class="form-group">
-									<label>Within a group with button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-body">
+											<h6 class="media-title">Wickedly and groundhog</h6>
+											Willing monkey horse until after some one less mature wantonly agonizing yikes and cumulative
 										</div>
 
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button dropdown -->
+										<div class="ml-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+									</li>
 
-
-								<!-- Within a group with segmented button dropdown -->
-								<div class="form-group">
-									<label>Within a group with segmented button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light">Action</button>
-											<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
+									<li class="media">
+										<div class="media-body">
+											<h6 class="media-title">And rampantly thoroughly</h6>
+											Irresolutely left manta invaluably until some ape much komodo hello marvelously endlessly
 										</div>
 
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with segmented button dropdown -->
+										<div class="ml-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+									</li>
 
+									<li class="media">
+										<div class="media-body">
+											<h6 class="media-title">Less the gibbered</h6>
+											Ouch sexual fitted gosh more during alas less overpaid hello a one a far hello beat due that ouch
+										</div>
 
-								<!-- Within a group with checkbox -->
-								<div class="form-group">
-									<label>Within a group with checkbox</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="checkbox" class="form-control-styled" name="input-addon-checkbox" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with checkbox -->
-
-
-								<!-- Within a group with radio -->
-								<div class="form-group">
-									<label>Within a group with radio</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="radio" class="form-control-styled" name="input-addon-radio" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with radio -->
-
-
-								<!-- Remove active option class -->
-								<div class="form-group">
-									<label>Remove active option class</label>
-									<select class="form-control multiselect-no-active-class" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /remove active option class -->
-
-
-								<!-- Alternative labels for options -->
-								<div class="form-group">
-									<label>Alternative labels for options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="analysis" label="An (Analysis)">Analysis</option>
-										<option value="algebra" label="LA (Linear Algebra)">Linear Algebra</option>
-										<option value="discrete" label="Discrete (Mathematics)">Discrete Mathematics</option>
-									</select>
-								</div>
-								<!-- /alternative labels for options -->
-
-
-								<!-- Limit options number -->
-								<div class="form-group">
-									<label>Limit options number</label>
-									<select class="form-control multiselect-number" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /limit options number -->
-
-
-								<!-- Custom empty text -->
-								<div class="form-group">
-									<label>Custom empty text</label>
-									<select class="form-control multiselect-nonselected-text" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom empty -->
-
-
-								<!-- As a link -->
-								<div class="form-group">
-									<label>As a link</label>
-									<select class="form-control multiselect-link" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /as a link -->
-
-
-								<!-- onChange notice -->
-								<div class="form-group">
-									<label>onChange notice</label>
-									<select class="form-control multiselect-onchange-notice" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange notice -->
-
-
-								<!-- onChange desktop notification -->
-								<div class="form-group">
-									<label>onChange desktop notification</label>
-									<select class="form-control multiselect-onchange-desktop" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange desktop notification -->
-
-
-								<!-- onDropdownShow event -->
-								<div class="form-group">
-									<label>onDropdownShow event</label>
-									<select class="form-control multiselect-show-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownShow event -->
-
-
-								<!-- onDropdownHide event -->
-								<div class="form-group">
-									<label>onDropdownHide event</label>
-									<select class="form-control multiselect-hide-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownHide event -->									
-
+										<div class="ml-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /multiselect examples -->
+				<!-- /default lists -->
 
 
-				<!-- Sizing options -->
-				<div class="mb-3 mt-2">
+				<!-- Bordered lists -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Left bordered list</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<ul class="media-list media-list-bordered">
+								<li class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">Suddenly resignedly</h6>
+										Ponderously across reproachfully austerely nonchalant one and dear under off enthusiastically
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">Yet lied cursed</h6>
+										Outdid then away amidst and around waved considering on this less less by guinea apart more
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">Far a lubberly fraternal</h6>
+										Gosh wherever up clapped tapir winced wombat nice this hen hectic effective well patted darn onto
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Right bordered list</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<ul class="media-list media-list-bordered">
+								<li class="media">
+									<div class="media-body">
+										<h6 class="media-title">Tortoise goodness</h6>
+										Reproachfully austerely nonchalant one and dear under off enthusiastically ludicrous crud
+									</div>
+
+									<div class="ml-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-body">
+										<h6 class="media-title">Overlay that far</h6>
+										On yikes awful much this irrespective vicariously a yet well vengefully dear manatee and until
+									</div>
+
+									<div class="ml-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-body">
+										<h6 class="media-title">Ponderously across</h6>
+										Wow strived rang powerlessly piranha this crud mandrill and far and armadillo spoke dishonest
+									</div>
+
+									<div class="ml-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /bordered lists -->
+
+
+				<!-- Basic list headers -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic list headers</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media font-weight-semibold">First header</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">Ouch trout that</h6>
+											Crane jeepers avoidable around after a shined soundly the well ouch less subtly much trout then
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">And thus when</h6>
+											Less cuffed a that yikes precisely so taped past pangolin mammoth balked cute monogamously
+										</div>
+									</li>
+
+									<li class="media font-weight-semibold">Second header</li>
+									
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">Far pushed much</h6>
+											Penguin sniffed as a jeepers wow cow some far less alert hence python much the barked during
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">But much lingeringly</h6>
+											Morally gosh shrank outside fraudulently hedgehog less and jeepers much overlay crab octopus
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Bordered list headers</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<ul class="media-list media-list-bordered">
+								<li class="media font-weight-semibold bg-light py-2">First header</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">And hello spluttered</h6>
+										And egregiously much obsessive mammoth redid rankly because as along much then yikes behind
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">One bland far</h6>
+										Foolishly yikes more far saw hey astride differently therefore clever leopard ouch underneath
+									</div>
+								</li>
+
+								<li class="media font-weight-semibold bg-light py-2">Second header</li>
+								
+								<li class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">Foretold remade</h6>
+										Admirably some gurgled much this jeepers made moaned stoic concentric following let brilliant
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /basic list headers -->
+
+
+
+				<!-- Linked lists title -->
+				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Sizing options
+						Linked lists
 					</h6>
-					<span class="text-muted d-block">Width and height sizing</span>
+					<span class="text-muted d-block">Display list items as links</span>
 				</div>
+				<!-- /linked lists title -->
 
+
+				<!-- Linked lists -->
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Width sizing</h5>
+								<h6 class="card-title">Linked media list</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2214,51 +1678,53 @@
 			                	</div>
 							</div>
 
-							<div class="card-body">
+							<ul class="media-list media-list-linked">
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
 
-								<!-- Full width -->
-								<div class="form-group">
-									<label>Full width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /full width -->
+										<div class="media-body">
+											<h6 class="media-title">Rolled out online</h6>
+											Returned toucan yikes slavishly plankton emu immaculately some a jeez labrador the boyish contrary
+										</div>
+									</a>
+								</li>
 
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
 
-								<!-- Fixed width -->
-								<div class="form-group">
-									<label>Fixed width</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="250" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /fixed width -->
+										<div class="media-body">
+											<h6 class="media-title">Elephant gosh</h6>
+											Slung far vulture this this considerable much crud indecisive hey hello as somberly special sternly
+										</div>
+									</a>
+								</li>
 
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
 
-								<!-- Auto width -->
-								<div class="form-group">
-									<label>Auto width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="auto" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /auto width -->
-
-							</div>
+										<div class="media-body">
+											<h6 class="media-title">Before regardless</h6>
+											Conservatively disconsolate goodness more lazy less exclusively more unlike far sensational jeez some
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Height sizing</h5>
+								<h6 class="card-title">Bordered linked list</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2268,63 +1734,191 @@
 			                	</div>
 							</div>
 
-							<div class="card-body">
+							<ul class="media-list media-list-linked media-list-bordered">
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
 
-								<!-- Large button -->
-								<div class="form-group">
-									<label>Large select</label>
-									<select class="form-control form-control-lg multiselect" multiple="multiple" data-button-class="btn btn-light btn-lg" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /large button -->
+										<div class="media-body">
+											<h6 class="media-title">Apart far much</h6>
+											Hey goodness much rethought oh lubber goodness beseeching so goodness floated and yet dear inside me
+										</div>
+									</a>
+								</li>
 
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
 
-								<!-- Default button -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /default button -->
+										<div class="media-body">
+											<h6 class="media-title">Alas goodness nutria</h6>
+											Less according rude impassive the yikes onto sheared congenially steadfast lizard and deceiving some
+										</div>
+									</a>
+								</li>
 
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
 
-								<!-- Small button -->
-								<div class="form-group">
-									<label>Small select</label>
-									<select class="form-control form-control-sm multiselect" multiple="multiple" data-button-class="btn btn-light btn-sm" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /small button -->
-
-							</div>
+										<div class="media-body">
+											<h6 class="media-title">As across mallard</h6>
+											Outside gosh tactful thus incongruous anteater less accidentally tiger this hey much rhinoceros minute
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<!-- /sizing options -->
+				<!-- /linked lists -->
 
 
-				<!-- Color options -->
-				<div class="mb-3 mt-2">
+				<!-- Linked list headers -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Linked list headers</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<ul class="media-list media-list-linked">
+								<li class="media bg-light font-weight-semibold py-2">First header</li>
+
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">And jeepers otter</h6>
+											One trite goodness after goodness preparatory where save despite luscious did weird far frisky
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">Rabbit less out</h6>
+											Shyly and boa much jeez alas as cumulatively far and less confessedly well because before then hey
+										</div>
+									</a>
+								</li>
+
+								<li class="media bg-light font-weight-semibold py-2">Second header</li>
+
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">Less caribou</h6>
+											Spoke superb relentless this jeepers because and far horse that shaky goldfish much knew this gosh
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Bordered list headers</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<ul class="media-list media-list-linked media-list-bordered">
+								<li class="media bg-light font-weight-semibold py-2">First header</li>
+
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">Hummingbird</h6>
+											Massively a far far affable gull and that this on ahead some on the cursed weirdly a much far
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">Unsociable intimate</h6>
+											Frowned winced knitted despite that rueful forgot through loudly far alas guarded where hummed
+										</div>
+									</a>
+								</li>
+
+								<li class="media bg-light font-weight-semibold py-2">Second header</li>
+
+								<li>
+									<a href="#" class="media">
+										<div class="mr-3">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title">And wow amidst</h6>
+											Before re-laid as much turned fluid disbanded some exited less so due capable one grasshopper
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /linked list headers -->
+
+
+
+				<!-- Text and title options -->
+				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Other options
+						Text and title
 					</h6>
-					<span class="text-muted d-block">Contextual alternatives and other options</span>
+					<span class="text-muted d-block">Media title and text options</span>
 				</div>
 
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Contextual alternatives</h5>
+								<h6 class="card-title">Simple title</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2335,78 +1929,113 @@
 							</div>
 
 							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+										</a>
+									</div>
 
-								<!-- Default -->
-								<div class="form-group">
-									<label>Default class</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+									<div class="media-body">
+										<div class="media-title font-weight-semibold">Dutifully because</div>
+										Badger hey apart and burst flung unimaginative and this goodness and however meek about near
+									</div>
 								</div>
-								<!-- /default -->
 
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+										</a>
+									</div>
 
-								<!-- Primary -->
-								<div class="form-group">
-									<label>Primary class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-primary" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+									<div class="media-body">
+										<div class="media-title font-weight-semibold">Casual felt more</div>
+										Steadfastly therefore flimsy this far impudently where one sheep that let some threw that pouted
+									</div>
 								</div>
-								<!-- /primary -->
+							</div>
+						</div>
 
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Using headings</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-								<!-- Danger -->
-								<div class="form-group">
-									<label>Danger class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-danger" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title font-weight-semibold">Flailed felicitous</h6>
+										Far one inside beside jeez dear immeasurable less where spoiled regarding lost belated and close
+									</div>
 								</div>
-								<!-- /danger -->
 
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
 
-								<!-- Success -->
-								<div class="form-group">
-									<label>Success class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-success" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+									<div class="media-body">
+										<h6 class="media-title font-weight-semibold">Overthrew nefariously</h6>
+										Beyond forward nutria that the outside belched wove one let next less the heroic closed spluttered
+									</div>
 								</div>
-								<!-- /success -->
+							</div>
+						</div>
 
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Title color</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-								<!-- Warning -->
-								<div class="form-group">
-									<label>Warning class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-warning" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title font-weight-semibold text-warning">Unequivocal thanks</h6>
+										Impotently much wedded within truly amidst therefore toward as as insect pre-set where foolhardily
+									</div>
 								</div>
-								<!-- /warning -->
 
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
 
-								<!-- Info -->
-								<div class="form-group">
-									<label>Info class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-info" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+									<div class="media-body">
+										<h6 class="media-title font-weight-semibold"><a href="#" class="text-teal-400">Snuffed the reproachful</a></h6>
+										Near one brightly some remade aside a concretely some or this and onto arch dear far gerbil so great
+									</div>
 								</div>
-								<!-- /info -->
-
 							</div>
 						</div>
 					</div>
@@ -2414,7 +2043,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Other options</h5>
+								<h6 class="card-title">Linked titles</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2425,110 +2054,359 @@
 							</div>
 
 							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+										</a>
+									</div>
 
-								<!-- Single select -->
-								<div class="form-group">
-									<label>Single select</label>
-									<select class="form-control multiselect" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+									<div class="media-body">
+										<div class="media-title"><a href="#">Hound and echidna</a></div>
+										That a that hence dutifully beheld hey bashful contemplated wherever as the yikes far undertook
+									</div>
 								</div>
-								<!-- /single select -->
 
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+										</a>
+									</div>
 
-								<!-- Clickable optgroups -->
-								<div class="form-group">
-									<label>Clickable optgroups</label>
-									<select class="form-control multiselect-clickable-groups" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-										<optgroup label="Physics">
-											<option value="mechanics">Classical Mechanics</option>
-											<option value="magnetism">Electromagnetism</option>
-											<option value="quantum">Quantum Mechanics</option>
-										</optgroup>
-									</select>
+									<div class="media-body">
+										<div class="media-title"><a href="#">Dealt the far therefore</a></div>
+										That put kneeled more surprisingly arose since inimical augustly far thus on after however ahead
+									</div>
 								</div>
-								<!-- /clickable optgroups -->
+							</div>
+						</div>
 
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Linked headings</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-								<!-- Disable if empty -->
-								<div class="form-group">
-									<label>Disable if no options are given</label>
-									<select class="form-control multiselect-disable-empty" multiple="multiple" data-fouc></select>
+							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title"><a href="#">Set heroically amid</a></h6>
+										Away one gosh gracefully tenably hid amid far overlay ouch oh until oyster crud much in far far
+									</div>
 								</div>
-								<!-- /disable if empty -->
 
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
 
-								<!-- Custom button color -->
-								<div class="form-group">
-									<label>Custom button color</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-teal-400" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+									<div class="media-body">
+										<h6 class="media-title"><a href="#">Kneeled indirect</a></h6>
+										Strangely mounted the and as however repaid wow goodness oh falcon unproductive and some bred
+									</div>
 								</div>
-								<!-- /custom button color -->
+							</div>
+						</div>
 
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Mute preview text</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-								<!-- Custom menu color -->
-								<div class="form-group">
-									<label>Custom menu color</label>
-									<select class="form-control multiselect-menu-bg-color" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title font-weight-semibold">Before evidently</h6>
+										<span class="text-muted">Far jauntily manta laughed pugnacious hey hey ouch globefish far yikes crud overheard far off</span>
+									</div>
 								</div>
-								<!-- /custom menu color -->
 
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
 
-								<!-- Custom colors -->
-								<div class="form-group">
-									<label>Custom colors combination</label>
-									<select class="form-control multiselect-combine-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+									<div class="media-body">
+										<h6 class="media-title font-weight-semibold">Luridly seagull</h6>
+										<span class="text-muted">Bled wept across mindful constructively suggestive hello fuzzily this jocosely capybara well to</span>
+									</div>
 								</div>
-								<!-- /custom colors -->
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /color options -->
+				<!-- /text and title options -->
 
 
-				<!-- More complex examples -->
-				<div class="mb-3 mt-2">
+
+				<!-- Annotation text title -->
+				<div class="mb-3 pt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Advanced examples
+						Annotation text
 					</h6>
-					<span class="text-muted d-block">More complex multiselect examples</span>
+					<span class="text-muted d-block">Display custom text in media items</span>
+				</div>
+				<!-- /annotation text title -->
+
+
+				<!-- Inline annotation -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Left inline</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<div class="media-title d-flex justify-content-start align-items-center">
+											<h6 class="m-0">Eccentrically greedily</h6>
+											<div class="text-muted ml-3">added by Eugene</div>
+										</div>
+
+										Far coarsely or tuneful kangaroo much lantern this however oyster yikes cute unbound obscurely
+									</div>
+								</div>
+
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<div class="media-title d-flex justify-content-start align-items-center">
+											<h6 class="m-0">Exquisitely jeepers</h6>
+											<div class="text-muted ml-3">News and articles</div>
+										</div>
+
+										Yikes bent lopsidedly some courageous as far sobbed guffawed piously squinted iguana crane
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Right inline</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<div class="media-title d-flex justify-content-between">
+											<h6 class="m-0">However accordingly</h6>
+											<span class="text-muted">1 hour ago</span>
+										</div>
+
+										Hello some plentiful a beneath much glanced that savage pending dashingly and hare insane dull
+									</div>
+								</div>
+
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<div class="media-title d-flex justify-content-between">
+											<h6 class="m-0">More some met despite</h6>
+											<span class="text-muted">Yesterday, 12:16</span>
+										</div>
+
+										Dragonfly oversold forgot ouch less darn firefly one while honey until cockatoo more as the rat 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /inline annotation -->
+
+
+				<!-- Block annotaiton -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Text block</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">So alas some intriguing</h6>
+										But darn discarded stubbornly far a after aboard well unimaginative ruthless and flamingo cow
+
+										<div class="text-muted mt-1"><i class="icon-check"></i> Just now</div>
+									</div>
+								</div>
+
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">A blissful caterpillar</h6>
+										Man-of-war so where far up as less yikes thus at more yet so hardheadedly some hey darn dry now
+
+										<div class="text-muted mt-1"><i class="icon-pin-alt"></i> &nbsp;4 hours ago from Thailand</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Text list</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">This crud hypocritically</h6>
+										Ferret on bowed engagingly kangaroo and split contagious far one dear seagull fidgeted some
+
+										<ul class="list-inline mt-1">
+											<li class="list-inline-item">89 <a href="#"><i class="icon-arrow-up22 text-success"></i></a><a href="#"><i class="icon-arrow-down22 text-danger"></i></a></li>
+											<li class="list-inline-item"><a href="#">Reply</a></li>
+											<li class="list-inline-item"><a href="#">Edit</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="media">
+									<div class="mr-3">
+										<a href="#">
+											<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="44" height="44" alt="">
+										</a>
+									</div>
+
+									<div class="media-body">
+										<h6 class="media-title">Dismounted pungent</h6>
+										Sexily far excited less jeepers and due hit at greyhound tryingly one adjusted cuckoo hamster
+
+										<ul class="list-inline mt-1">
+											<li class="list-inline-item">153 <a href="#"><i class="icon-arrow-up22 text-success"></i></a><a href="#"><i class="icon-arrow-down22 text-danger"></i></a></li>
+											<li class="list-inline-item"><a href="#">Reply</a></li>
+											<li class="list-inline-item"><a href="#">Edit</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /block annotation -->
+
+
+
+				<!-- Stackable lists -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Stackable objects
+					</h6>
+					<span class="text-muted d-block">Stack items on mobile</span>
 				</div>
 
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Further examples</h5>
+								<h6 class="card-title">Left stackable list</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2539,153 +2417,46 @@
 							</div>
 
 							<div class="card-body">
-
-								<!-- Showing values -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Showing values</h6>
-									<p class="mb-3">Use "Select" and "Deselect" buttons to select or deselect cheese and tomatoes. Display selected or deselected options by using <code>$('.multiselect').val()</code> method.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-display-values" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-display-values-select">Select</button>
-											<button type="button" class="btn btn-light multiselect-display-values-deselect">Deselect</button>
+								<ul class="media-list">
+									<li class="media align-items-center align-items-md-start text-center text-md-left flex-column flex-md-row">
+										<div class="mr-md-3 mb-2 mb-md-0">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
 										</div>
-									</div>
 
-									<div class="values-area mt-2"></div>
-								</div>
-								<!-- /showing values -->
-
-
-								<!-- Toggle selection -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Toggle selection</h6>
-									<p class="mb-3">Use the button to toggle the selection. Don't forget to include <code>$.uniform.update();</code> to update checkboxes or radios state dynamically.</p>
-									<div class="input-group">
-										<select class="form-control multiselect-toggle-selection" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-toggle-selection-button">Select All</button>
+										<div class="media-body">
+											<h6 class="media-title">Walking away fallaciously</h6>
+											Wise that some and before yellow thus yikes mandrill one luxuriantly other fashionably much
 										</div>
-									</div>
-								</div>
-								<!-- /toggle selection -->
+									</li>
 
-
-								<!-- Order options -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Order options</h6>
-									<p class="mb-3">Record the order the options are selected. When selecting an item an ordering number will be incremented and saved within the option.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-order-options" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-order-options-button">Order</button>
+									<li class="media align-items-center align-items-md-start text-center text-md-left flex-column flex-md-row">
+										<div class="mr-md-3 mb-2 mb-md-0">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
 										</div>
-									</div>
-								</div>
-								<!-- /order options -->
 
-
-								<!-- Simulate selections -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Simulate selections</h6>
-									<p class="mb-3">Simulate single selections using checkboxes. The behavior will be similar to a multiselect with radio buttons.</p>
-
-									<select class="form-control multiselect-simulate-selections" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /simulate selections -->
-
-
-								<!-- Close dropdown automatically -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Close dropdown automatically</h6>
-									<p class="mb-3">Close dropdown after 3 selections automatically.</p>
-
-									<select class="form-control multiselect-close-dropdown" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /close dropdown automatically -->
-
-
-								<!-- Reset button -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Reset button</h6>
-									<p class="mb-3">Using a reset button together with a multiselect. Select options then click Reset button to reset selections.</p>
-
-									<form class="input-group" id="multiselect-reset-form">
-										<select class="form-control multiselect-reset" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="reset" class="btn bg-blue">Reset</button>
+										<div class="media-body">
+											<h6 class="media-title">Recklessly won</h6>
+											Awkwardly thus when much according forwardly far grizzly adversely guilty hey below and did
 										</div>
-									</form>
-								</div>
-								<!-- /reset button -->
+									</li>
 
+									<li class="media align-items-center align-items-md-start text-center text-md-left flex-column flex-md-row">
+										<div class="mr-md-3 mb-2 mb-md-0">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
 
-								<!-- Templates -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Multiselect templates</h6>
-									<p class="mb-3">The templates can be overriden using the <code>templates</code> configuration option. The example below uses a <code>red</code> border color for dividers.</p>
-
-									<select class="form-control multiselect-templates" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option data-role="divider"></option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /templates -->
-
+										<div class="media-body">
+											<h6 class="media-title">Fired or unlocked</h6>
+											Much contemptible squid crud the dear less hazy naturally hey a much twitched yet hey slovenly
+										</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -2693,7 +2464,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiselect methods</h5>
+								<h6 class="card-title">Right stackable list</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2704,181 +2475,512 @@
 							</div>
 
 							<div class="card-body">
-
-								<!-- Destroy method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Destroy method</h6>
-									<p class="mb-3">This method is used to destroy the plugin on the given element - meaning unbinding the plugin.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-destroy" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-create-button">Create</button>
-											<button type="button" class="btn bg-danger multiselect-destroy-button">Destroy</button>
+								<ul class="media-list">
+									<li class="media align-items-center align-items-md-start text-center text-md-left flex-column flex-md-row">
+										<div class="media-body order-2 order-md-1">
+											<h6 class="media-title">Wickedly and groundhog</h6>
+											Willing monkey horse until after some one less mature wantonly agonizing yikes and cumulative
 										</div>
-									</div>
-								</div>
-								<!-- /destroy method -->
 
-
-								<!-- Refresh method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Refresh method</h6>
-									<p class="mb-3">This method is used to refresh the checked checkboxes based on the currently selected options within the select. Click <strong>'Select'</strong>, then click <strong>refresh</strong>. The plugin will update the checkboxes.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-refresh" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-button">Select</button>
-											<button type="button" class="btn btn-light multiselect-deselect-button">Deselect</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-refresh-button"><i class="icon-reload-alt"></i></button>
+										<div class="ml-md-3 mb-2 mb-md-0 order-1 order-md-2">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
 										</div>
-									</div>
-								</div>
-								<!-- /refresh method -->
+									</li>
 
-
-								<!-- Rebuild method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Rebuild method</h6>
-									<p class="mb-3">Rebuilds the whole dropdown menu. All selected options will remain selected (if still existent!). Click <strong>Add</strong> button and then click <strong>Rebuild</strong> button, open dropdown and you'll notice new options added to the bottom of the list.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-rebuild" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-add-button">Add</button>
-											<button type="button" class="btn btn-light multiselect-delete-button">Delete</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-rebuild-button"><i class="icon-reload-alt"></i></button>
+									<li class="media align-items-center align-items-md-start text-center text-md-left flex-column flex-md-row">
+										<div class="media-body order-2 order-md-1">
+											<h6 class="media-title">And rampantly thoroughly</h6>
+											Irresolutely left manta invaluably until some ape much komodo hello marvelously endlessly
 										</div>
-									</div>
-								</div>
-								<!-- /rebuild method -->
 
-
-								<!-- Select method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Select method</h6>
-									<p class="mb-3">Selects an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-select" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-cheese-button">Cheese</button>
-											<button type="button" class="btn btn-light multiselect-select-onions-button">Onions</button>
+										<div class="ml-md-3 mb-2 mb-md-0 order-1 order-md-2">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
 										</div>
-									</div>
-								</div>
-								<!-- /select method -->
+									</li>
 
-
-								<!-- Deselect method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Deselect method</h6>
-									<p class="mb-3">Deselect an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-deselect" multiple="multiple" data-fouc>
-											<option value="cheese" selected>Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions" selected>Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-deselect-cheese-button">Deselect Cheese</button>
-											<button type="button" class="btn btn-light multiselect-deselect-onions-button">Deselect Onions</button>
+									<li class="media align-items-center align-items-md-start text-center text-md-left flex-column flex-md-row">
+										<div class="media-body order-2 order-md-1">
+											<h6 class="media-title">Less the gibbered</h6>
+											Ouch sexual fitted gosh more during alas less overpaid hello a one a far hello beat due that ouch
 										</div>
-									</div>
-								</div>
-								<!-- /deselect method -->
 
-
-								<!-- Disable method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable method</h6>
-									<p class="mb-3">Disable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-disable" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-danger multiselect-disable1-button">Disable</button>
-											<button type="button" class="btn btn-light multiselect-enable1-button">Enable</button>
+										<div class="ml-md-3 mb-2 mb-md-0 order-1 order-md-2">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
 										</div>
-									</div>
-								</div>
-								<!-- /disable method -->
-
-
-								<!-- Enable method -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Enable method</h6>
-									<p class="mb-3">Enable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-enable" multiple="multiple" disabled data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-enable2-button">Enable</button>
-											<button type="button" class="btn btn-light multiselect-disable2-button">Disable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /enable method -->
-
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /more complex examples -->
+				<!-- /stackable lists -->
+
+
+
+				<!-- Other examples -->
+				<div class="mb-3 pt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Other examples
+					</h6>
+					<span class="text-muted d-block">Examples of media list usage</span>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Icon, icon list or dropdown</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">Rhinoceros rebellious</div>
+											One preparatory festive outran blatantly indecisively interminable bid popular much and less
+										</div>
+
+										<div class="ml-3">
+											<div class="list-icons">
+												<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+													<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+													<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+													<div class="dropdown-divider"></div>
+													<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Statistics</a>
+												</div>
+						                	</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">Onto much less</div>
+											As ouch lizard hurried less ingenuously malicious yikes belched agilely shrank more diabolically
+										</div>
+
+										<div class="ml-3">
+											<div class="list-icons">
+												<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Start chat</a>
+													<a href="#" class="dropdown-item"><i class="icon-phone2"></i> Make a call</a>
+													<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Send mail</a>
+													<div class="dropdown-divider"></div>
+													<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Statistics</a>
+												</div>
+						                	</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Badges</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">Busted that rethought</div>
+											Some adversely infallibly parrot far yet amazing jay much much black in oh idiotically globefish
+										</div>
+
+										<div class="ml-3">
+											<span class="badge badge-primary">Colleague</span>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">Goodness understood</div>
+											On thus oh insolently before obsessive therefore this including made alas more dauntless snooty
+										</div>
+
+										<div class="ml-3">
+											<span class="badge badge-danger">Partner</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Bordered icon</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i class="icon-checkmark3"></i></a>
+										</div>
+
+										<div class="media-body">
+											Less thus overhung during rabbit goose while amid ludicrously after terribly that opposite the amicable
+
+											<div class="text-muted">19 minutes ago</div>
+										</div>
+
+										<div class="ml-3">
+											<div class="list-icons">
+												<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item"><i class="icon-history"></i> Toggle auto update</a>
+													<a href="#" class="dropdown-item"><i class="icon-graph"></i> View statistics</a>
+													<a href="#" class="dropdown-item"><i class="icon-calendar3"></i> Set schedule</a>
+													<div class="divider"></div>
+													<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+												</div>
+						                	</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-danger text-danger rounded-round border-2 btn-icon"><i class="icon-cross2"></i></a>
+										</div>
+
+										<div class="media-body">
+											Gosh however salmon far astride gerbil convincing kissed zealous assisted outgrew rolled until quail
+
+											<div class="text-muted">7 hours ago</div>
+										</div>
+
+										<div class="ml-3">
+											<div class="list-icons">
+												<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a href="#" class="dropdown-item"><i class="icon-history"></i> Toggle auto update</a>
+													<a href="#" class="dropdown-item"><i class="icon-graph"></i> View statistics</a>
+													<a href="#" class="dropdown-item"><i class="icon-calendar3"></i> Set schedule</a>
+													<div class="divider"></div>
+													<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+												</div>
+						                	</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Checkboxes</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<input type="checkbox" class="form-input-styled" checked data-fouc>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">Resplendent much during</h6>
+											Urchin that understood yikes special ladybug that hilariously inflexible following simply walking
+										</div>
+
+										<div class="ml-3">
+											<div class="list-icons">
+												<a href="#" class="list-icons-item"><i class="icon-comment-discussion"></i></a>
+						                	</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<input type="checkbox" class="form-input-styled" data-fouc>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">Insect far hound</h6>
+											Hey where more that much meanly shivered salamander oh spent regarding gosh among much 
+										</div>
+
+										<div class="ml-3">
+											<div class="list-icons">
+												<a href="#" class="list-icons-item"><i class="icon-comment-discussion"></i></a>
+						                	</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Status badge</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">Marcus Maison</div>
+											Kiwi that dear because wow barring dear temperate narrowly securely indecently this persistently
+										</div>
+
+										<div class="ml-3">
+											<span class="badge badge-mark bg-danger border-danger"></span>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">Benjamin Wallace</div>
+											Yikes jeez bid and on after man-of-war insect owing far far dalmatian vicariously crud goodness 
+										</div>
+
+										<div class="ml-3">
+											<span class="badge badge-mark border-success"></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Pill badges</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">This exclusive past</div>
+											Forward the some goodness suddenly squirrel therefore sadly notwithstanding onto alas the save
+										</div>
+
+										<div class="ml-3">
+											<span class="badge badge-warning badge-pill">83</span>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">Oh shoddy about</div>
+											Much untiringly darn learned a and goodness off until much excepting where jeez one in softly
+										</div>
+
+										<div class="ml-3">
+											<span class="badge bg-teal badge-pill">39</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Object badges</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3 position-relative">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+											<span class="badge badge-pill bg-teal badge-float">9</span>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">This conjointly some</div>
+											Thus boa much thus innocent thus some in amidst irrespective oriole cost absently rat against
+										</div>
+
+										<div class="ml-3">
+											<input type="checkbox" class="form-control-switchery" checked data-fouc>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3 position-relative">
+											<a href="#">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="42" height="42" alt="">
+											</a>
+											<span class="badge badge-warning badge-pill badge-float">6</span>
+										</div>
+
+										<div class="media-body">
+											<div class="media-title font-weight-semibold">Crud relentlessly bid</div>
+											Creative a far crud jeepers snickered well winced goodness the decently jeepers smelled outran 
+										</div>
+
+										<div class="ml-3">
+											<input type="checkbox" class="form-control-switchery" checked data-fouc>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Radios</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<input type="radio" name="media-radio" class="form-input-styled" checked data-fouc>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">Hello underneath</h6>
+											Jeepers magically enthusiastically hummingbird that jeez and more a grumbled a shark sorely about
+										</div>
+
+										<div class="ml-3">
+											<div class="list-icons">
+						                		<a class="list-icons-item"><i class="icon-comment-discussion"></i></a>
+						                	</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<input type="radio" name="media-radio" class="form-input-styled" data-fouc>
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-title font-weight-semibold">Unnecessary invoked less</h6>
+											Amid less manifest soggily diversely but far tentative away however this rhinoceros far droll far
+										</div>
+
+										<div class="ml-3">
+											<div class="list-icons">
+						                		<a class="list-icons-item"><i class="icon-comment-discussion"></i></a>
+						                	</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /other examples -->
 
 			</div>
 			<!-- /content area -->

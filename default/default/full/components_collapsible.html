@@ -23,12 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/notifications/pnotify.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/touch.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_multiselect.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/components_collapsible.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -482,14 +481,13 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Agregar</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Editar</a></li>
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link active">Departamentos</a></li>
-								<!--
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
+								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
 								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
@@ -498,10 +496,9 @@
 								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
 								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
 								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>/-->
+								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
 							</ul>
 						</li>
-						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
@@ -536,20 +533,19 @@
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>/-->
-
+						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.html" class="nav-link">Modals</a></li>
 								<li class="nav-item"><a href="components_dropdowns.html" class="nav-link">Dropdown menus</a></li>
 								<li class="nav-item"><a href="components_tabs.html" class="nav-link">Tabs component</a></li>
 								<li class="nav-item"><a href="components_pills.html" class="nav-link">Pills component</a></li>
-								<li class="nav-item"><a href="components_collapsible.html" class="nav-link">Collapsible</a></li>
+								<li class="nav-item"><a href="components_collapsible.html" class="nav-link active">Collapsible</a></li>
 								<li class="nav-item"><a href="components_navs.html" class="nav-link">Navs</a></li>
 								<li class="nav-item"><a href="components_buttons.html" class="nav-link">Buttons</a></li>
 								<li class="nav-item"><a href="components_popups.html" class="nav-link">Tooltips and popovers</a></li>
@@ -1213,7 +1209,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold"></span> - Multiselect</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Components</span> - Collapsible</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1230,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_multiselect.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Multiselect</span>
+							<a href="components_collapsible.html" class="breadcrumb-item">Components</a>
+							<span class="breadcrumb-item active">Collapsible</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1268,1617 +1264,1101 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar Departamento</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						The <code>No omitir ningun paso</strong>
-					</div>
-
-					<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th>edición</th>
-								<th>edición 2</th>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Departamento</th>
-								<th>Antiguedad</th>
-								<th>Estado</th>
-								<th class="text-center">Acciones</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Marta</td>
-								<td><a href="#">López</a></td>
-								<td>Contaduria</td>
-								<td>2 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Jackelyn</td>
-								<td>Juarez</td>
-								<td><a href="#">Piloto Aviador</a></td>
-								<td>3 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Aura</td>
-								<td>Gómez</td>
-								<td>Recepcionista</td>
-								<td>12 años</td>
-								<td><span class="badge badge-danger">Suspendida</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Natalie</td>
-								<td><a href="#">Alvarez</a></td>
-								<td>Limpieza</td>
-								<td>10 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Sharon</td>
-								<td>Aquino</td>
-								<td>Manofactura</td>
-								<td>5 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximo</td>
-								<td><a href="#"></a>Martinez</td>
-								<td><a href="#">licenciado</a></td>
-								<td>8 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Silvia</td>
-								<td><a href="#">Rodriguez</a></td>
-								<td>Tecnico en sistemas computacionales</td>
-								<td>14 años</td>
-								<td><span class="badge badge-danger">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Lizi</td>
-								<td><a href="#">Godinez</a></td>
-								<td>Comercio Internacional</td>
-								<td>6 meses</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Kendy</td>
-								<td>Ornelas</td>
-								<td>Marketing</td>
-								<td>4 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Chantal</td>
-								<td><a href="#">Morado</a></td>
-								<td>Librista</td>
-								<td>9 años y medio</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Delma</td>
-								<td>Bondas</td>
-								<td>Manager</td>
-								<td>2 años y medio</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Rolando</td>
-								<td>Salmos</td>
-								<td><a href="#">Diseñador</a></td>
-								<td>6 años y medio</td>
-								<td><span class="badge badge-secondary">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Coral</td>
-								<td>Wong</td>
-								<td>Programador</td>
-								<td>20 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximiliano</td>
-								<td>Morato</td>
-								<td>Tecnico en supervisión</td>
-								<td>1 mes</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Laura</td>
-								<td>Silva</td>
-								<td><a href="#">Medico</a></td>
-								<td>23 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
-			
-				<!-- Multiselect examples -->
+				<!-- Collapsible options -->
 				<div class="mb-3">
 					<h6 class="mb-0 font-weight-semibold">
-						Empleados
+						Collapsible options
 					</h6>
-					<span class="text-muted d-block">Different multiselect options</span>
+					<span class="text-muted d-block">Examples of elements and states</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic examples</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Inline or block element</h6>
+								<p class="mb-3 text-muted">Example of inline text toggler</p>
+
+								<span class="font-weight-semibold cursor-pointer" data-toggle="collapse" data-target="#collapse-text">
+									Toggle content
+								</span>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Default multiselect -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+							<div class="collapse" id="collapse-text">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
-								<!-- /default multiselect -->
-
-
-								<!-- Default multiselect with selected options -->
-								<div class="form-group">
-									<label>Default selected options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect with selected options -->
-
-
-								<!-- Options with divider -->
-								<div class="form-group">
-									<label>Options with divider</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /options with divider -->
-
-
-								<!-- Option groups support -->
-								<div class="form-group">
-									<label>Option groups support</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /option groups support -->
-
-
-								<!-- Options with and without groups -->
-								<div class="form-group">
-									<label>Options with and without groups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="automata">Automata Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /options with and without groups -->
-
-
-								<!-- Dropdown with max height -->
-								<div class="form-group">
-									<label>Dropdown with max height</label>
-									<select class="form-control multiselect-max-height" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /dropdown with max height -->
-
-
-								<!-- Select All option -->
-								<div class="form-group">
-									<label>With <span class="font-weight-semibold">Select all</span> option</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option -->
-
-
-								<!-- Select All option selected -->
-								<div class="form-group">
-									<label>Select all option response</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese" selected>Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella" selected>Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option selected -->
-
-
-								<!-- Filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Filtering</span> option</label>
-									<select class="form-control multiselect-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /filtering options -->
-
-
-								<!-- Select All and filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Select All</span> and <span class="font-weight-semibold">Filtering</span> options</label>
-									<select class="form-control multiselect-select-all-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All and filtering options -->
-
-
-								<!-- Optgroups, filtering and select all -->
-								<div class="form-group">
-									<label>Full featured example</label>
-									<select class="form-control multiselect-full-featured" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /optgroups, filtering and select all -->
-
-
-								<!-- Disabled select -->
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control multiselect" multiple="multiple" disabled data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled select -->
-
-
-								<!-- Disabled options -->
-								<div class="form-group">
-									<label>Disabled options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" disabled selected>Tomatoes</option>
-										<option value="mozarella" disabled>Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled options -->
-
-
-								<!-- Disabled optgroups -->
-								<div class="form-group">
-									<label>Disabled optgroups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics" disabled>
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /disabled optgroups -->
-
-
-								<!-- Prevent deselect -->
-								<div class="form-group">
-									<label>Prevent deselect</label>
-									<select class="form-control multiselect-prevent-deselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /prevent deselect -->
-
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced usage</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Text and other links</h6>
+								<p class="mb-3 text-muted">Example of a simple <code>&lt;a></code> element</p>
+
+								<a href="#collapse-link" class="font-weight-semibold" data-toggle="collapse">
+									Toggle content
+								</a>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Within a group with addon -->
-								<div class="form-group">
-									<label>Within a group with addon</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="icon-android"></i>
-											</span>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
+							<div class="collapse" id="collapse-link">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
-								<!-- /within a group with addon -->
-
-
-								<!-- Within a group with button -->
-								<div class="form-group">
-									<label>Within a group with button</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<button class="btn btn-light" type="button">Action</button>
-										</span>
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button -->
-
-
-								<!-- Within a group with button dropdown -->
-								<div class="form-group">
-									<label>Within a group with button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button dropdown -->
-
-
-								<!-- Within a group with segmented button dropdown -->
-								<div class="form-group">
-									<label>Within a group with segmented button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light">Action</button>
-											<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with segmented button dropdown -->
-
-
-								<!-- Within a group with checkbox -->
-								<div class="form-group">
-									<label>Within a group with checkbox</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="checkbox" class="form-control-styled" name="input-addon-checkbox" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with checkbox -->
-
-
-								<!-- Within a group with radio -->
-								<div class="form-group">
-									<label>Within a group with radio</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="radio" class="form-control-styled" name="input-addon-radio" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with radio -->
-
-
-								<!-- Remove active option class -->
-								<div class="form-group">
-									<label>Remove active option class</label>
-									<select class="form-control multiselect-no-active-class" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /remove active option class -->
-
-
-								<!-- Alternative labels for options -->
-								<div class="form-group">
-									<label>Alternative labels for options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="analysis" label="An (Analysis)">Analysis</option>
-										<option value="algebra" label="LA (Linear Algebra)">Linear Algebra</option>
-										<option value="discrete" label="Discrete (Mathematics)">Discrete Mathematics</option>
-									</select>
-								</div>
-								<!-- /alternative labels for options -->
-
-
-								<!-- Limit options number -->
-								<div class="form-group">
-									<label>Limit options number</label>
-									<select class="form-control multiselect-number" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /limit options number -->
-
-
-								<!-- Custom empty text -->
-								<div class="form-group">
-									<label>Custom empty text</label>
-									<select class="form-control multiselect-nonselected-text" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom empty -->
-
-
-								<!-- As a link -->
-								<div class="form-group">
-									<label>As a link</label>
-									<select class="form-control multiselect-link" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /as a link -->
-
-
-								<!-- onChange notice -->
-								<div class="form-group">
-									<label>onChange notice</label>
-									<select class="form-control multiselect-onchange-notice" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange notice -->
-
-
-								<!-- onChange desktop notification -->
-								<div class="form-group">
-									<label>onChange desktop notification</label>
-									<select class="form-control multiselect-onchange-desktop" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange desktop notification -->
-
-
-								<!-- onDropdownShow event -->
-								<div class="form-group">
-									<label>onDropdownShow event</label>
-									<select class="form-control multiselect-show-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownShow event -->
-
-
-								<!-- onDropdownHide event -->
-								<div class="form-group">
-									<label>onDropdownHide event</label>
-									<select class="form-control multiselect-hide-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownHide event -->									
-
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /multiselect examples -->
 
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Simgle or multiple icons</h6>
+								<p class="mb-3 text-muted">Icons in block or inline elements</p>
 
-				<!-- Sizing options -->
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Sizing options
-					</h6>
-					<span class="text-muted d-block">Width and height sizing</span>
+								<a href="#collapse-icon" class="text-default" data-toggle="collapse">
+									<i class="icon-circle-down2"></i>
+								</a>
+							</div>
+
+							<div class="collapse" id="collapse-icon">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Width sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Link with href</h6>
+								<p class="mb-3 text-muted">Specify target in <code>href</code> attribute</p>
+
+								<a class="btn btn-primary" data-toggle="collapse" href="#collapse-link-collapsed">
+									Toggle content
+								</a>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Full width -->
-								<div class="form-group">
-									<label>Full width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+							<div class="collapse" id="collapse-link-collapsed">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
-								<!-- /full width -->
-
-
-								<!-- Fixed width -->
-								<div class="form-group">
-									<label>Fixed width</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="250" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /fixed width -->
-
-
-								<!-- Auto width -->
-								<div class="form-group">
-									<label>Auto width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="auto" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /auto width -->
-
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Height sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Button with data attribute</h6>
+								<p class="mb-3 text-muted">Specify target in <code>data-target</code> attribute</p>
+
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse-button-collapsed">
+									Toggle content
+								</button>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Large button -->
-								<div class="form-group">
-									<label>Large select</label>
-									<select class="form-control form-control-lg multiselect" multiple="multiple" data-button-class="btn btn-light btn-lg" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+							<div class="collapse" id="collapse-button-collapsed">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
-								<!-- /large button -->
-
-
-								<!-- Default button -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /default button -->
-
-
-								<!-- Small button -->
-								<div class="form-group">
-									<label>Small select</label>
-									<select class="form-control form-control-sm multiselect" multiple="multiple" data-button-class="btn btn-light btn-sm" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /small button -->
-
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /sizing options -->
 
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Input with data attribute</h6>
+								<p class="mb-3 text-muted">Specify target in <code>data-target</code> attribute</p>
 
-				<!-- Color options -->
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Other options
-					</h6>
-					<span class="text-muted d-block">Contextual alternatives and other options</span>
+								<input type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse-input-collapsed" value="Toggle content">
+							</div>
+
+							<div class="collapse" id="collapse-input-collapsed">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Contextual alternatives</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Link with href</h6>
+								<p class="mb-3 text-muted">Expand content by default</p>
+
+								<a class="btn btn-primary" data-toggle="collapse" href="#collapse-link-expanded">
+									Toggle content
+								</a>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Default -->
-								<div class="form-group">
-									<label>Default class</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+							<div class="collapse show" id="collapse-link-expanded">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
-								<!-- /default -->
-
-
-								<!-- Primary -->
-								<div class="form-group">
-									<label>Primary class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-primary" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /primary -->
-
-
-								<!-- Danger -->
-								<div class="form-group">
-									<label>Danger class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-danger" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /danger -->
-
-
-								<!-- Success -->
-								<div class="form-group">
-									<label>Success class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-success" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /success -->
-
-
-								<!-- Warning -->
-								<div class="form-group">
-									<label>Warning class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-warning" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /warning -->
-
-
-								<!-- Info -->
-								<div class="form-group">
-									<label>Info class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-info" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /info -->
-
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Other options</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Button with data attribute</h6>
+								<p class="mb-3 text-muted">Expand content by default</p>
+
+								<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse-button-expanded">
+									Toggle content
+								</button>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Single select -->
-								<div class="form-group">
-									<label>Single select</label>
-									<select class="form-control multiselect" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+							<div class="collapse show" id="collapse-button-expanded">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
-								<!-- /single select -->
+							</div>
+						</div>
+					</div>
 
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Input with data attribute</h6>
+								<p class="mb-3 text-muted">Expand content by default</p>
 
-								<!-- Clickable optgroups -->
-								<div class="form-group">
-									<label>Clickable optgroups</label>
-									<select class="form-control multiselect-clickable-groups" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-										<optgroup label="Physics">
-											<option value="mechanics">Classical Mechanics</option>
-											<option value="magnetism">Electromagnetism</option>
-											<option value="quantum">Quantum Mechanics</option>
-										</optgroup>
-									</select>
+								<input type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse-input-expanded" value="Toggle content">
+							</div>
+
+							<div class="collapse show" id="collapse-input-expanded">
+								<div class="mt-3">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 								</div>
-								<!-- /clickable optgroups -->
-
-
-								<!-- Disable if empty -->
-								<div class="form-group">
-									<label>Disable if no options are given</label>
-									<select class="form-control multiselect-disable-empty" multiple="multiple" data-fouc></select>
-								</div>
-								<!-- /disable if empty -->
-
-
-								<!-- Custom button color -->
-								<div class="form-group">
-									<label>Custom button color</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-teal-400" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom button color -->
-
-
-								<!-- Custom menu color -->
-								<div class="form-group">
-									<label>Custom menu color</label>
-									<select class="form-control multiselect-menu-bg-color" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom menu color -->
-
-
-								<!-- Custom colors -->
-								<div class="form-group">
-									<label>Custom colors combination</label>
-									<select class="form-control multiselect-combine-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom colors -->
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /color options -->
+				<!-- /collapsible options -->
 
 
-				<!-- More complex examples -->
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Advanced examples
-					</h6>
-					<span class="text-muted d-block">More complex multiselect examples</span>
-				</div>
-
+				<!-- Accordion and collapsible -->
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Further examples</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-6">
+
+						<!-- Basic accordion -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Basic accordion
+							</h6>
+							<span class="text-muted d-block">Basic accordion functionality</span>
+						</div>
+
+						<div id="accordion-default">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-item-default1">Accordion Item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-item-default1" class="collapse show" data-parent="#accordion-default">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Showing values -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Showing values</h6>
-									<p class="mb-3">Use "Select" and "Deselect" buttons to select or deselect cheese and tomatoes. Display selected or deselected options by using <code>$('.multiselect').val()</code> method.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-display-values" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-display-values-select">Select</button>
-											<button type="button" class="btn btn-light multiselect-display-values-deselect">Deselect</button>
-										</div>
-									</div>
-
-									<div class="values-area mt-2"></div>
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-default2">Accordion Item #2</a>
+									</h6>
 								</div>
-								<!-- /showing values -->
 
-
-								<!-- Toggle selection -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Toggle selection</h6>
-									<p class="mb-3">Use the button to toggle the selection. Don't forget to include <code>$.uniform.update();</code> to update checkboxes or radios state dynamically.</p>
-									<div class="input-group">
-										<select class="form-control multiselect-toggle-selection" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-toggle-selection-button">Select All</button>
-										</div>
+								<div id="accordion-item-default2" class="collapse" data-parent="#accordion-default">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
 									</div>
 								</div>
-								<!-- /toggle selection -->
+							</div>
 
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-default3">Accordion Item #3</a>
+									</h6>
+								</div>
 
-								<!-- Order options -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Order options</h6>
-									<p class="mb-3">Record the order the options are selected. When selecting an item an ordering number will be incremented and saved within the option.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-order-options" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-order-options-button">Order</button>
-										</div>
+								<div id="accordion-item-default3" class="collapse" data-parent="#accordion-default">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
 									</div>
 								</div>
-								<!-- /order options -->
-
-
-								<!-- Simulate selections -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Simulate selections</h6>
-									<p class="mb-3">Simulate single selections using checkboxes. The behavior will be similar to a multiselect with radio buttons.</p>
-
-									<select class="form-control multiselect-simulate-selections" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /simulate selections -->
-
-
-								<!-- Close dropdown automatically -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Close dropdown automatically</h6>
-									<p class="mb-3">Close dropdown after 3 selections automatically.</p>
-
-									<select class="form-control multiselect-close-dropdown" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /close dropdown automatically -->
-
-
-								<!-- Reset button -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Reset button</h6>
-									<p class="mb-3">Using a reset button together with a multiselect. Select options then click Reset button to reset selections.</p>
-
-									<form class="input-group" id="multiselect-reset-form">
-										<select class="form-control multiselect-reset" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="reset" class="btn bg-blue">Reset</button>
-										</div>
-									</form>
-								</div>
-								<!-- /reset button -->
-
-
-								<!-- Templates -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Multiselect templates</h6>
-									<p class="mb-3">The templates can be overriden using the <code>templates</code> configuration option. The example below uses a <code>red</code> border color for dividers.</p>
-
-									<select class="form-control multiselect-templates" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option data-role="divider"></option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /templates -->
-
 							</div>
 						</div>
+						<!-- /basic accordion -->
+
+
+						<!-- Accordion group -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Accordion group
+							</h6>
+							<span class="text-muted d-block">Display cards as card group</span>
+						</div>
+
+						<div id="accordion-group">
+							<div class="card mb-0 rounded-bottom-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-item-group1">Accordion Item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-item-group1" class="collapse show" data-parent="#accordion-group">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-0 rounded-0 border-y-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-group2">Accordion Item #2</a>
+									</h6>
+								</div>
+
+								<div id="accordion-item-group2" class="collapse" data-parent="#accordion-group">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card rounded-top-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-group3">Accordion Item #3</a>
+									</h6>
+								</div>
+
+								<div id="accordion-item-group3" class="collapse" data-parent="#accordion-group">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /accordion group -->
+
+
+						<!-- Accordion with controls -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Accordion with controls
+							</h6>
+							<span class="text-muted d-block">Using card controls, except <code>collapse</code></span>
+						</div>
+
+						<div class="accordion-sortable" id="accordion-controls">
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-controls-group1">Accordion Item #1</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="accordion-controls-group1" class="collapse show" data-parent="#accordion-controls">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-controls-group2">Accordion Item #2</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="accordion-controls-group2" class="collapse" data-parent="#accordion-controls">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-controls-group3">Accordion Item #3</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="accordion-controls-group3" class="collapse" data-parent="#accordion-controls">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /accordion with controls -->
+
+
+						<!-- Accordion with left control button -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Left control icon
+							</h6>
+							<span class="text-muted d-block">Using <code>left</code> aligned control icon</span>
+						</div>
+
+						<div class="card-group-control card-group-control-left" id="accordion-control">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-control-group1">Accordion Item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-group1" class="collapse show" data-parent="#accordion-control">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-control-group2">Accordion Item #2</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-group2" class="collapse" data-parent="#accordion-control">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-control-group3">Accordion Item #3</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-group3" class="collapse" data-parent="#accordion-control">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /accordion with left control button -->
+
+
+						<!-- Accordion with right control button -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Right control icon
+							</h6>
+							<span class="text-muted d-block">Using <code>right</code> aligned control icon</span>
+						</div>
+
+						<div class="card-group-control card-group-control-right" id="accordion-control-right">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-control-right-group1">Accordion Item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-right-group1" class="collapse show" data-parent="#accordion-control-right">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-control-right-group2">Accordion Item #2</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-right-group2" class="collapse" data-parent="#accordion-control-right">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-control-right-group3">Accordion Item #3</a>
+									</h6>
+								</div>
+
+								<div id="accordion-control-right-group3" class="collapse" data-parent="#accordion-control-right">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /accordion with right control button -->
+
+
+						<!-- Nested accordions -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Nested accordions
+							</h6>
+							<span class="text-muted d-block">Multiple accordion levels</span>
+						</div>
+
+						<div id="accordion-parent">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#accordion-item-nested-parent1">Parent accordion item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-item-nested-parent1" class="collapse show" data-parent="#accordion-parent">
+									<div class="card-body">
+
+										<!-- Child level -->
+										<div id="accordion-child1">
+											<div class="card">
+												<div class="card-header bg-dark">
+													<h6 class="card-title">
+														<a data-toggle="collapse" class="text-white" href="#accordion-item-nested-child1">Child accordion item #1</a>
+													</h6>
+												</div>
+
+												<div id="accordion-item-nested-child1" class="collapse show" data-parent="#accordion-child1">
+													<div class="card-body">
+														Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+													</div>
+												</div>
+											</div>
+
+											<div class="card mb-0">
+												<div class="card-header bg-dark">
+													<h6 class="card-title">
+														<a class="collapsed text-white" data-toggle="collapse" href="#accordion-item-nested-child2">Child accordion item #2</a>
+													</h6>
+												</div>
+
+												<div id="accordion-item-nested-child2" class="collapse" data-parent="#accordion-child1">
+													<div class="card-body">
+														Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /child level -->
+
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#accordion-item-nested-parent2">Parent accordion item #2</a>
+									</h6>
+								</div>
+
+								<div id="accordion-item-nested-parent2" class="collapse" data-parent="#accordion-parent">
+									<div class="card-body">
+
+										<!-- Child level -->
+										<div id="accordion-child2">
+											<div class="card">
+												<div class="card-header bg-dark">
+													<h6 class="card-title">
+														<a data-toggle="collapse" class="text-white" href="#accordion-item-nested-child3">Child accordion item #1</a>
+													</h6>
+												</div>
+
+												<div id="accordion-item-nested-child3" class="collapse show" data-parent="#accordion-child2">
+													<div class="card-body">
+														Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+													</div>
+												</div>
+											</div>
+
+											<div class="card mb-0">
+												<div class="card-header bg-dark">
+													<h6 class="card-title">
+														<a class="collapsed text-white" data-toggle="collapse" href="#accordion-item-nested-child4">Child accordion item #2</a>
+													</h6>
+												</div>
+
+												<div id="accordion-item-nested-child4" class="collapse" data-parent="#accordion-child2">
+													<div class="card-body">
+														Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /child level -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /nested accordions -->
+
+
+						<!-- Accordion with different card styling -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Cards styling
+							</h6>
+							<span class="text-muted d-block">Using different card styles</span>
+						</div>
+
+						<div id="accordion-styled">
+							<div class="card">
+								<div class="card-header bg-danger">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-white" href="#accordion-styled-group1">Accordion Item #1</a>
+									</h6>
+								</div>
+
+								<div id="accordion-styled-group1" class="collapse show" data-parent="#accordion-styled">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header bg-teal">
+									<h6 class="card-title">
+										<a class="collapsed text-white" data-toggle="collapse" href="#accordion-styled-group2">Accordion Item #2</a>
+									</h6>
+								</div>
+
+								<div id="accordion-styled-group2" class="collapse" data-parent="#accordion-styled">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header bg-primary">
+									<h6 class="card-title">
+										<a class="collapsed text-white" data-toggle="collapse" href="#accordion-styled-group3">Accordion Item #3</a>
+									</h6>
+								</div>
+
+								<div id="accordion-styled-group3" class="collapse" data-parent="#accordion-styled">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /accordion with different card styling -->
+
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiselect methods</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-6">
+
+						<!-- Basic collapsible -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Basic collapsible
+							</h6>
+							<span class="text-muted d-block">Basic collapsible functionality</span>
+						</div>
+
+						<div>
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapse-item-default1">Collapsible Item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapse-item-default1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
 							</div>
 
-							<div class="card-body">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapse-item-default2">Collapsible Item #2</a>
+									</h6>
+								</div>
 
-								<!-- Destroy method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Destroy method</h6>
-									<p class="mb-3">This method is used to destroy the plugin on the given element - meaning unbinding the plugin.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-destroy" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-create-button">Create</button>
-											<button type="button" class="btn bg-danger multiselect-destroy-button">Destroy</button>
-										</div>
+								<div id="collapse-item-default2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
 									</div>
 								</div>
-								<!-- /destroy method -->
+							</div>
 
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapse-item-default3">Collapsible Item #3</a>
+									</h6>
+								</div>
 
-								<!-- Refresh method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Refresh method</h6>
-									<p class="mb-3">This method is used to refresh the checked checkboxes based on the currently selected options within the select. Click <strong>'Select'</strong>, then click <strong>refresh</strong>. The plugin will update the checkboxes.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-refresh" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-button">Select</button>
-											<button type="button" class="btn btn-light multiselect-deselect-button">Deselect</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-refresh-button"><i class="icon-reload-alt"></i></button>
-										</div>
+								<div id="collapse-item-default3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
 									</div>
 								</div>
-								<!-- /refresh method -->
-
-
-								<!-- Rebuild method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Rebuild method</h6>
-									<p class="mb-3">Rebuilds the whole dropdown menu. All selected options will remain selected (if still existent!). Click <strong>Add</strong> button and then click <strong>Rebuild</strong> button, open dropdown and you'll notice new options added to the bottom of the list.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-rebuild" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-add-button">Add</button>
-											<button type="button" class="btn btn-light multiselect-delete-button">Delete</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-rebuild-button"><i class="icon-reload-alt"></i></button>
-										</div>
-									</div>
-								</div>
-								<!-- /rebuild method -->
-
-
-								<!-- Select method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Select method</h6>
-									<p class="mb-3">Selects an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-select" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-cheese-button">Cheese</button>
-											<button type="button" class="btn btn-light multiselect-select-onions-button">Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /select method -->
-
-
-								<!-- Deselect method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Deselect method</h6>
-									<p class="mb-3">Deselect an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-deselect" multiple="multiple" data-fouc>
-											<option value="cheese" selected>Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions" selected>Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-deselect-cheese-button">Deselect Cheese</button>
-											<button type="button" class="btn btn-light multiselect-deselect-onions-button">Deselect Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /deselect method -->
-
-
-								<!-- Disable method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable method</h6>
-									<p class="mb-3">Disable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-disable" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-danger multiselect-disable1-button">Disable</button>
-											<button type="button" class="btn btn-light multiselect-enable1-button">Enable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /disable method -->
-
-
-								<!-- Enable method -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Enable method</h6>
-									<p class="mb-3">Enable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-enable" multiple="multiple" disabled data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-enable2-button">Enable</button>
-											<button type="button" class="btn btn-light multiselect-disable2-button">Disable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /enable method -->
-
 							</div>
 						</div>
+						<!-- /basic collapsible -->
+
+
+						<!-- Collapsible group -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Collapsible group
+							</h6>
+							<span class="text-muted d-block">Display cards as card group</span>
+						</div>
+
+						<div>
+							<div class="card mb-0 rounded-bottom-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-item-group1">Collapsible Item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card mb-0 rounded-0 border-y-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-item-group2">Collapsible Item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card rounded-top-0">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-item-group3">Collapsible Item #3</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible group -->
+
+
+						<!-- Collapsible with controls -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Collapsible with controls
+							</h6>
+							<span class="text-muted d-block">Using all card controls, except <code>collapse</code></span>
+						</div>
+
+						<div class="collapsible-sortable">
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-controls-group1">Collapsible Item #1</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="collapsible-controls-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-controls-group2">Collapsible Item #2</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="collapsible-controls-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-controls-group3">Collapsible Item #3</a>
+									</h6>
+
+									<div class="header-elements">
+										<div class="list-icons">
+					                		<a class="list-icons-item" data-action="reload"></a>
+					                		<a class="list-icons-item" data-action="move"></a>
+					                		<a class="list-icons-item" data-action="fullscreen"></a>
+					                		<a class="list-icons-item" data-action="remove"></a>
+					                	</div>
+				                	</div>
+								</div>
+
+								<div id="collapsible-controls-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible with controls -->
+
+
+						<!-- Collapsible with left control button -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Left control icon
+							</h6>
+							<span class="text-muted d-block">Using <code>left</code> aligned control icon</span>
+						</div>
+
+						<div class="card-group-control card-group-control-left">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-control-group1">Collapsible Item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-control-group2">Collapsible Item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-control-group3">Collapsible Item #3</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible with left control button -->
+
+
+						<!-- Collapsible with right control button -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Right control icon
+							</h6>
+							<span class="text-muted d-block">Using <code>right</code> aligned control icon</span>
+						</div>
+
+						<div class="card-group-control card-group-control-right">
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-control-right-group1">Collapsible Item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-right-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-control-right-group2">Collapsible Item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-right-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-control-right-group3">Collapsible Item #3</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-control-right-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible with right control button -->
+
+
+						<!-- Nested collapsibles -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Nested collapsibles
+							</h6>
+							<span class="text-muted d-block">Multiple collapsible levels</span>
+						</div>
+
+						<div>
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-default" href="#collapsible-item-nested-parent1">Parent collapsible item #1</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-nested-parent1" class="collapse show">
+									<div class="card-body">
+
+										<!-- Child level -->
+										<div class="card">
+											<div class="card-header bg-dark">
+												<h6 class="card-title">
+													<a data-toggle="collapse" class="text-white" href="#collapsible-item-nested-child1">Child collapsible item #1</a>
+												</h6>
+											</div>
+
+											<div id="collapsible-item-nested-child1" class="collapse show">
+												<div class="card-body">
+													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+												</div>
+											</div>
+										</div>
+
+										<div class="card mb-0">
+											<div class="card-header bg-dark">
+												<h6 class="card-title">
+													<a class="collapsed text-white" data-toggle="collapse" href="#collapsible-item-nested-child2">Child collapsible item #2</a>
+												</h6>
+											</div>
+
+											<div id="collapsible-item-nested-child2" class="collapse">
+												<div class="card-body">
+													Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+												</div>
+											</div>
+										</div>
+										<!-- /child level -->
+
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h6 class="card-title">
+										<a class="collapsed text-default" data-toggle="collapse" href="#collapsible-item-nested-parent2">Parent collapsible item #2</a>
+									</h6>
+								</div>
+
+								<div id="collapsible-item-nested-parent2" class="collapse">
+									<div class="card-body">
+
+										<!-- Child level -->
+										<div class="card">
+											<div class="card-header bg-dark">
+												<h6 class="card-title">
+													<a data-toggle="collapse" class="text-white" href="#collapsible-item-nested-child3">Child collapsible item #1</a>
+												</h6>
+											</div>
+
+											<div id="collapsible-item-nested-child3" class="collapse show">
+												<div class="card-body">
+													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+												</div>
+											</div>
+										</div>
+
+										<div class="card mb-0">
+											<div class="card-header bg-dark">
+												<h6 class="card-title">
+													<a class="collapsed text-white" data-toggle="collapse" href="#collapsible-item-nested-child4">Child collapsible item #2</a>
+												</h6>
+											</div>
+
+											<div id="collapsible-item-nested-child4" class="collapse">
+												<div class="card-body">
+													Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+												</div>
+											</div>
+										</div>
+										<!-- /child level -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /nested collapsibles -->
+
+
+						<!-- Collapsible with different card styling -->
+						<div class="mb-3 pt-2">
+							<h6 class="mb-0 font-weight-semibold">
+								Cards styling
+							</h6>
+							<span class="text-muted d-block">Using different card styles</span>
+						</div>
+
+						<div>
+							<div class="card">
+								<div class="card-header bg-info">
+									<h6 class="card-title">
+										<a data-toggle="collapse" class="text-white" href="#collapsible-styled-group1">Collapsible Item #1</a>
+									</h6>
+								</div>
+								<div id="collapsible-styled-group1" class="collapse show">
+									<div class="card-body">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header bg-slate">
+									<h6 class="card-title">
+										<a class="collapsed text-white" data-toggle="collapse" href="#collapsible-styled-group2">Collapsible Item #2</a>
+									</h6>
+								</div>
+								<div id="collapsible-styled-group2" class="collapse">
+									<div class="card-body">
+										Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header bg-purple">
+									<h6 class="card-title">
+										<a class="collapsed text-white" data-toggle="collapse" href="#collapsible-styled-group3">Collapsible Item #3</a>
+									</h6>
+								</div>
+								<div id="collapsible-styled-group3" class="collapse">
+									<div class="card-body">
+										3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /collapsible with different card styling -->
+
 					</div>
 				</div>
-				<!-- /more complex examples -->
+				<!-- /accordion and collapsible -->
 
 			</div>
 			<!-- /content area -->

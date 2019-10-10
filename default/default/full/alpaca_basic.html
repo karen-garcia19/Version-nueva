@@ -23,12 +23,15 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/notifications/pnotify.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/alpaca.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_multiselect.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/alpaca_basic.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -482,14 +485,13 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Agregar</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Editar</a></li>
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link active">Departamentos</a></li>
-								<!--
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
+								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
 								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
@@ -498,14 +500,13 @@
 								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
 								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
 								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>/-->
+								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
 							</ul>
 						</li>
-						<!--
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link active">Basic inputs</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">Advanced inputs</a></li>
 								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">Controls</a></li>
 							</ul>
@@ -536,8 +537,7 @@
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>/-->
-
+						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
@@ -1213,7 +1213,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold"></span> - Multiselect</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alpaca</span> - Basic Inputs</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1230,8 +1230,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_multiselect.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Multiselect</span>
+							<a href="alpaca_basic.html" class="breadcrumb-item">Alpaca</a>
+							<span class="breadcrumb-item active">Basic inputs</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1268,415 +1268,22 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar Departamento</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						The <code>No omitir ningun paso</strong>
-					</div>
-
-					<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th>edición</th>
-								<th>edición 2</th>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Departamento</th>
-								<th>Antiguedad</th>
-								<th>Estado</th>
-								<th class="text-center">Acciones</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Marta</td>
-								<td><a href="#">López</a></td>
-								<td>Contaduria</td>
-								<td>2 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Jackelyn</td>
-								<td>Juarez</td>
-								<td><a href="#">Piloto Aviador</a></td>
-								<td>3 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Aura</td>
-								<td>Gómez</td>
-								<td>Recepcionista</td>
-								<td>12 años</td>
-								<td><span class="badge badge-danger">Suspendida</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Natalie</td>
-								<td><a href="#">Alvarez</a></td>
-								<td>Limpieza</td>
-								<td>10 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Sharon</td>
-								<td>Aquino</td>
-								<td>Manofactura</td>
-								<td>5 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximo</td>
-								<td><a href="#"></a>Martinez</td>
-								<td><a href="#">licenciado</a></td>
-								<td>8 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Silvia</td>
-								<td><a href="#">Rodriguez</a></td>
-								<td>Tecnico en sistemas computacionales</td>
-								<td>14 años</td>
-								<td><span class="badge badge-danger">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Lizi</td>
-								<td><a href="#">Godinez</a></td>
-								<td>Comercio Internacional</td>
-								<td>6 meses</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Kendy</td>
-								<td>Ornelas</td>
-								<td>Marketing</td>
-								<td>4 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Chantal</td>
-								<td><a href="#">Morado</a></td>
-								<td>Librista</td>
-								<td>9 años y medio</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Delma</td>
-								<td>Bondas</td>
-								<td>Manager</td>
-								<td>2 años y medio</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Rolando</td>
-								<td>Salmos</td>
-								<td><a href="#">Diseñador</a></td>
-								<td>6 años y medio</td>
-								<td><span class="badge badge-secondary">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Coral</td>
-								<td>Wong</td>
-								<td>Programador</td>
-								<td>20 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximiliano</td>
-								<td>Morato</td>
-								<td>Tecnico en supervisión</td>
-								<td>1 mes</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Laura</td>
-								<td>Silva</td>
-								<td><a href="#">Medico</a></td>
-								<td>23 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
-			
-				<!-- Multiselect examples -->
+				<!-- Text inputs title -->
 				<div class="mb-3">
 					<h6 class="mb-0 font-weight-semibold">
-						Empleados
+						Text inputs
 					</h6>
-					<span class="text-muted d-block">Different multiselect options</span>
+					<span class="text-muted d-block">Input fields with options</span>
 				</div>
+				<!-- /text inputs title -->
 
+
+				<!-- Basic examples -->
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic examples</h5>
+								<h6 class="card-title">Basic text field</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1685,238 +1292,20 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-
-								<!-- Default multiselect -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+								<p class="mb-3">A simple example of using Alpaca with nothing more than a string of text. Alpaca looks at your data and determines that it is a string. It then looks for a suitable candidate for representing a string and it decides to use the <code>text</code> field.</p>
+								<div id="alpaca-basic"></div>
+								<a href="#alpaca-basic-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-basic-source">
+									<pre class="language-javascript"><code>// Basic text input
+$("#alpaca-basic").alpaca({
+    data: "I Love Alpaca Ice Cream!",
+    options: {
+        focus: false
+    }
+});</code></pre>
 								</div>
-								<!-- /default multiselect -->
-
-
-								<!-- Default multiselect with selected options -->
-								<div class="form-group">
-									<label>Default selected options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect with selected options -->
-
-
-								<!-- Options with divider -->
-								<div class="form-group">
-									<label>Options with divider</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /options with divider -->
-
-
-								<!-- Option groups support -->
-								<div class="form-group">
-									<label>Option groups support</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /option groups support -->
-
-
-								<!-- Options with and without groups -->
-								<div class="form-group">
-									<label>Options with and without groups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="automata">Automata Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /options with and without groups -->
-
-
-								<!-- Dropdown with max height -->
-								<div class="form-group">
-									<label>Dropdown with max height</label>
-									<select class="form-control multiselect-max-height" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /dropdown with max height -->
-
-
-								<!-- Select All option -->
-								<div class="form-group">
-									<label>With <span class="font-weight-semibold">Select all</span> option</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option -->
-
-
-								<!-- Select All option selected -->
-								<div class="form-group">
-									<label>Select all option response</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese" selected>Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella" selected>Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option selected -->
-
-
-								<!-- Filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Filtering</span> option</label>
-									<select class="form-control multiselect-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /filtering options -->
-
-
-								<!-- Select All and filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Select All</span> and <span class="font-weight-semibold">Filtering</span> options</label>
-									<select class="form-control multiselect-select-all-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All and filtering options -->
-
-
-								<!-- Optgroups, filtering and select all -->
-								<div class="form-group">
-									<label>Full featured example</label>
-									<select class="form-control multiselect-full-featured" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /optgroups, filtering and select all -->
-
-
-								<!-- Disabled select -->
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control multiselect" multiple="multiple" disabled data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled select -->
-
-
-								<!-- Disabled options -->
-								<div class="form-group">
-									<label>Disabled options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" disabled selected>Tomatoes</option>
-										<option value="mozarella" disabled>Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled options -->
-
-
-								<!-- Disabled optgroups -->
-								<div class="form-group">
-									<label>Disabled optgroups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics" disabled>
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /disabled optgroups -->
-
-
-								<!-- Prevent deselect -->
-								<div class="form-group">
-									<label>Prevent deselect</label>
-									<select class="form-control multiselect-prevent-deselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /prevent deselect -->
-
 							</div>
 						</div>
 					</div>
@@ -1924,7 +1313,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced usage</h5>
+								<h6 class="card-title">Display only view</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1933,278 +1322,364 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-
-								<!-- Within a group with addon -->
-								<div class="form-group">
-									<label>Within a group with addon</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="icon-android"></i>
-											</span>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
+								<p class="mb-3">Displays a text field using a display-only view. The text field simply prints out and is not editable, a simple block appears instead. This is a default form control type provided by Bootstrap framework.</p>
+								<div id="alpaca-static"></div>
+								<a href="#alpaca-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-static-source">
+									<pre class="language-javascript"><code>// Display only view
+$("#alpaca-static").alpaca({
+    data: "I Love Alpaca Ice Cream!",
+    schema: {
+        type: "string"
+    },
+    view: "bootstrap-display"
+});</code></pre>
 								</div>
-								<!-- /within a group with addon -->
-
-
-								<!-- Within a group with button -->
-								<div class="form-group">
-									<label>Within a group with button</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<button class="btn btn-light" type="button">Action</button>
-										</span>
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button -->
-
-
-								<!-- Within a group with button dropdown -->
-								<div class="form-group">
-									<label>Within a group with button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button dropdown -->
-
-
-								<!-- Within a group with segmented button dropdown -->
-								<div class="form-group">
-									<label>Within a group with segmented button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light">Action</button>
-											<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with segmented button dropdown -->
-
-
-								<!-- Within a group with checkbox -->
-								<div class="form-group">
-									<label>Within a group with checkbox</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="checkbox" class="form-control-styled" name="input-addon-checkbox" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with checkbox -->
-
-
-								<!-- Within a group with radio -->
-								<div class="form-group">
-									<label>Within a group with radio</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="radio" class="form-control-styled" name="input-addon-radio" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with radio -->
-
-
-								<!-- Remove active option class -->
-								<div class="form-group">
-									<label>Remove active option class</label>
-									<select class="form-control multiselect-no-active-class" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /remove active option class -->
-
-
-								<!-- Alternative labels for options -->
-								<div class="form-group">
-									<label>Alternative labels for options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="analysis" label="An (Analysis)">Analysis</option>
-										<option value="algebra" label="LA (Linear Algebra)">Linear Algebra</option>
-										<option value="discrete" label="Discrete (Mathematics)">Discrete Mathematics</option>
-									</select>
-								</div>
-								<!-- /alternative labels for options -->
-
-
-								<!-- Limit options number -->
-								<div class="form-group">
-									<label>Limit options number</label>
-									<select class="form-control multiselect-number" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /limit options number -->
-
-
-								<!-- Custom empty text -->
-								<div class="form-group">
-									<label>Custom empty text</label>
-									<select class="form-control multiselect-nonselected-text" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom empty -->
-
-
-								<!-- As a link -->
-								<div class="form-group">
-									<label>As a link</label>
-									<select class="form-control multiselect-link" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /as a link -->
-
-
-								<!-- onChange notice -->
-								<div class="form-group">
-									<label>onChange notice</label>
-									<select class="form-control multiselect-onchange-notice" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange notice -->
-
-
-								<!-- onChange desktop notification -->
-								<div class="form-group">
-									<label>onChange desktop notification</label>
-									<select class="form-control multiselect-onchange-desktop" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange desktop notification -->
-
-
-								<!-- onDropdownShow event -->
-								<div class="form-group">
-									<label>onDropdownShow event</label>
-									<select class="form-control multiselect-show-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownShow event -->
-
-
-								<!-- onDropdownHide event -->
-								<div class="form-group">
-									<label>onDropdownHide event</label>
-									<select class="form-control multiselect-hide-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownHide event -->									
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /multiselect examples -->
+				<!-- /basic examples -->
 
 
-				<!-- Sizing options -->
+				<!-- Input labels -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Label for text input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In this example <strong>text</strong> input field has label. By default appears on top left and uses default Bootstrap styles, including contetual alternatives. To add text label to any input field, use <code>label</code> option inside set of configuration <code>options</code>.</p>
+								<div id="alpaca-input-label"></div>
+								<a href="#alpaca-input-label-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-input-label-source">
+									<pre class="language-javascript"><code>// Text input label
+$("#alpaca-input-label").alpaca({
+    data: "I Love Alpaca Ice Cream!",
+    options: {
+        label: "Input label",
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Label for static input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In this example <strong>static</strong> input field has label. By default appears on top left and uses default Bootstrap styles, including contetual alternatives. To add text label to any input field, use <code>label</code> option inside set of configuration <code>options</code>.</p>
+								<div id="alpaca-static-label"></div>
+								<a href="#alpaca-static-label-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-static-label-source">
+									<pre class="language-javascript"><code>// Static input label
+$("#alpaca-static-label").alpaca({
+    data: "I Love Alpaca Ice Cream!",
+    schema: {
+        type: "string"
+    },
+    options: {
+        label: "Input label"
+    },
+    view: "bootstrap-display"
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /input labels -->
+
+
+				<!-- Validation -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Validation</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">A more developed example that specifies not only the data but also the schema, options and some basic input validation. In this example text field is limited to minimum 3 characters and maximum 5 characters. Try to change default input value.</p>
+								<div id="alpaca-validation"></div>
+								<a href="#alpaca-validation-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-validation-source">
+									<pre class="language-javascript"><code>// Validation
+$("#alpaca-validation").alpaca({
+    data: "Mint",
+    schema: {
+        minLength: 3,
+        maxLength: 5
+    },
+    options: {
+        label: "Ice Cream",
+        helper: "Your favorite ice cream?",
+        size: 30,
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Predefined value</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In this example, we intentionally set the data to something that is invalid. The schema specifies that the maximum length of the allowed value is 8 characters. Our value exceeds that and so we receive a message straight away indicating this problem.</p>
+								<div id="alpaca-validation-predefined"></div>
+								<a href="#alpaca-validation-predefined-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-validation-predefined-source">
+									<pre class="language-javascript"><code>// Predefined value
+$("#alpaca-validation-predefined").alpaca({
+    data: "Mint Chocolate",
+    schema: {
+        minLength: 3,
+        maxLength: 5
+    },
+    options: {
+        label: "Ice Cream",
+        helper: "Please tell us the kind of ice cream you love most!",
+        size: 30,
+        focus: false,
+        placeholder: "Enter an ice cream flavor"
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /validation -->
+
+
+				<!-- Disallowance -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disallow empty spaces</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">A text with field with <code>disallowEmptySpaces</code> set to <code>true</code>. This prevents the entry of spaces - it doesn't react on pressing space key. This is useful for things like username entry fields, as configured below.</p>
+								<div id="alpaca-disallow-empty"></div>
+								<a href="#alpaca-disallow-empty-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-disallow-empty-source">
+									<pre class="language-javascript"><code>// Disallow empty spaces
+$("#alpaca-disallow-empty").alpaca({
+    schema: {
+        type: "string"
+    },
+    options: {
+        type: "lowercase",
+        label: "User Name",
+        disallowEmptySpaces: true,
+        helper: "Type something with empty space",
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disallow values</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In this example we've added a few predefined values, that are not allowed by default. Just place values you want to disallow into <code>disallow</code> option, this will enable input field validation. Try to change input field value to see it in action.</p>
+								<div id="alpaca-disallow-values"></div>
+								<a href="#alpaca-disallow-values-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-disallow-values-source">
+									<pre class="language-javascript"><code>// Disallow values
+$("#alpaca-disallow-values").alpaca({
+    data: "Mickey Mantle",
+    schema: {
+        type: "string",
+        disallow: ["Mickey Mantle", "Mickey"]
+    },
+    options: {
+        label: "Name",
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /disallowance -->
+
+
+				<!-- Third party integrations -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Typeahead integration</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">This example uses <code>$.typeahead</code> auto-completion with a function to provide lookup values. The <code>config</code> block defines the first argument into the typeahead plugin. The <code>datasets</code> block defines the second argument into the typeahead plugin.</p>
+								<div id="alpaca-typeahead"></div>
+								<a href="#alpaca-typeahead-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-typeahead-source">
+									<pre class="language-javascript"><code>// Typeahead
+$("#alpaca-typeahead").alpaca({
+    schema: {
+        type: "string"
+    },
+    options: {
+        type: "text",
+        label: "Company Name",
+        helper: "Select the name of a computing company",
+        placeholder: "Enter 'a'",
+        focus: false,
+        typeahead: {
+            config: {
+                highlight: true,
+                hint: true,
+                minLength: 1
+            },
+            datasets: {
+                type: "local",
+                displayKey: 'value',
+                source: ["Google", "Amazon", "Microsoft", "Apple", "Spotify", "Alpaca", "Another company", "Facebook"]
+            }
+        }
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Maxlength integration</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">This example constrains the entered text value, forcing it to be at minimum 3 and at most 25. This not only runs validation checks but also enforces some UI behavior. This also shows how many characters are left for <code>maxLength</code> as you type.</p>
+								<div id="alpaca-maxlength"></div>
+								<a href="#alpaca-maxlength-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-maxlength-source">
+									<pre class="language-javascript"><code>// Maxlength
+$("#alpaca-maxlength").alpaca({
+    schema: {
+        type: "string",
+        minLength: 3,
+        maxLength: 25
+    },
+    options: {
+        type: "text",
+        label: "What is your name?",
+        constrainMaxLength: true,
+        constrainMinLength: true,
+        showMaxLengthIndicator: true,
+        focus: false
+    },
+    data: "Jackie Robinson"
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /third party integrations -->
+
+
+
+				<!-- Textarea title -->
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Sizing options
+						Textarea type
 					</h6>
-					<span class="text-muted d-block">Width and height sizing</span>
+					<span class="text-muted d-block">Basic examples of textarea</span>
 				</div>
+				<!-- /textarea title -->
 
+
+				<!-- Basic textarea -->
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Width sizing</h5>
+								<h6 class="card-title">Basic textarea</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2213,44 +1688,25 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-
-								<!-- Full width -->
-								<div class="form-group">
-									<label>Full width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+								<p class="mb-3">The following example demonstrates a simple textarea field with a string of text. Textarea type supports almost all available options for text inputs and also includes basic textarea attributes, such as columns and rows.</p>
+								<div id="alpaca-textarea"></div>
+								<a href="#alpaca-textarea-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-textarea-source">
+									<pre class="language-javascript"><code>// Basic textarea
+$("#alpaca-textarea").alpaca({
+    data: "Ice cream or ice-cream...",
+    options: {
+        type: "textarea",
+        label: "Receipt",
+        helper: "Receipt for Best Homemade Ice Cream",
+        rows: 4,
+        cols: 80,
+        focus: false
+    }
+});</code></pre>
 								</div>
-								<!-- /full width -->
-
-
-								<!-- Fixed width -->
-								<div class="form-group">
-									<label>Fixed width</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="250" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /fixed width -->
-
-
-								<!-- Auto width -->
-								<div class="form-group">
-									<label>Auto width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="auto" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /auto width -->
-
 							</div>
 						</div>
 					</div>
@@ -2258,7 +1714,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Height sizing</h5>
+								<h6 class="card-title">With placeholder</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2267,64 +1723,124 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-
-								<!-- Large button -->
-								<div class="form-group">
-									<label>Large select</label>
-									<select class="form-control form-control-lg multiselect" multiple="multiple" data-button-class="btn btn-light btn-lg" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+								<p class="mb-3">The following example uses the <code>placeholder</code> option to set up the placeholder text for a text area field. This basic option is available in all input types: text, number, search, url, email, textarea etc.</p>
+								<div id="alpaca-textarea-placeholder"></div>
+								<a href="#alpaca-textarea-placeholder-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-textarea-placeholder-source">
+									<pre class="language-javascript"><code>// With placeholder
+$("#alpaca-textarea-placeholder").alpaca({
+    options: {
+        type: "textarea",
+        label: "Receipt",
+        helper: "Receipt for Best Homemade Ice Cream",
+        placeholder: "Enter your favorite ice cream here...",
+        rows: 4,
+        cols: 80,
+        focus: false
+    }
+});</code></pre>
 								</div>
-								<!-- /large button -->
-
-
-								<!-- Default button -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /default button -->
-
-
-								<!-- Small button -->
-								<div class="form-group">
-									<label>Small select</label>
-									<select class="form-control form-control-sm multiselect" multiple="multiple" data-button-class="btn btn-light btn-sm" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /small button -->
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /sizing options -->
+				<!-- /basic textarea -->
 
 
-				<!-- Color options -->
+				<!-- View mode -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">View mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">In the following example textarea field is rendered in display-only mode, which means textarea is replaced with div block and can't be editable. To set a view only mode, use <code>bootstrap-display</code>option added to <code>view</code> option.</p>
+								<div id="alpaca-textarea-static"></div>
+								<a href="#alpaca-textarea-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-textarea-static-source">
+									<pre class="language-javascript"><code>// View mode
+$("#alpaca-textarea-static").alpaca({
+    data: "Ice cream or ice-cream...",
+    options: {
+        type: "textarea",
+        label: "Receipt",
+        rows: 6,
+        cols: 80,
+        focus: false
+    },
+    view: "bootstrap-display"
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Single field render</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example overrides the <code>view</code> property on the field to have just the single field render in an alternate, display-only view. To make it short - <code>view</code> property here is placed inside <code>options</code> property.</p>
+								<div id="alpaca-textarea-override"></div>
+								<a href="#alpaca-textarea-override-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-textarea-override-source">
+									<pre class="language-javascript"><code>// Single field render
+$("#alpaca-textarea-override").alpaca({
+    data: "My name is Dr. Jacobian and I am a neuroscientist...",
+    schema: {
+        type: "string"
+    },
+    options: {
+        type: "textarea",
+        label: "Tell us about yourself",
+        view: "bootstrap-display"
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /view mode -->
+
+
+
+				<!-- Selects title -->
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Other options
+						Select menus
 					</h6>
-					<span class="text-muted d-block">Contextual alternatives and other options</span>
+					<span class="text-muted d-block">Basic selects, Multiselect and Select2</span>
 				</div>
+				<!-- /selects title -->
 
+
+				<!-- Basic selects -->
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Contextual alternatives</h5>
+								<h6 class="card-title">Basic select</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2333,80 +1849,25 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-
-								<!-- Default -->
-								<div class="form-group">
-									<label>Default class</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+								<p class="mb-3">Select field with data, options and schema parameters. As default, a select field will be rendered if schema enum property has more than 3 options. The sort order for enumerated values and their text are assumed to be alphanumeric.</p>
+								<div id="alpaca-select"></div>
+								<a href="#alpaca-select-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-select-source">
+									<pre class="language-javascript"><code>// Basic select
+$("#alpaca-select").alpaca({
+    data: "coffee",
+    schema: {
+        enum: ["vanilla", "chocolate", "coffee", "strawberry", "mint"]
+    },
+    options: {
+        label: "Ice cream",
+        helper: "What flavor of ice cream do you prefer?",
+        focus: false
+    }
+});</code></pre>
 								</div>
-								<!-- /default -->
-
-
-								<!-- Primary -->
-								<div class="form-group">
-									<label>Primary class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-primary" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /primary -->
-
-
-								<!-- Danger -->
-								<div class="form-group">
-									<label>Danger class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-danger" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /danger -->
-
-
-								<!-- Success -->
-								<div class="form-group">
-									<label>Success class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-success" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /success -->
-
-
-								<!-- Warning -->
-								<div class="form-group">
-									<label>Warning class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-warning" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /warning -->
-
-
-								<!-- Info -->
-								<div class="form-group">
-									<label>Info class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-info" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /info -->
-
 							</div>
 						</div>
 					</div>
@@ -2414,7 +1875,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Other options</h5>
+								<h6 class="card-title">External data source</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2423,112 +1884,36 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-
-								<!-- Single select -->
-								<div class="form-group">
-									<label>Single select</label>
-									<select class="form-control multiselect" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+								<p class="mb-3">Select field with external data source using <code>dataSource</code> option. If a string, it is considered to be a URI to a service that produces a object containing key/value pairs or an array of elements. Function needs to produce the same list.</p>
+								<div id="alpaca-select-external"></div>
+								<a href="#alpaca-select-external-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-select-external-source">
+									<pre class="language-javascript"><code>// External data source
+$("#alpaca-select-external").alpaca({
+    options: {
+        label: "Ice cream",
+        helper: "Guess my favorite ice cream?",
+        type: "select",
+        focus: false,
+        dataSource: "../../../../global_assets/demo_data/alpaca/selects.json"
+    }
+});</code></pre>
 								</div>
-								<!-- /single select -->
-
-
-								<!-- Clickable optgroups -->
-								<div class="form-group">
-									<label>Clickable optgroups</label>
-									<select class="form-control multiselect-clickable-groups" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-										<optgroup label="Physics">
-											<option value="mechanics">Classical Mechanics</option>
-											<option value="magnetism">Electromagnetism</option>
-											<option value="quantum">Quantum Mechanics</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /clickable optgroups -->
-
-
-								<!-- Disable if empty -->
-								<div class="form-group">
-									<label>Disable if no options are given</label>
-									<select class="form-control multiselect-disable-empty" multiple="multiple" data-fouc></select>
-								</div>
-								<!-- /disable if empty -->
-
-
-								<!-- Custom button color -->
-								<div class="form-group">
-									<label>Custom button color</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-teal-400" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom button color -->
-
-
-								<!-- Custom menu color -->
-								<div class="form-group">
-									<label>Custom menu color</label>
-									<select class="form-control multiselect-menu-bg-color" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom menu color -->
-
-
-								<!-- Custom colors -->
-								<div class="form-group">
-									<label>Custom colors combination</label>
-									<select class="form-control multiselect-combine-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom colors -->
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /color options -->
+				<!-- /basic selects -->
 
 
-				<!-- More complex examples -->
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Advanced examples
-					</h6>
-					<span class="text-muted d-block">More complex multiselect examples</span>
-				</div>
-
+				<!-- Multiselect -->
 				<div class="row">
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Further examples</h5>
+								<h6 class="card-title">Basic multiselect</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2537,155 +1922,38 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-
-								<!-- Showing values -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Showing values</h6>
-									<p class="mb-3">Use "Select" and "Deselect" buttons to select or deselect cheese and tomatoes. Display selected or deselected options by using <code>$('.multiselect').val()</code> method.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-display-values" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-display-values-select">Select</button>
-											<button type="button" class="btn btn-light multiselect-display-values-deselect">Deselect</button>
-										</div>
-									</div>
-
-									<div class="values-area mt-2"></div>
+								<p class="mb-3">The following example demonstrates select menu with multiple select option, based on <code>Bootstrap Multiselect</code> plugin. Default multiselect doesn't provide styled checkboxes, so we are using <code>Uniform</code> plugin for custom look.</p>
+								<div id="alpaca-multiselect"></div>
+								<a href="#alpaca-multiselect-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-multiselect-source">
+									<pre class="language-javascript"><code>// Multiselect
+$("#alpaca-multiselect").alpaca({
+    data: ["Vanilla", "Chocolate"],
+    schema: {
+        type: "array",
+        items: {
+            title: "Ice Cream",
+            type: "string",
+            enum: ["Vanilla", "Chocolate", "Strawberry", "Mint"],
+            minItems: 2,
+            maxItems: 3
+        }
+    },
+    options: {
+        label: "Ice cream",
+        helper: "Guess my favorite ice cream?",
+        type: "select",
+        size: 5,
+        id: "multiselect",
+        focus: false
+    },
+    postRender: function(control) {
+        $("#multiselect").parent().find("input[type=checkbox]").uniform();
+    }
+});</code></pre>
 								</div>
-								<!-- /showing values -->
-
-
-								<!-- Toggle selection -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Toggle selection</h6>
-									<p class="mb-3">Use the button to toggle the selection. Don't forget to include <code>$.uniform.update();</code> to update checkboxes or radios state dynamically.</p>
-									<div class="input-group">
-										<select class="form-control multiselect-toggle-selection" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-toggle-selection-button">Select All</button>
-										</div>
-									</div>
-								</div>
-								<!-- /toggle selection -->
-
-
-								<!-- Order options -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Order options</h6>
-									<p class="mb-3">Record the order the options are selected. When selecting an item an ordering number will be incremented and saved within the option.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-order-options" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-order-options-button">Order</button>
-										</div>
-									</div>
-								</div>
-								<!-- /order options -->
-
-
-								<!-- Simulate selections -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Simulate selections</h6>
-									<p class="mb-3">Simulate single selections using checkboxes. The behavior will be similar to a multiselect with radio buttons.</p>
-
-									<select class="form-control multiselect-simulate-selections" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /simulate selections -->
-
-
-								<!-- Close dropdown automatically -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Close dropdown automatically</h6>
-									<p class="mb-3">Close dropdown after 3 selections automatically.</p>
-
-									<select class="form-control multiselect-close-dropdown" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /close dropdown automatically -->
-
-
-								<!-- Reset button -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Reset button</h6>
-									<p class="mb-3">Using a reset button together with a multiselect. Select options then click Reset button to reset selections.</p>
-
-									<form class="input-group" id="multiselect-reset-form">
-										<select class="form-control multiselect-reset" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="reset" class="btn bg-blue">Reset</button>
-										</div>
-									</form>
-								</div>
-								<!-- /reset button -->
-
-
-								<!-- Templates -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Multiselect templates</h6>
-									<p class="mb-3">The templates can be overriden using the <code>templates</code> configuration option. The example below uses a <code>red</code> border color for dividers.</p>
-
-									<select class="form-control multiselect-templates" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option data-role="divider"></option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /templates -->
-
 							</div>
 						</div>
 					</div>
@@ -2693,7 +1961,7 @@
 					<div class="col-md-6">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiselect methods</h5>
+								<h6 class="card-title">Multiselect data source</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2702,183 +1970,119 @@
 				                	</div>
 			                	</div>
 							</div>
-
+						
 							<div class="card-body">
-
-								<!-- Destroy method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Destroy method</h6>
-									<p class="mb-3">This method is used to destroy the plugin on the given element - meaning unbinding the plugin.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-destroy" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-create-button">Create</button>
-											<button type="button" class="btn bg-danger multiselect-destroy-button">Destroy</button>
-										</div>
-									</div>
+								<p class="mb-3">Select field with external data source using <code>dataSource</code> option. If a string, it is considered to be a URI to a service that produces a object containing key/value pairs or an array of elements. Function needs to produce the same list.</p>
+								<div id="alpaca-multiselect-remote"></div>
+								<a href="#alpaca-multiselect-remote-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-multiselect-remote-source">
+									<pre class="language-javascript"><code>// Multiselect with remote data
+$("#alpaca-multiselect-remote").alpaca({
+    options: {
+        label: "Select your favorite flavor of ice cream",
+        type: "select",
+        multiple: true,
+        helper: "Guess my favorite ice cream?",
+        size: 3,
+        focus: false,
+        id: "multiselect-remote",
+        dataSource: "../../../../global_assets/demo_data/alpaca/selects.json"
+    },
+    postRender: function(control) {
+        $("#multiselect-remote").parent().find("input[type=checkbox]").uniform();
+    }
+});</code></pre>
 								</div>
-								<!-- /destroy method -->
-
-
-								<!-- Refresh method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Refresh method</h6>
-									<p class="mb-3">This method is used to refresh the checked checkboxes based on the currently selected options within the select. Click <strong>'Select'</strong>, then click <strong>refresh</strong>. The plugin will update the checkboxes.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-refresh" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-button">Select</button>
-											<button type="button" class="btn btn-light multiselect-deselect-button">Deselect</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-refresh-button"><i class="icon-reload-alt"></i></button>
-										</div>
-									</div>
-								</div>
-								<!-- /refresh method -->
-
-
-								<!-- Rebuild method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Rebuild method</h6>
-									<p class="mb-3">Rebuilds the whole dropdown menu. All selected options will remain selected (if still existent!). Click <strong>Add</strong> button and then click <strong>Rebuild</strong> button, open dropdown and you'll notice new options added to the bottom of the list.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-rebuild" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-add-button">Add</button>
-											<button type="button" class="btn btn-light multiselect-delete-button">Delete</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-rebuild-button"><i class="icon-reload-alt"></i></button>
-										</div>
-									</div>
-								</div>
-								<!-- /rebuild method -->
-
-
-								<!-- Select method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Select method</h6>
-									<p class="mb-3">Selects an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-select" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-cheese-button">Cheese</button>
-											<button type="button" class="btn btn-light multiselect-select-onions-button">Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /select method -->
-
-
-								<!-- Deselect method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Deselect method</h6>
-									<p class="mb-3">Deselect an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-deselect" multiple="multiple" data-fouc>
-											<option value="cheese" selected>Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions" selected>Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-deselect-cheese-button">Deselect Cheese</button>
-											<button type="button" class="btn btn-light multiselect-deselect-onions-button">Deselect Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /deselect method -->
-
-
-								<!-- Disable method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable method</h6>
-									<p class="mb-3">Disable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-disable" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-danger multiselect-disable1-button">Disable</button>
-											<button type="button" class="btn btn-light multiselect-enable1-button">Enable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /disable method -->
-
-
-								<!-- Enable method -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Enable method</h6>
-									<p class="mb-3">Enable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-enable" multiple="multiple" disabled data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-enable2-button">Enable</button>
-											<button type="button" class="btn btn-light multiselect-disable2-button">Disable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /enable method -->
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /more complex examples -->
+				<!-- /multiselects -->
+
+
+				<!-- Select2 selects -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Select2 basic</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates default implementation of Select2 library - here we need to specify select ID first, then initialize Select2 plugin using that ID selector. This is a custom integration, which is not supported in Alpaca by default.</p>
+								<div id="alpaca-select2"></div>
+								<a href="#alpaca-select2-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-select2-source">
+									<pre class="language-javascript"><code>// Select2 select
+$("#alpaca-select2").alpaca({
+    data: "coffee",
+    schema: {
+        enum: ["vanilla", "chocolate", "coffee", "strawberry", "mint"]
+    },
+    options: {
+        label: "Ice cream",
+        helper: "What flavor of ice cream do you prefer?",
+        id: "select2-basic",
+        focus: false
+    },
+    postRender: function(control) {
+        $('#select2-basic').select2({
+            minimumResultsForSearch: Infinity
+        });
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Select2 with search</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates Select2 select with search field - here we need to specify select ID first, then initialize Select2 plugin using that ID selector. This is a custom integration, which is not supported in Alpaca by default.</p>
+								<div id="alpaca-select2-search"></div>
+								<a href="#alpaca-select2-search-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-select2-search-source">
+									<pre class="language-javascript"><code>// Select2 select with search
+$("#alpaca-select2-search").alpaca({
+    data: "coffee",
+    schema: {
+        enum: ["vanilla", "chocolate", "coffee", "strawberry", "mint"]
+    },
+    options: {
+        label: "Ice cream",
+        helper: "What flavor of ice cream do you prefer?",
+        id: "select2-search",
+        focus: false
+    },
+    postRender: function(control) {
+        $('#select2-search').select2();
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /select2 selects -->
 
 			</div>
 			<!-- /content area -->

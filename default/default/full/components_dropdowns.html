@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
 	<!-- Global stylesheets -->
@@ -24,11 +24,10 @@
 
 	<!-- Theme JS files -->
 	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/notifications/pnotify.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_multiselect.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/components_dropdowns.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -482,14 +481,13 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
-								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Agregar</a></li>
-								<li class="nav-item"><a href="form_select2.html" class="nav-link">Editar</a></li>
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link active">Departamentos</a></li>
-								<!--
+								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Basic inputs</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Checkboxes &amp; radios</a></li>
+								<li class="nav-item"><a href="form_select2.html" class="nav-link">Select2 selects</a></li>
+								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
 								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
@@ -498,10 +496,9 @@
 								<li class="nav-item"><a href="form_validation.html" class="nav-link">Validation</a></li>
 								<li class="nav-item"><a href="form_wizard.html" class="nav-link">Form wizard</a></li>
 								<li class="nav-item"><a href="form_actions.html" class="nav-link">Form actions</a></li>
-								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>/-->
+								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>
 							</ul>
 						</li>
-						<!--
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-file-css"></i> <span>JSON forms</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
@@ -536,17 +533,16 @@
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>/-->
-
+						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
 								<li class="nav-item"><a href="components_modals.html" class="nav-link">Modals</a></li>
-								<li class="nav-item"><a href="components_dropdowns.html" class="nav-link">Dropdown menus</a></li>
+								<li class="nav-item"><a href="components_dropdowns.html" class="nav-link active">Dropdown menus</a></li>
 								<li class="nav-item"><a href="components_tabs.html" class="nav-link">Tabs component</a></li>
 								<li class="nav-item"><a href="components_pills.html" class="nav-link">Pills component</a></li>
 								<li class="nav-item"><a href="components_collapsible.html" class="nav-link">Collapsible</a></li>
@@ -1213,7 +1209,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold"></span> - Multiselect</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Components</span> - Dropdowns</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1230,8 +1226,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_multiselect.html" class="breadcrumb-item">Forms</a>
-							<span class="breadcrumb-item active">Multiselect</span>
+							<a href="components_dropdowns.html" class="breadcrumb-item">Components</a>
+							<span class="breadcrumb-item active">Dropdowns</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1268,1617 +1264,1002 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar Departamento</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						The <code>No omitir ningun paso</strong>
-					</div>
-
-					<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th>edición</th>
-								<th>edición 2</th>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Departamento</th>
-								<th>Antiguedad</th>
-								<th>Estado</th>
-								<th class="text-center">Acciones</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Marta</td>
-								<td><a href="#">López</a></td>
-								<td>Contaduria</td>
-								<td>2 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Jackelyn</td>
-								<td>Juarez</td>
-								<td><a href="#">Piloto Aviador</a></td>
-								<td>3 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Aura</td>
-								<td>Gómez</td>
-								<td>Recepcionista</td>
-								<td>12 años</td>
-								<td><span class="badge badge-danger">Suspendida</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Natalie</td>
-								<td><a href="#">Alvarez</a></td>
-								<td>Limpieza</td>
-								<td>10 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Sharon</td>
-								<td>Aquino</td>
-								<td>Manofactura</td>
-								<td>5 años</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximo</td>
-								<td><a href="#"></a>Martinez</td>
-								<td><a href="#">licenciado</a></td>
-								<td>8 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Silvia</td>
-								<td><a href="#">Rodriguez</a></td>
-								<td>Tecnico en sistemas computacionales</td>
-								<td>14 años</td>
-								<td><span class="badge badge-danger">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Lizi</td>
-								<td><a href="#">Godinez</a></td>
-								<td>Comercio Internacional</td>
-								<td>6 meses</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Kendy</td>
-								<td>Ornelas</td>
-								<td>Marketing</td>
-								<td>4 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Chantal</td>
-								<td><a href="#">Morado</a></td>
-								<td>Librista</td>
-								<td>9 años y medio</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Delma</td>
-								<td>Bondas</td>
-								<td>Manager</td>
-								<td>2 años y medio</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Rolando</td>
-								<td>Salmos</td>
-								<td><a href="#">Diseñador</a></td>
-								<td>6 años y medio</td>
-								<td><span class="badge badge-secondary">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Coral</td>
-								<td>Wong</td>
-								<td>Programador</td>
-								<td>20 años</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Maximiliano</td>
-								<td>Morato</td>
-								<td>Tecnico en supervisión</td>
-								<td>1 mes</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Pegar<i class="icon-play3 ml-2"></i></button></td>
-								<td>Laura</td>
-								<td>Silva</td>
-								<td><a href="#">Medico</a></td>
-								<td>23 años</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- /basic datatable -->
-			
-				<!-- Multiselect examples -->
+				<!-- Basic dropdowns -->
 				<div class="mb-3">
 					<h6 class="mb-0 font-weight-semibold">
-						Empleados
+						Dropdown menus
 					</h6>
-					<span class="text-muted d-block">Different multiselect options</span>
+					<span class="text-muted d-block">Dropdown component states</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic examples</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Basic dropdown</h6>
+								<p class="mb-3 text-muted">Default dropdown menu styling</p>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Default multiselect -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect -->
-
-
-								<!-- Default multiselect with selected options -->
-								<div class="form-group">
-									<label>Default selected options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /default multiselect with selected options -->
-
-
-								<!-- Options with divider -->
-								<div class="form-group">
-									<label>Options with divider</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /options with divider -->
-
-
-								<!-- Option groups support -->
-								<div class="form-group">
-									<label>Option groups support</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /option groups support -->
-
-
-								<!-- Options with and without groups -->
-								<div class="form-group">
-									<label>Options with and without groups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="automata">Automata Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /options with and without groups -->
-
-
-								<!-- Dropdown with max height -->
-								<div class="form-group">
-									<label>Dropdown with max height</label>
-									<select class="form-control multiselect-max-height" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /dropdown with max height -->
-
-
-								<!-- Select All option -->
-								<div class="form-group">
-									<label>With <span class="font-weight-semibold">Select all</span> option</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option -->
-
-
-								<!-- Select All option selected -->
-								<div class="form-group">
-									<label>Select all option response</label>
-									<select class="form-control multiselect-select-all" multiple="multiple" data-fouc>
-										<option value="cheese" selected>Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella" selected>Mozzarella</option>
-										<option value="mushrooms" selected>Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All option selected -->
-
-
-								<!-- Filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Filtering</span> option</label>
-									<select class="form-control multiselect-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /filtering options -->
-
-
-								<!-- Select All and filtering options -->
-								<div class="form-group">
-									<label><span class="font-weight-semibold">Select All</span> and <span class="font-weight-semibold">Filtering</span> options</label>
-									<select class="form-control multiselect-select-all-filtering" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /select All and filtering options -->
-
-
-								<!-- Optgroups, filtering and select all -->
-								<div class="form-group">
-									<label>Full featured example</label>
-									<select class="form-control multiselect-full-featured" multiple="multiple" data-fouc>
-										<option value="lab">Lab Course</option>
-										<option value="proseminar">Proseminar</option>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /optgroups, filtering and select all -->
-
-
-								<!-- Disabled select -->
-								<div class="form-group">
-									<label>Disabled select</label>
-									<select class="form-control multiselect" multiple="multiple" disabled data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled select -->
-
-
-								<!-- Disabled options -->
-								<div class="form-group">
-									<label>Disabled options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" disabled selected>Tomatoes</option>
-										<option value="mozarella" disabled>Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /disabled options -->
-
-
-								<!-- Disabled optgroups -->
-								<div class="form-group">
-									<label>Disabled optgroups</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics" disabled>
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="probability">Probability Theory</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-									</select>
-								</div>
-								<!-- /disabled optgroups -->
-
-
-								<!-- Prevent deselect -->
-								<div class="form-group">
-									<label>Prevent deselect</label>
-									<select class="form-control multiselect-prevent-deselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /prevent deselect -->
-
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced usage</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Disabled items</h6>
+								<p class="mb-3 text-muted">Disable the link with <code>.disabled</code> class</p>
 							</div>
 
-							<div class="card-body">
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<a href="#" class="dropdown-item disabled">Disabled item</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
+							</div>
+						</div>
+					</div>
 
-								<!-- Within a group with addon -->
-								<div class="form-group">
-									<label>Within a group with addon</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<span class="input-group-text">
-												<i class="icon-android"></i>
-											</span>
-										</span>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Active menu item</h6>
+								<p class="mb-3 text-muted">Make the link active with <code>.active</code> class</p>
+							</div>
 
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with addon -->
-
-
-								<!-- Within a group with button -->
-								<div class="form-group">
-									<label>Within a group with button</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<button class="btn btn-light" type="button">Action</button>
-										</span>
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button -->
-
-
-								<!-- Within a group with button dropdown -->
-								<div class="form-group">
-									<label>Within a group with button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Action</button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with button dropdown -->
-
-
-								<!-- Within a group with segmented button dropdown -->
-								<div class="form-group">
-									<label>Within a group with segmented button dropdown</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button type="button" class="btn btn-light">Action</button>
-											<button type="button" class="btn btn-light btn-icon dropdown-toggle" data-toggle="dropdown"></button>
-	                                        <div class="dropdown-menu">
-												<a href="#" class="dropdown-item">Action</a>
-												<a href="#" class="dropdown-item">Another action</a>
-												<a href="#" class="dropdown-item">Something else here</a>
-												<div class="dropdown-divider"></div>
-												<a href="#" class="dropdown-item">One more separated line</a>
-											</div>
-										</div>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with segmented button dropdown -->
-
-
-								<!-- Within a group with checkbox -->
-								<div class="form-group">
-									<label>Within a group with checkbox</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="checkbox" class="form-control-styled" name="input-addon-checkbox" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with checkbox -->
-
-
-								<!-- Within a group with radio -->
-								<div class="form-group">
-									<label>Within a group with radio</label>
-									<div class="input-group">
-										<span class="input-group-prepend">
-											<div class="input-group-text">
-												<input type="radio" class="form-control-styled" name="input-addon-radio" checked data-fouc>
-											</div>
-										</span>
-
-										<select class="form-control multiselect" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-										</select>
-									</div>									
-								</div>
-								<!-- /within a group with radio -->
-
-
-								<!-- Remove active option class -->
-								<div class="form-group">
-									<label>Remove active option class</label>
-									<select class="form-control multiselect-no-active-class" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes" selected>Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /remove active option class -->
-
-
-								<!-- Alternative labels for options -->
-								<div class="form-group">
-									<label>Alternative labels for options</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="analysis" label="An (Analysis)">Analysis</option>
-										<option value="algebra" label="LA (Linear Algebra)">Linear Algebra</option>
-										<option value="discrete" label="Discrete (Mathematics)">Discrete Mathematics</option>
-									</select>
-								</div>
-								<!-- /alternative labels for options -->
-
-
-								<!-- Limit options number -->
-								<div class="form-group">
-									<label>Limit options number</label>
-									<select class="form-control multiselect-number" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /limit options number -->
-
-
-								<!-- Custom empty text -->
-								<div class="form-group">
-									<label>Custom empty text</label>
-									<select class="form-control multiselect-nonselected-text" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom empty -->
-
-
-								<!-- As a link -->
-								<div class="form-group">
-									<label>As a link</label>
-									<select class="form-control multiselect-link" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /as a link -->
-
-
-								<!-- onChange notice -->
-								<div class="form-group">
-									<label>onChange notice</label>
-									<select class="form-control multiselect-onchange-notice" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange notice -->
-
-
-								<!-- onChange desktop notification -->
-								<div class="form-group">
-									<label>onChange desktop notification</label>
-									<select class="form-control multiselect-onchange-desktop" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onChange desktop notification -->
-
-
-								<!-- onDropdownShow event -->
-								<div class="form-group">
-									<label>onDropdownShow event</label>
-									<select class="form-control multiselect-show-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownShow event -->
-
-
-								<!-- onDropdownHide event -->
-								<div class="form-group">
-									<label>onDropdownHide event</label>
-									<select class="form-control multiselect-hide-event" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /onDropdownHide event -->									
-
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item active">Active item</a>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /multiselect examples -->
+				<!-- /basic dropdowns -->
 
 
-				<!-- Sizing options -->
+				<!-- Dropdown headers -->
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Sizing options
+						Dropdown headers
 					</h6>
-					<span class="text-muted d-block">Width and height sizing</span>
+					<span class="text-muted d-block">Dropdown header with options</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Width sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Default header</h6>
+								<p class="mb-3 text-muted">Basic <code>header</code> styling of label sections</p>
 							</div>
 
-							<div class="card-body">
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-header">Header first</div>
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<div class="dropdown-header">Header second</div>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<a href="#" class="dropdown-item">One more line</a>
+							</div>
+						</div>
 
-								<!-- Full width -->
-								<div class="form-group">
-									<label>Full width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /full width -->
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Header with underline</h6>
+								<p class="mb-3 text-muted">Basic <code>header</code> styling of label sections</p>
+							</div>
 
-
-								<!-- Fixed width -->
-								<div class="form-group">
-									<label>Fixed width</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="250" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /fixed width -->
-
-
-								<!-- Auto width -->
-								<div class="form-group">
-									<label>Auto width button (default)</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-width="auto" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /auto width -->
-
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-header font-weight-semibold py-0 text-default text-uppercase font-size-xs line-height-xs mt-1">Header first</div>
+								<div class="dropdown-divider opacity-75"></div>
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<div class="dropdown-header font-weight-semibold py-0 text-default text-uppercase font-size-xs line-height-xs mt-3">Header Second</div>
+								<div class="dropdown-divider opacity-75"></div>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<a href="#" class="dropdown-item">One more line</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Height sizing</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Uppercase headers</h6>
+								<p class="mb-3 text-muted">Basic <code>header</code> styling of label sections</p>
 							</div>
 
-							<div class="card-body">
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-header text-uppercase font-size-xs line-height-xs">Header first</div>
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<div class="dropdown-header text-uppercase font-size-xs line-height-xs">Header second</div>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<a href="#" class="dropdown-item">One more line</a>
+							</div>
+						</div>
 
-								<!-- Large button -->
-								<div class="form-group">
-									<label>Large select</label>
-									<select class="form-control form-control-lg multiselect" multiple="multiple" data-button-class="btn btn-light btn-lg" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /large button -->
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Highlighted header</h6>
+								<p class="mb-3 text-muted">Highlight header using <code>.dropdown-header-highlight</code> class</p>
+							</div>
 
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-header dropdown-header-highlight">Header first</div>
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<div class="dropdown-header dropdown-header-highlight">Header second</div>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<a href="#" class="dropdown-item">One more line</a>
+							</div>
+						</div>
+					</div>
 
-								<!-- Default button -->
-								<div class="form-group">
-									<label>Default select</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /default button -->
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Heading elements</h6>
+								<p class="mb-3 text-muted">Basic <code>header</code> styling of label sections</p>
+							</div>
 
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-header"><h6 class="text-default mb-0">Header first</h6></div>
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<div class="dropdown-header"><h6 class="text-default mb-0">Header Second</h6></div>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<a href="#" class="dropdown-item">One more line</a>
+							</div>
+						</div>
 
-								<!-- Small button -->
-								<div class="form-group">
-									<label>Small select</label>
-									<select class="form-control form-control-sm multiselect" multiple="multiple" data-button-class="btn btn-light btn-sm" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /small button -->
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Menu header icons</h6>
+								<p class="mb-3 text-muted">Display left/right positioned <code>icons</code></p>
+							</div>
 
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-header"><i class="icon-menu7"></i> Header first <i class="icon-gear mr-0 ml-auto"></i></div>
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<div class="dropdown-header dropdown-header-highlight"><i class="icon-menu7"></i> Header second <i class="icon-gear mr-0 ml-auto"></i></div>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<a href="#" class="dropdown-item">One more line</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /sizing options -->
+				<!-- /dropdown headers -->
 
 
-				<!-- Color options -->
+				<!-- Dropdowns with submenu -->
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Other options
+						Dropdown submenu
 					</h6>
-					<span class="text-muted d-block">Contextual alternatives and other options</span>
+					<span class="text-muted d-block">Multilevel submenu with options</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Contextual alternatives</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Basic submenu (on click)</h6>
+								<p class="mb-3 text-muted">Basic <code>multi</code> level menu example</p>
+
+								<div class="btn-group justify-content-center">
+									<a href="#" class="btn bg-indigo-400 dropdown-toggle" data-toggle="dropdown">Submenu on click</a>
+
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Action</a>
+										<a href="#" class="dropdown-item">Another action</a>
+										<a href="#" class="dropdown-item">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<div class="dropdown-submenu">
+											<a href="#" class="dropdown-item dropdown-toggle">More options</a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Second level link</a>
+												<div class="dropdown-submenu">
+													<a href="#" class="dropdown-item dropdown-toggle">Second level link</a>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+													</div>
+												</div>
+												<a href="#" class="dropdown-item">Second level link</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
+						</div>
 
-							<div class="card-body">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Basic submenu (on hover)</h6>
+								<p class="mb-3 text-muted">Doesn't work well on mobile devices</p>
 
-								<!-- Default -->
-								<div class="form-group">
-									<label>Default class</label>
-									<select class="form-control multiselect" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
+								<div class="btn-group justify-content-center">
+									<a href="#" class="btn bg-teal-400 dropdown-toggle" data-toggle="dropdown">Submenu on hover</a>
+
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Action</a>
+										<a href="#" class="dropdown-item">Another action</a>
+										<a href="#" class="dropdown-item">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<div class="dropdown-submenu">
+											<a href="#" class="dropdown-item">More options</a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Second level link</a>
+												<div class="dropdown-submenu">
+													<a href="#" class="dropdown-item">Second level link</a>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+													</div>
+												</div>
+												<a href="#" class="dropdown-item">Second level link</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<!-- /default -->
-
-
-								<!-- Primary -->
-								<div class="form-group">
-									<label>Primary class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-primary" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /primary -->
-
-
-								<!-- Danger -->
-								<div class="form-group">
-									<label>Danger class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-danger" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /danger -->
-
-
-								<!-- Success -->
-								<div class="form-group">
-									<label>Success class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-success" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /success -->
-
-
-								<!-- Warning -->
-								<div class="form-group">
-									<label>Warning class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-warning" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /warning -->
-
-
-								<!-- Info -->
-								<div class="form-group">
-									<label>Info class</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-info" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-									</select>
-								</div>
-								<!-- /info -->
-
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Other options</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Dropup menu (on click)</h6>
+								<p class="mb-3 text-muted">Change <code>vertical</code> orientation to <code>top</code></p>
+
+								<div class="btn-group justify-content-center">
+									<a href="#" class="btn bg-indigo-400 dropdown-toggle" data-toggle="dropdown">Submenu on click</a>
+
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Action</a>
+										<a href="#" class="dropdown-item">Another action</a>
+										<a href="#" class="dropdown-item">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<div class="dropdown-submenu dropup">
+											<a href="#" class="dropdown-item dropdown-toggle">More options</a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Second level link</a>
+												<div class="dropdown-submenu dropup">
+													<a href="#" class="dropdown-item dropdown-toggle">Second level link</a>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+													</div>
+												</div>
+												<a href="#" class="dropdown-item">Second level link</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
+						</div>
 
-							<div class="card-body">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Dropup menu (on hover)</h6>
+								<p class="mb-3 text-muted">Doesn't work well on mobile devices</p>
 
-								<!-- Single select -->
-								<div class="form-group">
-									<label>Single select</label>
-									<select class="form-control multiselect" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
+								<div class="btn-group justify-content-center">
+									<a href="#" class="btn bg-teal-400 dropdown-toggle" data-toggle="dropdown">Submenu on hover</a>
+
+									<div class="dropdown-menu dropup">
+										<a href="#" class="dropdown-item">Action</a>
+										<a href="#" class="dropdown-item">Another action</a>
+										<a href="#" class="dropdown-item">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<div class="dropdown-submenu dropup">
+											<a href="#" class="dropdown-item">More options</a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Second level link</a>
+												<div class="dropdown-submenu dropup">
+													<a href="#" class="dropdown-item">Second level link</a>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+													</div>
+												</div>
+												<a href="#" class="dropdown-item">Second level link</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<!-- /single select -->
+							</div>
+						</div>
+					</div>
 
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Left orientation (on click)</h6>
+								<p class="mb-3 text-muted">Change <code>horizontal</code> orientation to <code>left</code></p>
 
-								<!-- Clickable optgroups -->
-								<div class="form-group">
-									<label>Clickable optgroups</label>
-									<select class="form-control multiselect-clickable-groups" multiple="multiple" data-fouc>
-										<optgroup label="Mathematics">
-											<option value="analysis">Analysis</option>
-											<option value="algebra">Linear Algebra</option>
-											<option value="discrete">Discrete Mathematics</option>
-										</optgroup>
-										<optgroup label="Computer Science">
-											<option value="programming">Introduction to Programming</option>
-											<option value="complexity">Complexity Theory</option>
-											<option value="software">Software Engineering</option>
-										</optgroup>
-										<optgroup label="Physics">
-											<option value="mechanics">Classical Mechanics</option>
-											<option value="magnetism">Electromagnetism</option>
-											<option value="quantum">Quantum Mechanics</option>
-										</optgroup>
-									</select>
+								<div class="btn-group justify-content-center">
+									<a href="#" class="btn bg-indigo-400 dropdown-toggle" data-toggle="dropdown">Submenu on click</a>
+
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Action</a>
+										<a href="#" class="dropdown-item">Another action</a>
+										<a href="#" class="dropdown-item">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<div class="dropdown-submenu dropdown-submenu-left">
+											<a href="#" class="dropdown-item dropdown-toggle">More options</a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Second level link</a>
+												<div class="dropdown-submenu dropdown-submenu-left">
+													<a href="#" class="dropdown-item dropdown-toggle">Second level link</a>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+													</div>
+												</div>
+												<a href="#" class="dropdown-item">Second level link</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<!-- /clickable optgroups -->
+							</div>
+						</div>
 
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Left orientation (on hover)</h6>
+								<p class="mb-3 text-muted">Change <code>horizontal</code> orientation to <code>left</code></p>
 
-								<!-- Disable if empty -->
-								<div class="form-group">
-									<label>Disable if no options are given</label>
-									<select class="form-control multiselect-disable-empty" multiple="multiple" data-fouc></select>
+								<div class="btn-group justify-content-center">
+									<a href="#" class="btn bg-teal-400 dropdown-toggle" data-toggle="dropdown">Submenu on hover</a>
+
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Action</a>
+										<a href="#" class="dropdown-item">Another action</a>
+										<a href="#" class="dropdown-item">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<div class="dropdown-submenu dropdown-submenu-left">
+											<a href="#" class="dropdown-item">More options</a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Second level link</a>
+												<div class="dropdown-submenu dropdown-submenu-left">
+													<a href="#" class="dropdown-item">Second level link</a>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+														<a href="#" class="dropdown-item">Third level link</a>
+													</div>
+												</div>
+												<a href="#" class="dropdown-item">Second level link</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<!-- /disable if empty -->
-
-
-								<!-- Custom button color -->
-								<div class="form-group">
-									<label>Custom button color</label>
-									<select class="form-control multiselect" multiple="multiple" data-button-class="btn bg-teal-400" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom button color -->
-
-
-								<!-- Custom menu color -->
-								<div class="form-group">
-									<label>Custom menu color</label>
-									<select class="form-control multiselect-menu-bg-color" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom menu color -->
-
-
-								<!-- Custom colors -->
-								<div class="form-group">
-									<label>Custom colors combination</label>
-									<select class="form-control multiselect-combine-all" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-									</select>
-								</div>
-								<!-- /custom colors -->
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /color options -->
+				<!-- /dropdowns with submenu -->
 
 
-				<!-- More complex examples -->
+				<!-- Dropdown sizing -->
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Advanced examples
+						Additional sizes
 					</h6>
-					<span class="text-muted d-block">More complex multiselect examples</span>
+					<span class="text-muted d-block">Dropdown sizes with elements</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Further examples</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Large menu size</h6>
+								<p class="mb-3 text-muted">Using <code>.dropdown-menu-lg</code> class</p>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Showing values -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Showing values</h6>
-									<p class="mb-3">Use "Select" and "Deselect" buttons to select or deselect cheese and tomatoes. Display selected or deselected options by using <code>$('.multiselect').val()</code> method.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-display-values" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-display-values-select">Select</button>
-											<button type="button" class="btn btn-light multiselect-display-values-deselect">Deselect</button>
+							<div class="dropdown-menu dropdown-menu-lg" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">
+									<i class="icon-menu7"></i>
+									Action
+									<span class="badge bg-primary ml-auto">Added</span>
+								</a>
+								<a href="#" class="dropdown-item">
+									<i class="icon-screen-full"></i>
+									Another action
+									<span class="badge badge-pill bg-danger ml-auto">98</span>
+								</a>
+								<a href="#" class="dropdown-item">
+									<i class="icon-mail5"></i>
+									Something else here
+									<span class="ml-auto font-size-lg"><i class="icon-command"></i>F</span>
+								</a>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-submenu">
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> More options</a>
+									<div class="dropdown-menu dropdown-menu-lg">
+										<a href="#" class="dropdown-item">Second level link</a>
+										<div class="dropdown-submenu">
+											<a href="#" class="dropdown-item">Second level link</a>
+											<div class="dropdown-menu dropdown-menu-lg">
+												<a href="#" class="dropdown-item">Third level link</a>
+												<a href="#" class="dropdown-item">Third level link</a>
+												<a href="#" class="dropdown-item">Third level link</a>
+											</div>
 										</div>
-									</div>
-
-									<div class="values-area mt-2"></div>
-								</div>
-								<!-- /showing values -->
-
-
-								<!-- Toggle selection -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Toggle selection</h6>
-									<p class="mb-3">Use the button to toggle the selection. Don't forget to include <code>$.uniform.update();</code> to update checkboxes or radios state dynamically.</p>
-									<div class="input-group">
-										<select class="form-control multiselect-toggle-selection" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-toggle-selection-button">Select All</button>
-										</div>
+										<a href="#" class="dropdown-item">Second level link</a>
 									</div>
 								</div>
-								<!-- /toggle selection -->
-
-
-								<!-- Order options -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Order options</h6>
-									<p class="mb-3">Record the order the options are selected. When selecting an item an ordering number will be incremented and saved within the option.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-order-options" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-order-options-button">Order</button>
-										</div>
-									</div>
-								</div>
-								<!-- /order options -->
-
-
-								<!-- Simulate selections -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Simulate selections</h6>
-									<p class="mb-3">Simulate single selections using checkboxes. The behavior will be similar to a multiselect with radio buttons.</p>
-
-									<select class="form-control multiselect-simulate-selections" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /simulate selections -->
-
-
-								<!-- Close dropdown automatically -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Close dropdown automatically</h6>
-									<p class="mb-3">Close dropdown after 3 selections automatically.</p>
-
-									<select class="form-control multiselect-close-dropdown" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /close dropdown automatically -->
-
-
-								<!-- Reset button -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Reset button</h6>
-									<p class="mb-3">Using a reset button together with a multiselect. Select options then click Reset button to reset selections.</p>
-
-									<form class="input-group" id="multiselect-reset-form">
-										<select class="form-control multiselect-reset" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="reset" class="btn bg-blue">Reset</button>
-										</div>
-									</form>
-								</div>
-								<!-- /reset button -->
-
-
-								<!-- Templates -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Multiselect templates</h6>
-									<p class="mb-3">The templates can be overriden using the <code>templates</code> configuration option. The example below uses a <code>red</code> border color for dividers.</p>
-
-									<select class="form-control multiselect-templates" multiple="multiple" data-fouc>
-										<option value="cheese">Cheese</option>
-										<option value="tomatoes">Tomatoes</option>
-										<option data-role="divider"></option>
-										<option value="mozarella">Mozzarella</option>
-										<option value="mushrooms">Mushrooms</option>
-										<option data-role="divider"></option>
-										<option value="pepperoni">Pepperoni</option>
-										<option value="onions">Onions</option>
-									</select>
-								</div>
-								<!-- /templates -->
-
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Multiselect methods</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Small menu size</h6>
+								<p class="mb-3 text-muted">Using <code>.dropdown-menu-sm</code> class</p>
 							</div>
 
-							<div class="card-body">
-
-								<!-- Destroy method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Destroy method</h6>
-									<p class="mb-3">This method is used to destroy the plugin on the given element - meaning unbinding the plugin.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-destroy" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-create-button">Create</button>
-											<button type="button" class="btn bg-danger multiselect-destroy-button">Destroy</button>
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">
+									<i class="icon-menu7"></i>
+									Action
+									<span class="badge bg-primary ml-auto">Added</span>
+								</a>
+								<a href="#" class="dropdown-item">
+									<i class="icon-screen-full"></i>
+									Another action
+									<span class="badge badge-pill bg-danger ml-auto">98</span>
+								</a>
+								<a href="#" class="dropdown-item">
+									<i class="icon-mail5"></i>
+									Something else here
+									<span class="ml-auto font-size-lg"><i class="icon-command"></i>F</span>
+								</a>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-submenu">
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> More options</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Second level link</a>
+										<div class="dropdown-submenu">
+											<a href="#" class="dropdown-item">Second level link</a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item">Third level link</a>
+												<a href="#" class="dropdown-item">Third level link</a>
+												<a href="#" class="dropdown-item">Third level link</a>
+											</div>
 										</div>
+										<a href="#" class="dropdown-item">Second level link</a>
 									</div>
 								</div>
-								<!-- /destroy method -->
+							</div>
+						</div>
+					</div>
 
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Mini menu size</h6>
+								<p class="mb-3 text-muted">Using <code>.dropdown-menu-xs</code> class</p>
+							</div>
 
-								<!-- Refresh method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Refresh method</h6>
-									<p class="mb-3">This method is used to refresh the checked checkboxes based on the currently selected options within the select. Click <strong>'Select'</strong>, then click <strong>refresh</strong>. The plugin will update the checkboxes.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-refresh" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-button">Select</button>
-											<button type="button" class="btn btn-light multiselect-deselect-button">Deselect</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-refresh-button"><i class="icon-reload-alt"></i></button>
+							<div class="dropdown-menu dropdown-menu-sm" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">
+									<i class="icon-menu7"></i>
+									Action
+									<span class="badge bg-primary ml-auto">Added</span>
+								</a>
+								<a href="#" class="dropdown-item">
+									<i class="icon-screen-full"></i>
+									Another action
+									<span class="badge badge-pill bg-danger ml-auto">98</span>
+								</a>
+								<a href="#" class="dropdown-item">
+									<i class="icon-mail5"></i>
+									Something else here
+									<span class="ml-auto font-size-lg"><i class="icon-command"></i>F</span>
+								</a>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-submenu dropdown-submenu-left">
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> More options</a>
+									<div class="dropdown-menu dropdown-menu-sm">
+										<a href="#" class="dropdown-item">Second level link</a>
+										<div class="dropdown-submenu dropdown-submenu-left">
+											<a href="#" class="dropdown-item">Second level link</a>
+											<div class="dropdown-menu dropdown-menu-sm">
+												<a href="#" class="dropdown-item">Third level link</a>
+												<a href="#" class="dropdown-item">Third level link</a>
+												<a href="#" class="dropdown-item">Third level link</a>
+											</div>
 										</div>
+										<a href="#" class="dropdown-item">Second level link</a>
 									</div>
 								</div>
-								<!-- /refresh method -->
-
-
-								<!-- Rebuild method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Rebuild method</h6>
-									<p class="mb-3">Rebuilds the whole dropdown menu. All selected options will remain selected (if still existent!). Click <strong>Add</strong> button and then click <strong>Rebuild</strong> button, open dropdown and you'll notice new options added to the bottom of the list.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-rebuild" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-add-button">Add</button>
-											<button type="button" class="btn btn-light multiselect-delete-button">Delete</button>
-											<button type="button" class="btn bg-blue btn-icon multiselect-rebuild-button"><i class="icon-reload-alt"></i></button>
-										</div>
-									</div>
-								</div>
-								<!-- /rebuild method -->
-
-
-								<!-- Select method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Select method</h6>
-									<p class="mb-3">Selects an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-select" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-select-cheese-button">Cheese</button>
-											<button type="button" class="btn btn-light multiselect-select-onions-button">Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /select method -->
-
-
-								<!-- Deselect method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Deselect method</h6>
-									<p class="mb-3">Deselect an option by its value (which has to be given as string). Works also using an array of values.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-deselect" multiple="multiple" data-fouc>
-											<option value="cheese" selected>Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions" selected>Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn btn-light multiselect-deselect-cheese-button">Deselect Cheese</button>
-											<button type="button" class="btn btn-light multiselect-deselect-onions-button">Deselect Onions</button>
-										</div>
-									</div>
-								</div>
-								<!-- /deselect method -->
-
-
-								<!-- Disable method -->
-								<div class="mb-4">
-									<h6 class="font-weight-semibold">Disable method</h6>
-									<p class="mb-3">Disable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-disable" multiple="multiple" data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-danger multiselect-disable1-button">Disable</button>
-											<button type="button" class="btn btn-light multiselect-enable1-button">Enable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /disable method -->
-
-
-								<!-- Enable method -->
-								<div class="mb-3">
-									<h6 class="font-weight-semibold">Enable method</h6>
-									<p class="mb-3">Enable both the underlying select and the dropdown button.</p>
-
-									<div class="input-group">
-										<select class="form-control multiselect-method-enable" multiple="multiple" disabled data-fouc>
-											<option value="cheese">Cheese</option>
-											<option value="tomatoes">Tomatoes</option>
-											<option value="mozarella">Mozzarella</option>
-											<option value="mushrooms">Mushrooms</option>
-											<option value="pepperoni">Pepperoni</option>
-											<option value="onions">Onions</option>
-										</select>
-
-										<div class="input-group-append">
-											<button type="button" class="btn bg-blue multiselect-enable2-button">Enable</button>
-											<button type="button" class="btn btn-light multiselect-disable2-button">Disable</button>
-										</div>
-									</div>
-								</div>
-								<!-- /enable method -->
-
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /more complex examples -->
+				<!-- /dropdown sizing -->
+
+
+				<!-- Dropdowns with icons -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Dropdown components
+					</h6>
+					<span class="text-muted d-block">Icons, checkboxes, radios, switches etc.</span>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Left menu item icons</h6>
+								<p class="mb-3 text-muted">Dropdown icons in <code>left</code> position</p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item"><i class="icon-menu7"></i> Action</a>
+								<a href="#" class="dropdown-item"><i class="icon-screen-full"></i> Another action</a>
+								<a href="#" class="dropdown-item"><i class="icon-mail5"></i> Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item"><i class="icon-gear"></i> One more separated line</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Right menu item icons</h6>
+								<p class="mb-3 text-muted">Dropdown icons in <code>right</code> position</p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action <i class="icon-git-commit mr-0 ml-auto"></i></a>
+								<a href="#" class="dropdown-item">Another action <i class="icon-git-branch mr-0 ml-auto"></i></a>
+								<a href="#" class="dropdown-item">Something else here <i class="icon-git-compare mr-0 ml-auto"></i></a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line <i class="icon-git-merge mr-0 ml-auto"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Icons and text combo</h6>
+								<p class="mb-3 text-muted">Combine text and icons for annotations</p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">
+									Find
+									<span class="ml-auto font-size-lg"><i class="icon-command"></i>F</span>
+								</a>
+								<a href="#" class="dropdown-item">
+									Find Next
+									<span class="ml-auto font-size-lg"><i class="icon-command"></i>G</span>
+								</a>
+								<a href="#" class="dropdown-item">
+									Find Previous
+									<span class="ml-auto font-size-lg"><i class="icon-shift"></i><i class="icon-command"></i>G</span>
+								</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">
+									Incremental Find
+									<span class="ml-auto font-size-lg"><i class="icon-command"></i>I</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /dropdowns with icons -->
+
+
+				<!-- Dropdowns with badges -->
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Dropdown with badges</h6>
+								<p class="mb-3 text-muted">Dropdown menu items with <code>badges</code></p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action <span class="badge bg-primary ml-auto">Added</span></a>
+								<a href="#" class="dropdown-item">Another action <span class="badge bg-danger ml-auto">Bugs</span></a>
+								<a href="#" class="dropdown-item">Something else here <span class="badge bg-success ml-auto">Done</span></a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line <span class="badge bg-info ml-auto">New</span></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Dropdown with pill badges</h6>
+								<p class="mb-3 text-muted">Dropdown menu items with <code>pill badges</code></p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action <span class="badge badge-pill bg-success ml-auto">65</span></a>
+								<a href="#" class="dropdown-item">Another action <span class="badge badge-pill bg-warning ml-auto">23</span></a>
+								<a href="#" class="dropdown-item">Something else here <span class="badge badge-pill bg-primary ml-auto">83</span></a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line <span class="badge badge-pill bg-danger ml-auto">98</span></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Left positioned</h6>
+								<p class="mb-3 text-muted">Additional left side placement</p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item"><span class="badge bg-info mr-2">New</span> Action</a>
+								<a href="#" class="dropdown-item"><span class="badge bg-success mr-2">Done</span> Another action</a>
+								<a href="#" class="dropdown-item"><span class="badge badge-pill bg-primary mr-2">32</span> Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item"><span class="badge badge-pill bg-warning mr-2">54</span> One more separated line</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /dropdowns with badges -->
+
+
+				<!-- Dropdowns with checkboxes and radios -->
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Menu with checkboxes</h6>
+								<p class="mb-3 text-muted">Left and right positioned <code>checkboxes</code></p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-item form-check">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+										Some action
+									</label>
+								</div>
+								<div class="dropdown-item form-check active">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-styled" checked data-fouc>
+										Active action
+									</label>
+								</div>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-item form-check form-check-right disabled">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-styled" checked disabled data-fouc>
+										Disabled action
+									</label>
+								</div>
+								<div class="dropdown-item form-check form-check-right">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+										One more action
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Menu with radios</h6>
+								<p class="mb-3 text-muted">Left and right positioned <code>radios</code></p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-item form-check">
+									<label class="form-check-label">
+										<input type="radio" name="dropdown-radio" class="form-input-styled" data-fouc>
+										Some action
+									</label>
+								</div>
+								<div class="dropdown-item form-check active">
+									<label class="form-check-label">
+										<input type="radio" name="dropdown-radio" class="form-input-styled" checked data-fouc>
+										Active action
+									</label>
+								</div>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-item form-check form-check-right disabled">
+									<label class="form-check-label">
+										<input type="radio" class="form-input-styled" checked disabled data-fouc>
+										Disabled action
+									</label>
+								</div>
+								<div class="dropdown-item form-check form-check-right">
+									<label class="form-check-label">
+										<input type="radio" name="dropdown-radio" class="form-input-styled" data-fouc>
+										One more action
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Menu with switches</h6>
+								<p class="mb-3 text-muted">Left and right positioned <code>switches</code></p>
+							</div>
+
+							<div class="dropdown-menu" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-item form-check form-check-switchery">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-switchery" checked data-fouc>
+										Some action
+									</label>
+								</div>
+								<div class="dropdown-item form-check form-check-switchery active">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-switchery" data-fouc>
+										Active action
+									</label>
+								</div>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-item form-check form-check-switchery form-check-right disabled">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-switchery" checked disabled data-fouc>
+										Disabled action
+									</label>
+								</div>
+								<div class="dropdown-item form-check form-check-switchery form-check-right">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-switchery" data-fouc>
+										One more action
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /dropdowns with checkboxes and radios -->
+
+
+				<!-- Additional styling title -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Custom menu colors
+					</h6>
+					<span class="text-muted d-block">Custom background and state colors</span>
+				</div>
+				<!-- /additional styling title -->
+
+
+				<!-- Solid dropdowns -->
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Solid dropdown menu</h6>
+								<p class="mb-3 text-muted">Example of a <code>solid</code> dropdown menu</p>
+							</div>
+
+							<div class="dropdown-menu bg-teal-400" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Disabled menu items</h6>
+								<p class="mb-3 text-muted">Disable menu items with <code>disabled</code> class</p>
+							</div>
+
+							<div class="dropdown-menu bg-teal-400" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Another action</a>
+								<a href="#" class="dropdown-item disabled">Disabled item</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Active menu item</h6>
+								<p class="mb-3 text-muted">Set active menu item with <code>active</code> class</p>
+							</div>
+
+							<div class="dropdown-menu bg-teal-400" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item active">Active item</a>
+								<a href="#" class="dropdown-item">Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /solid dropdowns -->
+
+
+				<!-- Solid dropdown elements -->
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Menu item icons</h6>
+								<p class="mb-3 text-muted">Left and right positioned icons</p>
+							</div>
+
+							<div class="dropdown-menu bg-slate-600" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item"><i class="icon-menu7"></i> Action</a>
+								<a href="#" class="dropdown-item active"><i class="icon-screen-full"></i> Active action</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item disabled"><i class="icon-mail5 float-right"></i> Disabled action</a>
+								<a href="#" class="dropdown-item"><i class="icon-gear float-right"></i> Separated line</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Checkboxes and radios</h6>
+								<p class="mb-3 text-muted">Checkboxes and radios in <code>solid</code> menus</p>
+							</div>
+
+							<div class="dropdown-menu bg-slate-600" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<div class="dropdown-item form-check">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-styled" data-fouc>
+										Action
+									</label>
+								</div>
+								<div class="dropdown-item form-check active">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-styled" checked data-fouc>
+										Active action
+									</label>
+								</div>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-item form-check form-check-right disabled">
+									<label class="form-check-label">
+										<input type="radio" name="radio-solid" class="form-input-styled" checked disabled data-fouc>
+										Disabled action
+									</label>
+								</div>
+								<div class="dropdown-item form-check form-check-right">
+									<label class="form-check-label">
+										<input type="radio" name="radio-solid" class="form-input-styled" data-fouc>
+										One more action
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Labels and switches</h6>
+								<p class="mb-3 text-muted">Labels, badges and switch toggles</p>
+							</div>
+
+							<div class="dropdown-menu bg-slate-600" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Some badge <span class="badge bg-danger-400 ml-auto">New</span></a>
+								<a href="#" class="dropdown-item">And badge pill <span class="badge badge-pill bg-success-400 ml-auto">98</span></a>
+								<div class="dropdown-divider"></div>
+								<div class="dropdown-item form-check form-check-switchery active">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-switchery" checked data-fouc>
+										Active action
+									</label>
+								</div>
+								<div class="dropdown-item form-check form-check-right form-check-switchery">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-input-switchery" data-fouc>
+										One more action
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /solid dropdown elements -->
+
+
+				<!-- Border options -->
+				<div class="mb-3 mt-2">
+					<h6 class="mb-0 font-weight-semibold">
+						Border options
+					</h6>
+					<span class="text-muted d-block">Optional border customizations</span>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Menu without border</h6>
+								<p class="mb-3 text-muted">Hide border using <code>.border-0</code> class</p>
+							</div>
+
+							<div class="dropdown-menu border-0" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item active">Active menu item</a>
+								<a href="#" class="dropdown-item disabled">Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Border color</h6>
+								<p class="mb-3 text-muted">Using <code>.border-*</code> class</p>
+							</div>
+
+							<div class="dropdown-menu border-slate-700 rounded-0" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a></li>
+								<a href="#" class="dropdown-item active">Active menu item</a>
+								<a href="#" class="dropdown-item disabled">Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card card-body border-top-info">
+							<div class="text-center">
+								<h6 class="font-weight-semibold mb-0">Stronger border</h6>
+								<p class="mb-3 text-muted">Using <code>.border-2</code> class</p>
+							</div>
+
+							<div class="dropdown-menu border-2 border-primary rounded-0" style="display: block; position: static; width: 100%; margin-top: 0; float: none; z-index: auto;">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item active">Active menu item</a>
+								<a href="#" class="dropdown-item disabled">Something else here</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">One more separated line</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /border options -->
 
 			</div>
 			<!-- /content area -->
