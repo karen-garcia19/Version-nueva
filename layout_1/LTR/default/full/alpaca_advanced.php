@@ -23,11 +23,16 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/pickers/color/spectrum.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/alpaca.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/inputs/alpaca/price_format.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/editors/ckeditor/ckeditor.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/picker_color.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/alpaca_advanced.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -381,9 +386,9 @@
 							</div>
 
 							<div class="media-body">
-								<div class="media-title font-weight-semibold">Victoria Baker</div>
+								<div class="media-title font-weight-semibold">Karen Garcia</div>
 								<div class="font-size-xs opacity-50">
-									<i class="icon-pin font-size-sm"></i> &nbsp;Santa Ana, CA
+									<i class="icon-pin font-size-sm"></i> Ciudad Mante, Tam.
 								</div>
 							</div>
 
@@ -401,17 +406,17 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+						
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Principal</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
 							<a href="index.html" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
-									Dashboard
-									<span class="d-block font-weight-normal opacity-50">No active orders</span>
+									Tablero
+									<span class="d-block font-weight-normal opacity-50"></span>
 								</span>
 							</a>
-						</li>
+						<!--</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
 
@@ -501,11 +506,11 @@
 								<li class="nav-item"><a href="form_inputs_grid.html" class="nav-link">Inputs grid</a></li>/-->
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-home4"></i> <span>Departamentos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
 								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link active">Agregar</a></li>
 								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">Editar</a></li>
 							</ul>
 						</li>
@@ -518,15 +523,15 @@
 								<!--<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>/-->
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-list-unordered"></i> <span>Vacaciones</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
 								<li class="nav-item"><a href="picker_date.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link active">Agregar</a></li>
+								<li class="nav-item"><a href="picker_color.html" class="nav-link">Agregar</a></li>
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">Editar</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<!--<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
@@ -535,10 +540,11 @@
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /forms -->
 
 						<!-- Components -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -640,10 +646,11 @@
 								<li class="nav-item"><a href="icons_material.html" class="nav-link">Material</a></li>
 								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /components -->
 
 						<!-- Layout -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
@@ -805,10 +812,11 @@
 								</li>
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /layout -->
 
 						<!-- Data visualization -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
@@ -909,10 +917,11 @@
 								<li class="nav-item"><a href="maps_vector.html" class="nav-link">Vector maps</a></li>
 								<li class="nav-item"><a href="maps_echarts.html" class="nav-link disabled">ECharts maps <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
@@ -957,10 +966,11 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /extensions -->
 
 						<!-- Tables -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
@@ -1026,10 +1036,11 @@
 								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Responsive basic tables</a></li>
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /tables -->
 
 						<!-- Page kits -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
@@ -1190,7 +1201,7 @@
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /page kits -->
 
 					</ul>
@@ -1211,7 +1222,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Vacaciones</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Departamentos</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1228,8 +1239,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Bienvenido</a>
-							<a href="picker_color.html" class="breadcrumb-item">Agregar</a>
-							<span class="breadcrumb-item active">Vacaciones</span>
+							<a href="alpaca_advanced.html" class="breadcrumb-item">Agregar</a>
+							<span class="breadcrumb-item active">Departamentos</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1269,7 +1280,7 @@
 				<!-- Form inputs -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar datos de vacaciones correspondientes</h5>
+						<h5 class="card-title">Agregar datos de departamentos correspondientes</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1278,12 +1289,11 @@
 		                	</div>
 	                	</div>
 					</div>
-					
 
 					<div class="card-body">
 						<p class="mb-4"></p>
 
-						<!--<form action="#">
+						<form action="#">
 							<fieldset class="mb-3">
 								<legend class="text-uppercase font-size-sm font-weight-bold">Agregar Información</legend>
 
@@ -1365,7 +1375,7 @@
 								</div>
 							</fieldset>
 							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Opciones de Agregar</legend>/-->
+								<legend class="text-uppercase font-size-sm font-weight-bold">Opciones de Agregar</legend>
 
 								<div class="form-group row">
 									<label class="col-form-label col-md-2">Fecha y Hora</label>
@@ -1472,502 +1482,864 @@
 				</div>
 				<!-- /form inputs -->
 
-				<!-- Basic options -->
+				<!-- Option trees -->
 				<!--
 				<div class="mb-3">
 					<h6 class="mb-0 font-weight-semibold">
-						Basic options
+						Option trees
 					</h6>
-					<span class="text-muted d-block">Examples with basic picker options</span>
+					<span class="text-muted d-block">Dependent option trees</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Basic color picker</h6>
-							<p class="mb-3 text-muted">Color picker with default options</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-basic" value="#20BF7E" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Option tree field</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">This example asks a user what number they would like on the sports jersey. They're always able to just type in a value. Here, we provide a sequence of dropdowns to let them select a sport, team and athlete. The jersey number is then automatically filled in.</p>
+								<div id="alpaca-option-tree"></div>
+								<a href="#alpaca-option-tree-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-option-tree-source">
+									<pre class="language-javascript"><code>// Option tree field
+$('#alpaca-option-tree').alpaca({
+    schema: {
+        type: 'number',
+        title: 'What number would like for your sports jersey?'
+    },
+    options: {
+        type: 'optiontree',
+        tree: {
+            selectors: {
+                sport: {
+                    schema: {
+                        type: 'string'
+                    },
+                    options: {
+                        type: 'select',
+                        noneLabel: 'Pick a Sport...'
+                    }
+                },
+                team: {
+                    schema: {
+                        type: 'string'
+                    },
+                    options: {
+                        type: 'select',
+                        noneLabel: 'Pick a Team...'
+                    }
+                },
+                player: {
+                    schema: {
+                        type: 'string'
+                    },
+                    options: {
+                        type: 'select',
+                        noneLabel: 'Pick a Player...'
+                    }
+                }
+            },
+            order: ['sport', 'team', 'player'],
+            data: [{
+                value: 23,
+                attributes: {
+                    sport: 'Basketball',
+                    team: 'Chicago Bulls',
+                    player: 'Michael Jordan'
+                }
+            }, {
+                value: 33,
+                attributes: {
+                    sport: 'Basketball',
+                    team: 'Chicago Bulls',
+                    player: 'Scotty Pippen'
+                }
+            }, {
+                value: 4,
+                attributes: {
+                    sport: 'Football',
+                    team: 'Green Bay Packers',
+                    player: 'Brett Favre'
+                }
+            }, {
+                value: 19,
+                attributes: {
+                    sport: 'Baseball',
+                    team: 'Milwaukee Brewers',
+                    player: 'Robin Yount'
+                }
+            }, {
+                value: 99,
+                attributes: {
+                    sport: 'Hockey',
+                    player: 'Wayne Gretzky'
+                }
+            }],
+            horizontal: true
+        },
+        focus: false
+    }
+});
+</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Custom button text</h6>
-							<p class="mb-3 text-muted">Specify custom text for each button</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-basic" data-cancel-text="No way" data-choose-text="Yes baby" value="#20BF7E" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Using connector</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Hide picker buttons</h6>
-							<p class="mb-3 text-muted">Display only color picker area</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-basic" data-show-buttons="false" value="#20BF7E" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Disable color picker</h6>
-							<div class="mb-3 text-muted form-check form-check-switchery form-check-switchery-double">
-								<label class="form-check-label">
-									Disable
-									<input type="checkbox" class="form-input-switchery">
-									Enable
-								</label>
-							</div>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-disabled" value="#20BF7E" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Container color</h6>
-							<p class="mb-3 text-muted">Custom container color class</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-container-class" value="#20BF7E" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Replacer color</h6>
-							<p class="mb-3 text-muted">Custom replacer color class</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-replacer-class" value="#20BF7E" data-fouc>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example produces the same form, but uses a connector to load the schema and options. The options JSON is loaded and merged with some inline options that provide to override a submit click handler.</p>
+								<div id="alpaca-option-tree-connector"></div>
+								<a href="#alpaca-option-tree-connector-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-option-tree-connector-source">
+									<pre class="language-javascript"><code>// Using connector
+$('#alpaca-option-tree-connector').alpaca({
+    schemaSource: '../../../../global_assets/demo_data/alpaca/optiontree-custom-schema.json',
+    optionsSource: '../../../../global_assets/demo_data/alpaca/optiontree-custom-options.json',
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /basic options -->
+				<!-- /opton trees -->
 
 
-				<!-- Picker additions -->
+				<!-- Full CKEditor -->
 				<!--
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Picker additions
+						CKEditor field
 					</h6>
-					<span class="text-muted d-block">Show additional picker elements</span>
+					<span class="text-muted d-block">Render CKEditor editor</span>
 				</div>
 
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Show initial color</h6>
-							<p class="mb-3 text-muted">Show color that was initially set</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-initial" value="#E63E3E" data-fouc>
-							</div>
-						</div>
+				<div class="card mb-4">
+					<div class="card-header header-elements-inline">
+						<h6 class="card-title">Full featured editor</h6>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
 					</div>
+				
+					<div class="card-body">
+						<p class="mb-3">The <code>ckeditor</code> field. The CK Editor field renders the CK editor control that allows users to visually work with HTML and save the results back into a text property. This is a full example of the CK Editor at work. The point here is to show how it looks in full. In the examples that follow, we'll trim this down. Note - CKeditor must be included in your page ahead of the control loading in order for this to work properly.</p>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Show input field</h6>
-							<p class="mb-3 text-muted">Add input for free form typing</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" value="#E63E3E" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Show alpha channel</h6>
-							<p class="mb-3 text-muted">Allow alpha transparency selection</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-alpha" value="#E63E3E" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Clear selection</h6>
-							<p class="mb-3 text-muted">Reset current color selection</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-clear" value="#E63E3E" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Input and initial</h6>
-							<p class="mb-3 text-muted">Combining different elements</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-input-initial" value="#E63E3E" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Full leatured</h6>
-							<p class="mb-3 text-muted">Full featured picker example</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-full" value="#E63E3E" data-fouc>
-							</div>
-						</div>
+						<div id="alpaca-ckeditor-full"></div>
 					</div>
 				</div>/-->
-				<!-- /picker additions -->
+				<!-- /full CKEditor -->
 
 
-				<!-- Color palettes -->
+				<!-- Input types -->
 				<!--
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Color palettes
+						Input types
 					</h6>
-					<span class="text-muted d-block">Add a color palette to the picker</span>
+					<span class="text-muted d-block">Supported input types</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Show color palette</h6>
-							<p class="mb-3 text-muted">Display recently used colors</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette" value="#27ADCA" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Lowercase</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates how Alpaca library can format text inside input field. To apply <code>lowercase</code> text style, set <code>format</code> option to <code>lowercase</code> inside <code>schema</code> parameter.</p>
+								<div id="alpaca-lowercase"></div>
+								<a href="#alpaca-lowercase-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-lowercase-source">
+									<pre class="language-javascript"><code>// Lowercase
+$('#alpaca-lowercase').alpaca({
+    data: 'Ice cream is wonderful.',
+    schema: {
+        format: 'lowercase'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Show palette only</h6>
-							<p class="mb-3 text-muted">Show palette and nothing else</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-only" value="#27ADCA" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Uppercase</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Toggle palette only</h6>
-							<p class="mb-3 text-muted">Toggle picker next to the palette</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-toggle" value="#27ADCA" data-fouc>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates how Alpaca library can format text inside input field. To apply <code>uppercase</code> text style, set <code>format</code> option to <code>uppercase</code> inside <code>schema</code> parameter.</p>
+								<div id="alpaca-uppercase"></div>
+								<a href="#alpaca-uppercase-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-uppercase-source">
+									<pre class="language-javascript"><code>// Uppercase
+$('#alpaca-uppercase').alpaca({
+    data: 'Ice cream is wonderful.',
+    schema: {
+        format: 'uppercase'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Selection palette</h6>
-							<p class="mb-3 text-muted">Keep track of selected colors</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-selection" value="#27ADCA" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Search type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The <code>search</code> field implements a search box that provides a search-optimized control. It allows for the specification of search terms with an optimized user interface. It uses the HTML5 'search' input type, but not the actual search.</p>
+								<div id="alpaca-search"></div>
+								<a href="#alpaca-search-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-search-source">
+									<pre class="language-javascript"><code>// Search type
+$('#alpaca-search').alpaca({
+    data: 'Where for art thou Romeo?',
+    schema: {
+        type: 'string'
+    },
+    options: {
+        type: 'search',
+        focus: false,
+        label: 'Search'
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Limit selections</h6>
-							<p class="mb-3 text-muted">Palette colors are limited to 3</p>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Integer type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>integer</code> field with data, options and schema parameters. Minimum value is set to 18, maximum to 25. Validation is also enabled, try to change input value to see it in action.</p>
+								<div id="alpaca-integer"></div>
+								<a href="#alpaca-integer-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-integer-source">
+									<pre class="language-javascript"><code>// Integer type
+$('#alpaca-integer').alpaca({
+    data: 20,
+    options: {
+        type: 'integer',
+        label: 'Age:',
+        focus: false
+    },
+    schema: {
+        minimum: 18,
+        maximum: 25,
+        exclusiveMinimum: true,
+        exclusiveMaximum: true,
+        divisibleBy: 2
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-limit" value="#27ADCA" data-fouc>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Password type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>password</code> field type. Here input doesn't have any optional parameters, but a very basic setup. This input field type supports all available options and parameters.</p>
+								<div id="alpaca-password"></div>
+								<a href="#alpaca-password-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-password-source">
+									<pre class="language-javascript"><code>// Password type
+$('#alpaca-password').alpaca({
+    data: 'password',
+    schema: {
+        format: 'password'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Hide after select</h6>
-							<p class="mb-3 text-muted">Hide picker after color select</p>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Email type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>email</code> field type. Here input doesn't have any optional parameters, but a very basic setup. This input field type supports all available options and parameters. Validation enabled by default.</p>
+								<div id="alpaca-email"></div>
+								<a href="#alpaca-email-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-email-source">
+									<pre class="language-javascript"><code>// Email type
+$('#alpaca-email').alpaca({
+    data: 'support',
+    schema: {
+        format: 'email'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-hide" value="#27ADCA" data-fouc>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">IPv4 type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>ipv4</code> field type. Here input doesn't have any optional parameters, but a very basic setup. This input field type supports all available options and parameters. Validation enabled by default.</p>
+								<div id="alpaca-ipv4"></div>
+								<a href="#alpaca-ipv4-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-ipv4-source">
+									<pre class="language-javascript"><code>// IP address type
+$('#alpaca-ipv4').alpaca({
+    data: '100.60',
+    schema: {
+        format: 'ip-address'
+    },
+    options: {
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">URL type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>url</code> field type. Here input doesn't have any optional parameters, but a very basic setup. This input field type supports all available options and parameters. Validation enabled by default.</p>
+								<div id="alpaca-url"></div>
+								<a href="#alpaca-url-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-url-source">
+									<pre class="language-javascript"><code>// URL type
+$('#alpaca-url').alpaca({
+    data: 'http://www.alpacajs.org',
+    options: {
+        type: 'url',
+        focus: false
+    },
+    schema: {
+        format: 'uri'
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Currency type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>currency</code> field type. Here input doesn't have any optional parameters, but a very basic setup. The currency field uses the JQuery Price Format plugin to render format the input as it's entered.</p>
+								<div id="alpaca-currency"></div>
+								<a href="#alpaca-currency-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-currency-source">
+									<pre class="language-javascript"><code>// Currency type
+$('#alpaca-currency').alpaca({
+    options: {
+        type: 'currency',
+        focus: false
+    }
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Personal name type</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates custom <code>personal name</code> field type. Every time you press space key, new word starts with capital letter. This input field type supports all available options and parameters. Validation enabled by default.</p>
+								<div id="alpaca-name"></div>
+								<a href="#alpaca-name-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-name-source">
+									<pre class="language-javascript"><code>// Personal name type
+$('#alpaca-name').alpaca({
+    data: 'Oscar Zoroaster Phadrig Isaac Norman Henkel Emmannuel Ambroise Diggs',
+    options: {
+        type: 'personalname',
+        focus: false
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /color palettes -->
+				<!-- /input types -->
 
 
-				<!-- Color formats -->
+
+				<!-- File inputs -->
 				<!--
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Color formats
+						File inputs
 					</h6>
-					<span class="text-muted d-block">Display different color formats</span>
+					<span class="text-muted d-block">Default and optional styling</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">HEX color format</h6>
-							<p class="mb-3 text-muted">Display colors in HEX format</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="hex" value="#f75d1c" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Basic file input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates a basic single file input. This input field type supports all available options and parameters. Additionally you can specify schema format. Validation is disabled by default.</p>
+								<div id="alpaca-file"></div>
+								<a href="#alpaca-file-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-file-source">
+									<pre class="language-javascript"><code>// Basic file input
+$('#alpaca-file').alpaca({
+    data: '',
+    options: {
+        type: 'file',
+        label: 'Ice Cream Photo:',
+        helper: 'Pick your favorite ice cream picture.',
+        focus: false
+    },
+    schema: {
+        type: 'string',
+        format: 'uri'
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">HEX3 color format</h6>
-							<p class="mb-3 text-muted">Display colors in HEX3 format</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="hex3" value="#f75d1c" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Static mode</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">HSL color format</h6>
-							<p class="mb-3 text-muted">Display colors in HSL format</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="HSL" value="#f75d1c" data-fouc>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates a basic single file input in <code>read only</code> mode. This input field type supports all available options and parameters. Additionally you can specify schema format. Validation is disabled by default.</p>
+								<div id="alpaca-file-static"></div>
+								<a href="#alpaca-file-static-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-file-static-source">
+									<pre class="language-javascript"><code>// Static mode
+$('#alpaca-file-static').alpaca({
+    data: '/abc.html',
+    options: {
+        type: 'file',
+        label: 'Ice Cream Photo:',
+        helper: 'Pick your favorite ice cream picture.',
+        focus: false
+    },
+    schema: {
+        type: 'string',
+        format: 'uri'
+    },
+    view: 'bootstrap-display'
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">RGB color format</h6>
-							<p class="mb-3 text-muted">Display colors in RGB format</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="rgb" value="#f75d1c" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Styled file input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates a single file input styled with <code>uniform</code> plugin. This is optional configuration, Alpaca doesn't support it by default and doesn't have custom field type. Also supports all available options.</p>
+								<div id="alpaca-file-styled"></div>
+								<a href="#alpaca-file-styled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-file-styled-source">
+									<pre class="language-javascript"><code>// Styled file input
+$('#alpaca-file-styled').alpaca({
+    data: '',
+    options: {
+        type: 'file',
+        label: 'Ice Cream Photo:',
+        helper: 'Pick your favorite ice cream picture.',
+        id: 'file-styled',
+        focus: false
+    },
+    schema: {
+        type: 'string',
+        format: 'uri'
+    },
+    postRender: function() {
+        $('#file-styled').uniform({
+            fileButtonClass: 'action btn bg-blue'
+        });
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">HTML color names</h6>
-							<p class="mb-3 text-muted">HTML color names support</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="name" value="orangered" data-fouc>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Disabled file input</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">Mix color formats</h6>
-							<p class="mb-3 text-muted">Change formats in the input</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="name" value="#f75d1c" data-fouc>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates a single file input styled with <code>uniform</code> plugin in <code>disabled</code> mode. This is optional configuration, Alpaca doesn't support it by default and doesn't have custom field type. Also supports all available options.</p>
+								<div id="alpaca-file-disabled"></div>
+								<a href="#alpaca-file-disabled-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-file-disabled-source">
+									<pre class="language-javascript"><code>// Disabled file input
+$('#alpaca-file-disabled').alpaca({
+    data: '',
+    options: {
+        type: 'file',
+        label: 'Ice Cream Photo:',
+        helper: 'Pick your favorite ice cream picture.',
+        disabled: true,
+        id: 'file-styled-disabled',
+        focus: false
+    },
+    schema: {
+        type: 'string',
+        format: 'uri'
+    },
+    postRender: function() {
+        $('#file-styled-disabled').uniform({
+            fileButtonClass: 'action btn bg-blue'
+        });
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /color formats -->
+				<!-- /file inputs -->
 
 
-				<!-- Picker events -->
+
+				<!-- Select helpers -->
 				<!--
 				<div class="mb-3 mt-2">
 					<h6 class="mb-0 font-weight-semibold">
-						Picker events
+						Select helpers
 					</h6>
-					<span class="text-muted d-block">Basic usage of the picker events</span>
+					<span class="text-muted d-block">Country and state selects</span>
 				</div>
 
 				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Change event</h6>
-							<p class="mb-3 text-muted">Called as the input changes</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-change" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="change-result"></div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Country selector</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>country</code> field with default settings. To use this kind of select helper, just set <code>type</code> option to <code>country</code> in your configuration. Supports all available options.</p>
+								<div id="alpaca-country"></div>
+								<a href="#alpaca-country-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-country-source">
+									<pre class="language-javascript"><code>// Country selector
+$('#alpaca-country').alpaca({
+    options: {
+        type: 'country',
+        focus: false
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Move event</h6>
-							<p class="mb-3 text-muted">Called as the user moves around</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-move" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="move-result"></div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">State selector</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Hide event</h6>
-							<p class="mb-3 text-muted">Called after the picker is hidden</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-hide" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="hide-result"></div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>state</code> field with default settings. To use this kind of select helper, just set <code>type</code> option to <code>state</code> in your configuration. Supports all available options.</p>
+								<div id="alpaca-state"></div>
+								<a href="#alpaca-state-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-state-source">
+									<pre class="language-javascript"><code>// State selector
+$('#alpaca-state').alpaca({
+    options: {
+        type: 'state',
+        focus: false
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
+
 				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Show event</h6>
-							<p class="mb-3 text-muted">Called after the picker is opened</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-show" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="show-result"></div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Searchable select</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>country</code> field with integrated Select2 plugin. To initialize Select2 on select, you need to add init code in <code>postRender</code> callback. Supports all available options.</p>
+								<div id="alpaca-country-search"></div>
+								<a href="#alpaca-country-search-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-country-search-source">
+									<pre class="language-javascript"><code>// Searchable country selector
+$('#alpaca-country-search').alpaca({
+    options: {
+        type: 'country',
+        id: 'country-search',
+        focus: false
+    },
+    postRender: function() {
+        $('#country-search').select2();
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Dragstart event</h6>
-							<p class="mb-3 text-muted">Called as the drag event starts</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-dragstart" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="dragstart-result"></div>
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Searchable select</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Dragstop event</h6>
-							<p class="mb-3 text-muted">Called as the drag event stops</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-dragstop" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="dragstop-result"></div>
+						
+							<div class="card-body">
+								<p class="mb-3">The following example demonstrates <code>state</code> field with integrated Select2 plugin. To initialize Select2 on select, you need to add init code in <code>postRender</code> callback. Supports all available options.</p>
+								<div id="alpaca-state-search"></div>
+								<a href="#alpaca-state-search-source" data-toggle="collapse"><i class="icon-embed2 mr-2"></i> Show source code</a>
+								<div class="collapse mt-2" id="alpaca-state-search-source">
+									<pre class="language-javascript"><code>// Searchable state selector
+$('#alpaca-state-search').alpaca({
+    options: {
+        type: 'state',
+        id: 'state-search',
+        focus: false
+    },
+    postRender: function() {
+        $('#state-search').select2();
+    }
+});</code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /picker events -->
-
-
-				<!-- Flat pickers -->
-				<!--
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Flat pickers
-					</h6>
-					<span class="text-muted d-block">Display a full size color picker</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Basic flat picker</h6>
-							<p class="mb-3 text-muted">Basic full size color picker</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Flat color palette</h6>
-							<p class="mb-3 text-muted">Display both palette and picker</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-palette" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Set picker color</h6>
-							<p class="mb-3 text-muted">Custom flat color picker color</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-custom" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Show input field</h6>
-							<p class="mb-3 text-muted">Add input for free form typing</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-input" data-preferred-format="hex" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Full featured</h6>
-							<p class="mb-3 text-muted">Full featured flat picker</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-full" data-preferred-format="hex" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Show initial color</h6>
-							<p class="mb-3 text-muted">Show color that was initially set</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-initial" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /flat pickers -->
+				<!-- /select helpers -->
 
 			</div>
 			<!-- /content area -->

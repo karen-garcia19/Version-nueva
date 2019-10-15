@@ -23,11 +23,15 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/editors/summernote/summernote.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/daterangepicker.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/editor_summernote.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/dashboard.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -381,9 +385,9 @@
 							</div>
 
 							<div class="media-body">
-								<div class="media-title font-weight-semibold">Victoria Baker</div>
+								<div class="media-title font-weight-semibold">Karen Garcia</div>
 								<div class="font-size-xs opacity-50">
-									<i class="icon-pin font-size-sm"></i> &nbsp;Santa Ana, CA
+									<i class="icon-pin font-size-sm"></i> Ciudad Mante, Tam.
 								</div>
 							</div>
 
@@ -401,17 +405,16 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+						
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Principal</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link">
+							<a href="index.html" class="nav-link active">
 								<i class="icon-home4"></i>
 								<span>
-									Dashboard
-									<span class="d-block font-weight-normal opacity-50">No active orders</span>
+									Tablero
 								</span>
 							</a>
-						</li>
+						<!--</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
 
@@ -488,8 +491,9 @@
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">listado</a></li>
 								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Agregar</a></li>
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Editar</a></li>
+								
+								<!--<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Departamentos</a></li>/-->
 								<!--
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
 								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
@@ -504,15 +508,15 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-home4"></i> <span>Departamentos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="JSON forms">
-								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Listados</a></li>
+								<li class="nav-item"><a href="alpaca_basic.html" class="nav-link">Listado</a></li>
 								<li class="nav-item"><a href="alpaca_advanced.html" class="nav-link">Agregar</a></li>
 								<li class="nav-item"><a href="alpaca_controls.html" class="nav-link">Editar</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-home2"></i> <span>Empresas</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Text editors">
-								<li class="nav-item"><a href="editor_summernote.html" class="nav-link active">Listado</a></li>
+								<li class="nav-item"><a href="editor_summernote.html" class="nav-link">Listado</a></li>
 								<li class="nav-item"><a href="editor_ckeditor.html" class="nav-link">Agregar</a></li>
 								<li class="nav-item"><a href="editor_trumbowyg.html" class="nav-link">Editar</a></li>
 								<!--<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>/-->
@@ -521,12 +525,12 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-list-unordered"></i> <span>Vacaciones</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
-								<li class="nav-item"><a href="picker_date.html" class="nav-link">listado</a></li>
+								<li class="nav-item"><a href="picker_date.html" class="nav-link">Listado</a></li>
 								<li class="nav-item"><a href="picker_color.html" class="nav-link">Agregar</a></li>
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">Editar</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<!--<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
@@ -535,10 +539,11 @@
 								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /forms -->
 
 						<!-- Components -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -640,10 +645,11 @@
 								<li class="nav-item"><a href="icons_material.html" class="nav-link">Material</a></li>
 								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /components -->
 
 						<!-- Layout -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
@@ -805,10 +811,11 @@
 								</li>
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /layout -->
 
 						<!-- Data visualization -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
@@ -909,10 +916,11 @@
 								<li class="nav-item"><a href="maps_vector.html" class="nav-link">Vector maps</a></li>
 								<li class="nav-item"><a href="maps_echarts.html" class="nav-link disabled">ECharts maps <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
@@ -957,10 +965,11 @@
 								<li class="nav-item"><a href="internationalization_fallback.html" class="nav-link">Language fallback</a></li>
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /extensions -->
 
 						<!-- Tables -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
@@ -1026,10 +1035,11 @@
 								<li class="nav-item"><a href="table_responsive.html" class="nav-link">Responsive basic tables</a></li>
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /tables -->
 
 						<!-- Page kits -->
+						<!--
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
@@ -1190,7 +1200,7 @@
 								<li class="nav-item"><a href="widgets_menu.html" class="nav-link disabled">Menu widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
-						</li>
+						</li>/-->
 						<!-- /page kits -->
 
 					</ul>
@@ -1211,7 +1221,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Listado</span> - Empresas</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Bienvenido</span> - Tablero</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1228,8 +1238,7 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Bienvenido</a>
-							<a href="editor_summernote.html" class="breadcrumb-item">Listado</a>
-							<span class="breadcrumb-item active">Empresas</span>
+							<span class="breadcrumb-item active">Tablero</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1266,443 +1275,1707 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic table -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Listado de empresas</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
+				<!-- Main charts -->
+				<div class="row">
+					<div class="col-xl-7">
+
+						<!-- Traffic sources -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Fuentes de Tráfico</h6>
+								<div class="header-elements">
+									<div class="form-check form-check-right form-check-switchery form-check-switchery-sm">
+										<label class="form-check-label">
+											Actualización en vivo:
+											<input type="checkbox" class="form-input-switchery" checked data-fouc>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body py-0">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="d-flex align-items-center justify-content-center mb-2">
+											<a href="#" class="btn bg-transparent border-teal text-teal rounded-round border-2 btn-icon mr-3">
+												<i class="icon-plus3"></i>
+											</a>
+											<div>
+												<div class="font-weight-semibold">Nuevos visitantes</div>
+												<span class="text-muted">2,349 avg</span>
+											</div>
+										</div>
+										<div class="w-75 mx-auto mb-3" id="new-visitors"></div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="d-flex align-items-center justify-content-center mb-2">
+											<a href="#" class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon mr-3">
+												<i class="icon-watch2"></i>
+											</a>
+											<div>
+												<div class="font-weight-semibold">Nuevas estaciones</div>
+												<span class="text-muted">08:20 avg</span>
+											</div>
+										</div>
+										<div class="w-75 mx-auto mb-3" id="new-sessions"></div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="d-flex align-items-center justify-content-center mb-2">
+											<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon mr-3">
+												<i class="icon-people"></i>
+											</a>
+											<div>
+												<div class="font-weight-semibold">Total en línea</div>
+												<span class="text-muted"><span class="badge badge-mark border-success mr-2"></span> 5,378 avg</span>
+											</div>
+										</div>
+										<div class="w-75 mx-auto mb-3" id="total-online"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chart position-relative" id="traffic-sources"></div>
+						</div>
+						<!-- /traffic sources -->
+
 					</div>
 
-					<div class="card-body">
-						
-					</div>
+					<div class="col-xl-5">
 
-					<div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>Nombre de la empresa</th>
-									<th>Razon social</th>
-									<th>RFC</th>
-									<th>Nombre del contacto</th>
-									<th>Puesto que ocupa</th>
-									<th>Telefono ó Celular</th>
-									<th>Gmail</th>
-									<th>Título (Sra/Sr/Lic/Ing/Dr)</th>
-									<th>Ciudad de procedencia</th>
-									<th>Nombre de secretaria o asistente</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Lego</td>
-									<td>0000001</td>
-									<td>Supervisor</td>
-									<td>Aracely</td>
-									<td>Lego S.A. De C.V.</td>
-									<td>232-15-65</td>
-									<td>Aracely.lego@gmail</td>
-									<td>Ing</td>
-									<td>México</td>
-									<td>Lorena</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Canon</td>
-									<td>0000002</td>
-									<td>Canon S.A. De C.V</td>
-									<td>Benito</td>
-									<td>Empleado</td>
-									<td>232-84-96</td>
-									<td>Benito.canon@gmail.com</td>
-									<td>Ing</td>
-									<td>México</td>
-									<td>Paula</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>Sony</td>
-									<td>0000003</td>
-									<td>Sony S.A. De C.V</td>
-									<td>Carlos</td>
-									<td>Supervisor</td>
-									<td>232-74-36</td>
-									<td>Carlos.sony@gmail.com</td>
-									<td>Lic</td>
-									<td>Monterrey</td>
-									<td>Karina</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>Pepsi</td>
-									<td>0000004</td>
-									<td>Pepsi S.A. De C.V</td>
-									<td>Daniel</td>
-									<td>Empleado</td>
-									<td>232-95-19</td>
-									<td>Daniel.pepsi@gmail.com</td>
-									<td>Lic</td>
-									<td>Mante</td>
-									<td>Karen</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Bimbo</td>
-									<td>0000005</td>
-									<td>Bimbo S.A. De C.V</td>
-									<td>Estefan</td>
-									<td>Supervisor</td>
-									<td>232-78-98</td>
-									<td>Estefan.bimbo@gmail.com</td>
-									<td>Sr</td>
-									<td>Tampico</td>
-									<td>Marce</td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Coca cola</td>
-									<td>0000006</td>
-									<td>Coca cola S.A. De C.V</td>
-									<td>Flabio</td>
-									<td>Empleado</td>
-									<td>232-12-21</td>
-									<td>Flabio.cocacola@gmail.com</td>
-									<td>Sr</td>
-									<td>Victoria</td>
-									<td>Gabriela</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>La costeña</td>
-									<td>0000007</td>
-									<td>La costeña S.A. De C.V</td>
-									<td>Gaspar</td>
-									<td>Supervisor</td>
-									<td>323-56-65</td>
-									<td>Gaspar.lacosteña@gmail.com</td>
-									<td>Ing</td>
-									<td>México</td>
-									<td>Daniela</td>
-								</tr>
-								<tr>
-									<td>8</td>
-									<td>Starbuks</td>
-									<td>0000008</td>
-									<td>Starbuks S.A. De C.V</td>
-									<td>Heliot</td>
-									<td>Empleado</td>
-									<td>232-85-58</td>
-									<td>Heliot.starbuks@gmail.com</td>
-									<td>Sr</td>
-									<td>Queretaro</td>
-									<td>Fernanda</td>
-								</tr>
-								<tr>
-									<td>9</td>
-									<td>Nestle</td>
-									<td>0000009</td>
-									<td>Nestle S.A. De C.V</td>
-									<td>Irving</td>
-									<td>Supervisor</td>
-									<td>232-96-69</td>
-									<td>Irving.nestle@gmail.com</td>
-									<td>Lic</td>
-									<td>México</td>
-									<td>Amaris</td>
-								</tr>
-								<tr>
-									<td>10</td>
-									<td>Gamesa</td>
-									<td>0000010</td>
-									<td>Gamesa S.A. De C.V</td>
-									<td>Francisca</td>
-									<td>Empleado</td>
-									<td>232-47-76</td>
-									<td>Franco.gamesa@gmail.com</td>
-									<td>Sra</td>
-									<td>Valles</td>
-									<td>Danely</td>
-								</tr>
-							</tbody>
-						</table>
+						<!-- Sales stats -->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Ventas estáticas</h6>
+								<div class="header-elements">
+									<select class="form-control" id="select_date" data-fouc>
+										<option value="val1">June, 29 - July, 5</option>
+										<option value="val2">June, 22 - June 28</option>
+										<option value="val3" selected>June, 15 - June, 21</option>
+										<option value="val4">June, 8 - June, 14</option>
+									</select>
+			                	</div>
+							</div>
+
+							<div class="card-body py-0">
+								<div class="row text-center">
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">5,689</h5>
+											<span class="text-muted font-size-sm">Nueva orden</span>
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">32,568</h5>
+											<span class="text-muted font-size-sm">Este mes</span>
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">$23,464</h5>
+											<span class="text-muted font-size-sm">Ganancia esperada</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chart mb-2" id="app_sales"></div>
+							<div class="chart" id="monthly-sales-stats"></div>
+						</div>
+						<!-- /sales stats -->
+
 					</div>
 				</div>
-				<!-- /basic table -->
+				<!-- /main charts -->
 
-				<!-- Summernote editor -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote editor</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
 
-					<div class="card-body">
-						<div class="summernote">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+				<!-- Dashboard content -->
+				<div class="row">
+					<div class="col-xl-8">
 
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+						<!-- Marketing campaigns -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-sm-inline">
+								<h6 class="card-title">Marketing campaigns</h6>
+								<div class="header-elements">
+									<span class="badge bg-success badge-pill">28 active</span>
+									<div class="list-icons ml-3">
+				                		<div class="list-icons-item dropdown">
+				                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+											<div class="dropdown-menu">
+												<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
+												<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
+												<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
+											</div>
+				                		</div>
+				                	</div>
+			                	</div>
+							</div>
 
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+							<div class="card-body d-sm-flex align-items-sm-center justify-content-sm-between flex-sm-wrap">
+								<div class="d-flex align-items-center mb-3 mb-sm-0">
+									<div id="campaigns-donut"></div>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">38,289 <span class="text-success font-size-sm font-weight-normal"><i class="icon-arrow-up12"></i> (+16.2%)</span></h5>
+										<span class="badge badge-mark border-success mr-1"></span> <span class="text-muted">May 12, 12:30 am</span>
+									</div>
+								</div>
 
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
+								<div class="d-flex align-items-center mb-3 mb-sm-0">
+									<div id="campaign-status-pie"></div>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">2,458 <span class="text-danger font-size-sm font-weight-normal"><i class="icon-arrow-down12"></i> (-4.9%)</span></h5>
+										<span class="badge badge-mark border-danger mr-1"></span> <span class="text-muted">Jun 4, 4:00 am</span>
+									</div>
+								</div>
 
-							<h5 class="font-weight-semibold">Mission crew</h5>
+								<div>
+									<a href="#" class="btn bg-indigo-300"><i class="icon-statistics mr-2"></i> View report</a>
+								</div>
+							</div>
 
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
+							<div class="table-responsive">
+								<table class="table text-nowrap">
 									<thead>
 										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
+											<th>Campaign</th>
+											<th>Client</th>
+											<th>Changes</th>
+											<th>Budget</th>
+											<th>Status</th>
+											<th class="text-center" style="width: 20px;"><i class="icon-arrow-down12"></i></th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
+										<tr class="table-active table-border-double">
+											<td colspan="5">Today</td>
+											<td class="text-right">
+												<span class="progress-meter" id="today-progress" data-progress="30"></span>
+											</td>
 										</tr>
 										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/facebook.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Facebook</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-blue mr-1"></span>
+															02:00 - 03:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Mintlime</span></td>
+											<td><span class="text-success-600"><i class="icon-stats-growth2 mr-2"></i> 2.43%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$5,489</h6></td>
+											<td><span class="badge bg-blue">Active</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
 										</tr>
 										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/youtube.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Youtube videos</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-danger mr-1"></span>
+															13:00 - 14:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">CDsoft</span></td>
+											<td><span class="text-success-600"><i class="icon-stats-growth2 mr-2"></i> 3.12%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$2,592</h6></td>
+											<td><span class="badge bg-danger">Closed</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/spotify.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Spotify ads</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-grey-400 mr-1"></span>
+															10:00 - 11:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Diligence</span></td>
+											<td><span class="text-danger"><i class="icon-stats-decline2 mr-2"></i> - 8.02%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$1,268</h6></td>
+											<td><span class="badge bg-grey-400">On hold</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/twitter.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Twitter ads</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-grey-400 mr-1"></span>
+															04:00 - 05:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Deluxe</span></td>
+											<td><span class="text-success-600"><i class="icon-stats-growth2 mr-2"></i> 2.78%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$7,467</h6></td>
+											<td><span class="badge bg-grey-400">On hold</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr class="table-active table-border-double">
+											<td colspan="5">Yesterday</td>
+											<td class="text-right">
+												<span class="progress-meter" id="yesterday-progress" data-progress="65"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/bing.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Bing campaign</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-success mr-1"></span>
+															15:00 - 16:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Metrics</span></td>
+											<td><span class="text-danger"><i class="icon-stats-decline2 mr-2"></i> - 5.78%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$970</h6></td>
+											<td><span class="badge bg-success-400">Pending</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/amazon.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Amazon ads</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-danger mr-1"></span>
+															18:00 - 19:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Blueish</span></td>
+											<td><span class="text-success-600"><i class="icon-stats-growth2 mr-2"></i> 6.79%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$1,540</h6></td>
+											<td><span class="badge bg-blue">Active</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/brands/dribbble.png" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Dribbble ads</a>
+														<div class="text-muted font-size-sm">
+															<span class="badge badge-mark border-blue mr-1"></span>
+															20:00 - 21:00
+														</div>
+													</div>
+												</div>
+											</td>
+											<td><span class="text-muted">Teamable</span></td>
+											<td><span class="text-danger"><i class="icon-stats-decline2 mr-2"></i> 9.83%</span></td>
+											<td><h6 class="font-weight-semibold mb-0">$8,350</h6></td>
+											<td><span class="badge bg-danger">Closed</span></td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-file-stats"></i> View statement</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-text2"></i> Edit campaign</a>
+															<a href="#" class="dropdown-item"><i class="icon-file-locked"></i> Disable campaign</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-gear"></i> Settings</a>
+														</div>
+													</div>
+												</div>
+											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
+						</div>/-->
+						<!-- /marketing campaigns -->
 
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
+
+						<!-- Quick stats boxes -->
+						<div class="row">
+							<div class="col-lg-4">
+
+								<!-- Members online -->
+								<div class="card bg-teal-400">
+									<div class="card-body">
+										<div class="d-flex">
+											<h3 class="font-weight-semibold mb-0">3,450</h3>
+											<span class="badge bg-teal-800 badge-pill align-self-center ml-auto">+53,6%</span>
+					                	</div>
+					                	
+					                	<div>
+											Miembros en línea
+											<div class="font-size-sm opacity-75">489 avg</div>
+										</div>
+									</div>
+
+									<div class="container-fluid">
+										<div id="members-online"></div>
+									</div>
+								</div>
+								<!-- /members online -->
+
+							</div>
+
+							<div class="col-lg-4">
+
+								<!-- Current server load -->
+								<div class="card bg-pink-400">
+									<div class="card-body">
+										<div class="d-flex">
+											<h3 class="font-weight-semibold mb-0">49.4%</h3>
+											<div class="list-icons ml-auto">
+						                		<div class="list-icons-item dropdown">
+						                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
+														<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
+														<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
+														<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
+													</div>
+						                		</div>
+					                		</div>
+					                	</div>
+					                	
+					                	<div>
+											Carga actual del servidor
+											<div class="font-size-sm opacity-75">34.6% avg</div>
+										</div>
+									</div>
+
+									<div id="server-load"></div>
+								</div>
+								<!-- /current server load -->
+
+							</div>
+
+							<div class="col-lg-4">
+
+								<!-- Today's revenue -->
+								<div class="card bg-blue-400">
+									<div class="card-body">
+										<div class="d-flex">
+											<h3 class="font-weight-semibold mb-0">$18,390</h3>
+											<div class="list-icons ml-auto">
+						                		<a class="list-icons-item" data-action="reload"></a>
+						                	</div>
+					                	</div>
+					                	
+					                	<div>
+											Los ingresos de hoy Empleados
+											<div class="font-size-sm opacity-75">$37,578 avg</div>
+										</div>
+									</div>
+
+									<div id="today-revenue"></div>
+								</div>
+								<!-- /today's revenue -->
+
+							</div>
 						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote editor -->
+						<!-- /quick stats boxes -->
 
 
-				<!-- Summernote click to edit -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Click to edit</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+						<!-- Support tickets -->
+						<div class="card">
+							<div class="card-header header-elements-sm-inline">
+								<h6 class="card-title">Tickets de soporte</h6>
+								<div class="header-elements">
+									<a class="text-default daterange-ranges font-weight-semibold cursor-pointer dropdown-toggle">
+										<i class="icon-calendar3 mr-2"></i>
+										<span></span>
+									</a>
+			                	</div>
+							</div>
 
-					<div class="card-body">
-						<div class="form-group">
-							<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 mr-2"></i> Edit</button>
-							<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 mr-2"></i> Save</button>
-						</div>
+							<div class="card-body d-md-flex align-items-md-center justify-content-md-between flex-md-wrap">
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<div id="tickets-status"></div>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">14,327 <span class="text-success font-size-sm font-weight-normal"><i class="icon-arrow-up12"></i> (+2.9%)</span></h5>
+										<span class="badge badge-mark border-success mr-1"></span> <span class="text-muted">Jun 16, 10:00 am</span>
+									</div>
+								</div>
 
-						<div class="click2edit">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
+										<i class="icon-alarm-add"></i>
+									</a>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">1,132</h5>
+										<span class="text-muted">Tickets totales</span>
+									</div>
+								</div>
 
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
+										<i class="icon-spinner11"></i>
+									</a>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">06:25:00</h5>
+										<span class="text-muted">Tiempo de respuesta</span>
+									</div>
+								</div>
 
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+								<div>
+									<a href="#" class="btn bg-teal-400"><i class="icon-statistics mr-2"></i> Reporte</a>
+								</div>
+							</div>
 
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
+							<!--<div class="table-responsive">
+								<table class="table text-nowrap">
 									<thead>
 										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
+											<th style="width: 50px">Due</th>
+											<th style="width: 300px;">User</th>
+											<th>Description</th>
+											<th class="text-center" style="width: 20px;"><i class="icon-arrow-down12"></i></th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
+										<tr class="table-active table-border-double">
+											<td colspan="3">Active tickets</td>
+											<td class="text-right">
+												<span class="badge bg-blue badge-pill">24</span>
+											</td>
 										</tr>
+
 										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
+											<td class="text-center">
+												<h6 class="mb-0">12</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-teal-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Annabelle Doney</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">[#1183] Workaround for OS X selects printing bug</div>
+													<span class="text-muted">Chrome fixed the bug several versions ago, thus rendering this...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-checkmark3 text-success"></i> Resolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
 										</tr>
+
 										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
+											<td class="text-center">
+												<h6 class="mb-0">16</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Chris Macintyre</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">[#1249] Vertically center carousel controls</div>
+													<span class="text-muted">Try any carousel control and reduce the screen width below...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-checkmark3 text-success"></i> Resolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<h6 class="mb-0">20</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-blue rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Robert Hauber</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">[#1254] Inaccurate small pagination height</div>
+													<span class="text-muted">The height of pagination elements is not consistent with...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-checkmark3 text-success"></i> Resolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<h6 class="mb-0">40</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-warning-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Robert Hauber</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span> Active</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">[#1184] Round grid column gutter operations</div>
+													<span class="text-muted">Left rounds up, right rounds down. should keep everything...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-checkmark3 text-success"></i> Resolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr class="table-active table-border-double">
+											<td colspan="3">Resolved tickets</td>
+											<td class="text-right">
+												<span class="badge bg-success badge-pill">42</span>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-checkmark3 text-success"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-success-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Alan Macedo</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-success mr-1"></span> Resolved</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1046] Avoid some unnecessary HTML string</div>
+													<span class="text-muted">Rather than building a string of HTML and then parsing it...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-checkmark3 text-success"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-pink-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Brett Castellano</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-success mr-1"></span> Resolved</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1038] Update json configuration</div>
+													<span class="text-muted">The <code>files</code> property is necessary to override the files property...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-checkmark3 text-success"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Roxanne Forbes</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-success mr-1"></span> Resolved</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1034] Tooltip multiple event</div>
+													<span class="text-muted">Fix behavior when using tooltips and popovers that are...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-cross2 text-danger"></i> Close issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr class="table-active table-border-double">
+											<td colspan="3">Closed tickets</td>
+											<td class="text-right">
+												<span class="badge bg-danger badge-pill">37</span>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-cross2 text-danger-400"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#">
+															<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="32" height="32" alt="">
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold">Mitchell Sitkin</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-danger mr-1"></span> Closed</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1040] Account for static form controls in form group</div>
+													<span class="text-muted">Resizes control label's font-size and account for the standard...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-spinner11 text-grey"></i> Reopen issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-cross2 text-danger"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-brown-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Katleen Jensen</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-danger mr-1"></span> Closed</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div>[#1038] Proper sizing of form control feedback</div>
+													<span class="text-muted">Feedback icon sizing inside a larger/smaller form-group...</span>
+												</a>
+											</td>
+											<td class="text-center">
+												<div class="list-icons">
+													<div class="list-icons-item dropdown">
+														<a href="#" class="list-icons-item dropdown-toggle caret-0" data-toggle="dropdown"><i class="icon-menu7"></i></a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a href="#" class="dropdown-item"><i class="icon-undo"></i> Quick reply</a>
+															<a href="#" class="dropdown-item"><i class="icon-history"></i> Full history</a>
+															<div class="dropdown-divider"></div>
+															<a href="#" class="dropdown-item"><i class="icon-plus3 text-blue"></i> Unresolve issue</a>
+															<a href="#" class="dropdown-item"><i class="icon-spinner11 text-grey"></i> Reopen issue</a>
+														</div>
+													</div>
+												</div>
+											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote click to edit -->
+						</div>/-->
+						<!-- /support tickets -->
 
 
-				<!-- Summernote fixed height -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Custom fixed height</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
+						<!-- Latest posts -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Latest posts</h6>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
 		                	</div>
-	                	</div>
-					</div>
 
-					<div class="card-body">
-						<div class="summernote-height">
-							<h2>Apollo 11</h2>
-							<div class="float-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+							<div class="card-body pb-0">
+								<div class="row">
+									<div class="col-xl-6">
+										<div class="media flex-column flex-sm-row mt-0 mb-3">
+				        					<div class="mr-sm-3 mb-2 mb-sm-0">
+												<div class="card-img-actions">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
+														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+													</a>
+												</div>
+											</div>
 
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+				        					<div class="media-body">
+												<h6 class="media-title"><a href="#">Up unpacked friendly</a></h6>
+					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
+					                    		</ul>
+												The him father parish looked has sooner. Attachment frequently terminated son hello...
+											</div>
+										</div>
 
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+										<div class="media flex-column flex-sm-row mt-0 mb-3">
+				        					<div class="mr-sm-3 mb-2 mb-sm-0">
+												<div class="card-img-actions">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
+														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+													</a>
+												</div>
+											</div>
 
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
+				        					<div class="media-body">
+												<h6 class="media-title"><a href="#">It allowance prevailed</a></h6>
+					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
+					                    		</ul>
+												Alteration literature to or an sympathize mr imprudence. Of is ferrars subject enjoyed...
+											</div>
+										</div>
+									</div>
 
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
+									<div class="col-xl-6">
+										<div class="media flex-column flex-sm-row mt-0 mb-3">
+				        					<div class="mr-sm-3 mb-2 mb-sm-0">
+												<div class="card-img-actions">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
+														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+													</a>
+												</div>
+											</div>
+
+				        					<div class="media-body">
+												<h6 class="media-title"><a href="#">Case read they must</a></h6>
+					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
+					                    		</ul>
+												On it differed repeated wandered required in. Then girl neat why yet knew rose spot...
+											</div>
+										</div>
+
+										<div class="media flex-column flex-sm-row mt-0 mb-3">
+				        					<div class="mr-sm-3 mb-2 mb-sm-0">
+												<div class="card-img-actions">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
+														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
+													</a>
+												</div>
+											</div>
+
+				        					<div class="media-body">
+												<h6 class="media-title"><a href="#">Too carriage attended</a></h6>
+					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
+					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> FAQ section</li>
+					                    		</ul>
+												Marianne or husbands if at stronger ye. Considered is as middletons uncommonly...
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>/-->
+						<!-- /latest posts -->
+
+					<!--</div>
+
+					<div class="col-xl-4">/-->
+
+						<!-- Progress counters -->
+						<!--
+						<div class="row">
+							<div class="col-sm-6">/-->
+
+								<!-- Available hours -->
+
+								<div class="card text-center">
+									<div class="card-body">
+
+					                	<!-- Progress counter -->
+										<div class="svg-center position-relative" id="hours-available-progress"></div>
+										<!-- /progress counter -->
+
+
+										<!-- Bars -->
+										<div id="hours-available-bars"></div>
+										<!-- /bars -->
+
+									</div>
+								</div>
+								<!-- /available hours -->
+
+							</div>
+
+							<div class="col-sm-6">
+
+								<!-- Productivity goal -->
+								<div class="card text-center">
+									<div class="card-body">
+
+										<!-- Progress counter -->
+										<div class="svg-center position-relative" id="goal-progress"></div>
+										<!-- /progress counter -->
+
+										<!-- Bars -->
+										<div id="goal-bars"></div>
+										<!-- /bars -->
+
+									</div>
+								</div>
+								<!-- /productivity goal -->
+
+							<!--</div>
+						</div>/-->
+						<!-- /progress counters -->
+
+
+						<!-- Daily sales -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Daily sales stats</h6>
+								<div class="header-elements">
+									<span class="font-weight-bold text-danger-600 ml-2">$4,378</span>
+									<div class="list-icons ml-3">
+				                		<div class="list-icons-item dropdown">
+				                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
+												<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
+												<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
+											</div>
+				                		</div>
+				                	</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="chart" id="sales-heatmap"></div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table text-nowrap">
 									<thead>
 										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
+											<th class="w-100">Application</th>
+											<th>Time</th>
+											<th>Price</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-primary-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Sigma application</a>
+														<div class="text-muted font-size-sm"><i class="icon-checkmark3 font-size-sm mr-1"></i> New order</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">06:28 pm</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$49.90</h6>
+											</td>
 										</tr>
+
 										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-danger-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Alpha application</a>
+														<div class="text-muted font-size-sm"><i class="icon-spinner11 font-size-sm mr-1"></i> Renewal</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">04:52 pm</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$90.50</h6>
+											</td>
 										</tr>
+
 										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-indigo-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Delta application</a>
+														<div class="text-muted font-size-sm"><i class="icon-lifebuoy font-size-sm mr-1"></i> Support</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">01:26 pm</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$60.00</h6>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-success-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Omega application</a>
+														<div class="text-muted font-size-sm"><i class="icon-lifebuoy font-size-sm mr-1"></i> Support</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">11:46 am</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$55.00</h6>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-danger-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Alpha application</a>
+														<div class="text-muted font-size-sm"><i class="icon-spinner11 font-size-sm mr-2"></i> Renewal</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<span class="text-muted font-size-sm">10:29 am</span>
+											</td>
+											<td>
+												<h6 class="font-weight-semibold mb-0">$90.50</h6>
+											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote fixed height -->
+						</div>/-->
+						<!-- /daily sales -->
 
 
-				<!-- Summernote air mode -->
-				<!--
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Summernote air mode</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+						<!-- My messages -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">My messages</h6>
+								<div class="header-elements">
+									<span><i class="icon-history text-warning mr-2"></i> Jul 7, 10:30</span>
+									<span class="badge bg-success align-self-start ml-3">Online</span>
+								</div>
+							</div>/-->
 
-					<div class="card-body">
-						<div class="summernote-airmode">
-							<h2>Apollo 11</h2>
-							<div class="float-left" style="margin-right: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
+							<!-- Numbers -->
+							<!--
+							<div class="card-body py-0">
+								<div class="row text-center">
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">2,345</h5>
+											<span class="text-muted font-size-sm">this week</span>
+										</div>
+									</div>
 
-							<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">3,568</h5>
+											<span class="text-muted font-size-sm">this month</span>
+										</div>
+									</div>
 
-							<p class="mb-3">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
+									<div class="col-4">
+										<div class="mb-3">
+											<h5 class="font-weight-semibold mb-0">32,693</h5>
+											<span class="text-muted font-size-sm">all messages</span>
+										</div>
+									</div>
+								</div>
+							</div>/-->
+							<!-- /numbers -->
 
-							<h5 class="font-weight-semibold">Technical details</h5>
-							<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-							<ol>
-								<li><strong>- Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-								<li><strong>- Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-								<li><strong>- Lunar Module</strong> for landing on the Moon.</li>
-							</ol>
-							<p class="mb-3">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
 
-							<h5 class="font-weight-semibold">Mission crew</h5>
-							<div class="card card-table table-responsive shadow-0">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>Position</th>
-											<th>Astronaut</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Commander</td>
-											<td>Neil A. Armstrong</td>
-										</tr>
-										<tr>
-											<td>Command Module Pilot</td>
-											<td>Michael Collins</td>
-										</tr>
-										<tr>
-											<td>Lunar Module Pilot</td>
-											<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-										</tr>
-									</tbody>
-								</table>
+							<!-- Area chart -->
+							<!--
+							<div id="messages-stats"></div>/-->
+							<!-- /area chart -->
+
+
+							<!-- Tabs -->
+							<!--
+		                	<ul class="nav nav-tabs nav-tabs-solid nav-justified bg-indigo-400 border-x-0 border-bottom-0 border-top-indigo-300 mb-0">
+								<li class="nav-item">
+									<a href="#messages-tue" class="nav-link font-size-sm text-uppercase active" data-toggle="tab">
+										Tuesday
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a href="#messages-mon" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
+										Monday
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a href="#messages-fri" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
+										Friday
+									</a>
+								</li>
+							</ul>/-->
+							<!-- /tabs -->
+
+
+							<!-- Tabs content -->
+							<!--
+							<div class="tab-content card-body">
+								<div class="tab-pane active fade show" id="messages-tue">
+									<ul class="media-list">
+										<li class="media">
+											<div class="mr-3 position-relative">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">8</span>
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">James Alexander</a>
+													<span class="font-size-sm text-muted">14:58</span>
+												</div>
+
+												The constitutionally inventoried precariously...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3 position-relative">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">6</span>
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Margo Baker</a>
+													<span class="font-size-sm text-muted">12:16</span>
+												</div>
+
+												Pinched a well more moral chose goodness...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Jeremy Victorino</a>
+													<span class="font-size-sm text-muted">09:48</span>
+												</div>
+
+												Pert thickly mischievous clung frowned well...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Beatrix Diaz</a>
+													<span class="font-size-sm text-muted">05:54</span>
+												</div>
+
+												Nightingale taped hello bucolic fussily cardinal...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">												
+												<div class="d-flex justify-content-between">
+													<a href="#">Richard Vango</a>
+													<span class="font-size-sm text-muted">01:43</span>
+												</div>
+
+												Amidst roadrunner distantly pompously where...
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="tab-pane fade" id="messages-mon">
+									<ul class="media-list">
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Isak Temes</a>
+													<span class="font-size-sm text-muted">Tue, 19:58</span>
+												</div>
+
+												Reasonable palpably rankly expressly grimy...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Vittorio Cosgrove</a>
+													<span class="font-size-sm text-muted">Tue, 16:35</span>
+												</div>
+
+												Arguably therefore more unexplainable fumed...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Hilary Talaugon</a>
+													<span class="font-size-sm text-muted">Tue, 12:16</span>
+												</div>
+
+												Nicely unlike porpoise a kookaburra past more...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Bobbie Seber</a>
+													<span class="font-size-sm text-muted">Tue, 09:20</span>
+												</div>
+
+												Before visual vigilantly fortuitous tortoise...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Walther Laws</a>
+													<span class="font-size-sm text-muted">Tue, 03:29</span>
+												</div>
+
+												Far affecting more leered unerringly dishonest...
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="tab-pane fade" id="messages-fri">
+									<ul class="media-list">
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Owen Stretch</a>
+													<span class="font-size-sm text-muted">Mon, 18:12</span>
+												</div>
+
+												Tardy rattlesnake seal raptly earthworm...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Jenilee Mcnair</a>
+													<span class="font-size-sm text-muted">Mon, 14:03</span>
+												</div>
+
+												Since hello dear pushed amid darn trite...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Alaster Jain</a>
+													<span class="font-size-sm text-muted">Mon, 13:59</span>
+												</div>
+
+												Dachshund cardinal dear next jeepers well...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Sigfrid Thisted</a>
+													<span class="font-size-sm text-muted">Mon, 09:26</span>
+												</div>
+
+												Lighted wolf yikes less lemur crud grunted...
+											</div>
+										</li>
+
+										<li class="media">
+											<div class="mr-3">
+												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+											</div>
+
+											<div class="media-body">
+												<div class="d-flex justify-content-between">
+													<a href="#">Sherilyn Mckee</a>
+													<span class="font-size-sm text-muted">Mon, 06:38</span>
+												</div>
+
+												Less unicorn a however careless husky...
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>/-->
+							<!-- /tabs content -->
+
+						<!--</div>/-->
+						<!-- /my messages -->
+
+
+						<!-- Daily financials -->
+						<!--
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h6 class="card-title">Daily financials</h6>
+								<div class="header-elements">
+									<div class="form-check form-check-inline form-check-right form-check-switchery form-check-switchery-sm">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-input-switchery" id="realtime" checked data-fouc>
+											Realtime
+										</label>
+									</div>
+									<span class="badge bg-danger-400 badge-pill">+86</span>
+								</div>
 							</div>
 
-							Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /summernote air mode -->
+							<div class="card-body">
+								<div class="chart mb-3" id="bullets"></div>
 
-			</div>
+								<ul class="media-list">
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-pink text-pink rounded-round border-2 btn-icon"><i class="icon-statistics"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Stats for July, 6: <span class="font-weight-semibold">1938</span> orders, <span class="font-weight-semibold text-danger">$4220</span> revenue
+											<div class="text-muted">2 hours ago</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i class="icon-checkmark3"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Invoices <a href="#">#4732</a> and <a href="#">#4734</a> have been paid
+											<div class="text-muted">Dec 18, 18:36</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-alignment-unalign"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Affiliate commission for June has been paid
+											<div class="text-muted">36 minutes ago</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon"><i class="icon-spinner11"></i></a>
+										</div>
+
+										<div class="media-body">
+											Order <a href="#">#37745</a> from July, 1st has been refunded
+											<div class="text-muted">4 minutes ago</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="mr-3">
+											<a href="#" class="btn bg-transparent border-teal text-teal rounded-round border-2 btn-icon"><i class="icon-redo2"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Invoice <a href="#">#4769</a> has been sent to <a href="#">Robert Smith</a>
+											<div class="text-muted">Dec 12, 05:46</div>
+										</div>
+
+										<div class="ml-3 align-self-center">
+											<a href="#" class="list-icons-item"><i class="icon-more"></i></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>/-->
+						<!-- /daily financials -->
+
+					<!--</div>
+				</div>/-->
+				<!-- /dashboard content -->
+
+			<!--</div>/-->
 			<!-- /content area -->
 
 
@@ -1730,10 +3003,10 @@
 			</div>/-->
 			<!-- /footer -->
 
-		</div>
+		<!--</div>/-->
 		<!-- /main content -->
 
-	</div>
+	<!--</div>/-->
 	<!-- /page content -->
 
 </body>
