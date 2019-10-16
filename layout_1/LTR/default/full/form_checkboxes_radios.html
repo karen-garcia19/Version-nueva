@@ -23,11 +23,12 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/pickers/color/spectrum.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/switch.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/picker_color.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -331,7 +332,7 @@
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
 						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
-						<span>Victoria</span>
+						<span>Karen</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
@@ -401,7 +402,7 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-					
+						
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Principal</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
 							<a href="index.html" class="nav-link">
@@ -482,14 +483,14 @@
 
 						<!-- Forms -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Componentes</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-people"></i> <span>Empleados</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
 								<li class="nav-item"><a href="form_inputs.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="form_checkboxes_radios.html" class="nav-link active">Agregar</a></li>
 								<li class="nav-item"><a href="form_select2.html" class="nav-link">Editar</a></li>
+								<!--<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Departamento</a></li>/-->
 								<!--
-								<li class="nav-item"><a href="form_multiselect.html" class="nav-link">Bootstrap multiselect</a></li>
 								<li class="nav-item"><a href="form_input_groups.html" class="nav-link">Input groups</a></li>
 								<li class="nav-item"><a href="form_controls_extended.html" class="nav-link">Extended controls</a></li>
 								<li class="nav-item"><a href="form_floating_labels.html" class="nav-link">Floating labels</a></li>
@@ -518,11 +519,11 @@
 								<!--<li class="nav-item"><a href="editor_code.html" class="nav-link">Code editor</a></li>/-->
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-list-unordered"></i> <span>Vacaciones</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Pickers">
 								<li class="nav-item"><a href="picker_date.html" class="nav-link">Listado</a></li>
-								<li class="nav-item"><a href="picker_color.html" class="nav-link active">Agregar</a></li>
+								<li class="nav-item"><a href="picker_color.html" class="nav-link">Agregar</a></li>
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">Editar</a></li>
 							</ul>
 						</li>
@@ -536,16 +537,17 @@
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>/-->
+
 						<!-- /forms -->
 
 						<!-- Components -->
-						<!--
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
+						
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Componentes 2</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Pago de transporte</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
-								<li class="nav-item"><a href="components_modals.html" class="nav-link">Modals</a></li>
-								<li class="nav-item"><a href="components_dropdowns.html" class="nav-link">Dropdown menus</a></li>
+								<li class="nav-item"><a href="components_modals.html" class="nav-link">Formulario de pago</a></li>
+								<!--<li class="nav-item"><a href="components_dropdowns.html" class="nav-link">Dropdown menus</a></li>
 								<li class="nav-item"><a href="components_tabs.html" class="nav-link">Tabs component</a></li>
 								<li class="nav-item"><a href="components_pills.html" class="nav-link">Pills component</a></li>
 								<li class="nav-item"><a href="components_collapsible.html" class="nav-link">Collapsible</a></li>
@@ -1217,7 +1219,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Vacaciones</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Agregar</span> - Formulario de empleados</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1234,8 +1236,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Bienvenido</a>
-							<a href="picker_color.html" class="breadcrumb-item">Agregar</a>
-							<span class="breadcrumb-item active">Vacaciones</span>
+							<a href="form_checkboxes_radios.html" class="breadcrumb-item">Agregar</a>
+							<span class="breadcrumb-item active">Formularios</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1275,7 +1277,7 @@
 				<!-- Form inputs -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Agregar datos de vacaciones correspondientes</h5>
+						<h5 class="card-title">Agregar datos de empleados correspondientes (Formulario)</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1284,65 +1286,64 @@
 		                	</div>
 	                	</div>
 					</div>
-					
 
 					<div class="card-body">
 						<p class="mb-4"></p>
 
-						<!--<form action="#">
+						<form action="#">
 							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Agregar Información</legend>
+								<legend class="text-uppercase font-size-sm font-weight-bold">Agregar Información (formulario)</legend>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Entrada de texto</label>
+									<label class="col-form-label col-lg-2">Nombre</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Contraseña</label>
+									<label class="col-form-label col-lg-2">Apellido</label>
 									<div class="col-lg-10">
 										<input type="password" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Entrada con marcador</label>
+									<label class="col-form-label col-lg-2">Habilidad</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control" placeholder="">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Solo lectura</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" readonly value="">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Deshabilitado</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" disabled value="">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Valor predefinido</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Autocompletado</label>
+									<label class="col-form-label col-lg-2">Clave</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control" placeholder="" autocomplete="off">
 									</div>
 								</div>
 
 								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Dirección</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="" autocomplete="off">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Departamento</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="" autocomplete="off">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Descripcion del departamento</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder="" autocomplete="off">
+									</div>
+								</div>
+
+								<!--<div class="form-group row">
 									<label class="col-form-label col-lg-2">Valor máximo</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control" maxlength="4" placeholder="Maximum 4 characters">
@@ -1369,9 +1370,608 @@
 										<textarea rows="3" cols="3" class="form-control" placeholder=""></textarea>
 									</div>
 								</div>
-							</fieldset>
+							</fieldset>/-->
+							<!--
+
 							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Opciones de Agregar</legend>/-->
+								<legend class="text-uppercase font-size-sm font-weight-bold">Basic selects</legend>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2">Single select</label>
+		                        	<div class="col-lg-10">
+			                            <select class="form-control">
+			                                <option value="opt1">Default select box</option>
+			                                <option value="opt2">Option 2</option>
+			                                <option value="opt3">Option 3</option>
+			                                <option value="opt4">Option 4</option>
+			                                <option value="opt5">Option 5</option>
+			                                <option value="opt6">Option 6</option>
+			                                <option value="opt7">Option 7</option>
+			                                <option value="opt8">Option 8</option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2">Styled select</label>
+		                        	<div class="col-lg-10">
+			                            <select class="form-control form-control-uniform" data-fouc>
+			                                <option value="opt1">Styled select box</option>
+			                                <option value="opt2">Option 2</option>
+			                                <option value="opt3">Option 3</option>
+			                                <option value="opt4">Option 4</option>
+			                                <option value="opt5">Option 5</option>
+			                                <option value="opt6">Option 6</option>
+			                                <option value="opt7">Option 7</option>
+			                                <option value="opt8">Option 8</option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2">Custom BS select</label>
+		                        	<div class="col-lg-10">
+			                            <select class="custom-select">
+			                                <option value="opt1">Styled select box</option>
+			                                <option value="opt2">Option 2</option>
+			                                <option value="opt3">Option 3</option>
+			                                <option value="opt4">Option 4</option>
+			                                <option value="opt5">Option 5</option>
+			                                <option value="opt6">Option 6</option>
+			                                <option value="opt7">Option 7</option>
+			                                <option value="opt8">Option 8</option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Multiple select</label>
+									<div class="col-lg-10">
+			                            <select multiple="multiple" class="form-control">
+			                                <option selected>Amsterdam</option>      
+			                                <option selected>Atlanta</option>
+			                                <option>Baltimore</option>
+			                                <option>Boston</option>
+			                                <option>Buenos Aires</option>
+			                                <option>Calgary</option>
+			                                <option selected>Chicago</option>
+			                                <option>Denver</option>
+			                                <option>Dubai</option>
+			                                <option>Frankfurt</option>
+			                                <option>Hong Kong</option>
+			                                <option>Honolulu</option>
+			                                <option>Houston</option>
+			                                <option>Kuala Lumpur</option>
+			                                <option>London</option>
+			                                <option>Los Angeles</option>
+			                                <option>Melbourne</option>
+			                                <option>Mexico City</option>
+			                                <option>Miami</option>
+			                                <option>Minneapolis</option>
+			                            </select>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Basic file inputs</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Default file input</label>
+									<div class="col-lg-10">
+										<input type="file" class="form-control h-auto">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Styled file input</label>
+									<div class="col-lg-10">
+										<input type="file" class="form-control-uniform" data-fouc>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Custom BS file input</label>
+									<div class="col-lg-10">
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="customFile">
+											<label class="custom-file-label" for="customFile">Choose file</label>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Form helpers</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Text form helpers</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="form-text text-muted">Left aligned helper</span>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="form-text text-muted text-center">Centered helper</span>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="form-text text-muted text-right">Right aligned helper</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Full width badge helpers</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="badge d-block badge-primary form-text text-left">Left aligned badge</span>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="badge d-block badge-danger form-text">Centered badge</span>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<span class="badge d-block badge-info form-text text-right">Right aligned badge</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Block badge helpers</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<div class="d-block form-text">
+													<span class="badge badge-primary">Left aligned badge</span>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<div class="d-block form-text text-center">
+													<span class="badge badge-danger">Centered badge</span>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<input type="text" class="form-control">
+												<div class="d-block form-text text-right">
+													<span class="badge badge-info text-right">Right aligned badge</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Inline text helper</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-lg-6">
+												<input type="text" class="form-control">
+											</div>
+											<div class="col-lg-6 mt-1 mt-lg-0 align-self-center">
+												<span class="text-muted">Inline text helper</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Inline badge helper</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-lg-6">
+												<input type="text" class="form-control">
+											</div>
+											<div class="col-lg-6 mt-1 mt-lg-0 align-self-center">
+												<span class="badge bg-teal">Inline badge helper</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Input icons</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Input with icons</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control form-control-lg" placeholder="Left icon, input large">
+													<div class="form-control-feedback form-control-feedback-lg">
+														<i class="icon-make-group"></i>
+													</div>
+												</div>
+
+												<div class="form-group form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control" placeholder="Left icon, input default">
+													<div class="form-control-feedback">
+														<i class="icon-droplets"></i>
+													</div>
+												</div>
+
+												<div class="form-group form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control form-control-sm" placeholder="Left icon, input small">
+													<div class="form-control-feedback form-control-feedback-sm">
+														<i class="icon-pin-alt"></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group form-group-feedback form-group-feedback-right">
+													<input type="text" class="form-control form-control-lg" placeholder="Right icon, input large">
+													<div class="form-control-feedback form-control-feedback-lg">
+														<i class="icon-make-group"></i>
+													</div>
+												</div>
+
+												<div class="form-group form-group-feedback form-group-feedback-right">
+													<input type="text" class="form-control" placeholder="Right icon, input default">
+													<div class="form-control-feedback">
+														<i class="icon-droplets"></i>
+													</div>
+												</div>
+
+												<div class="form-group form-group-feedback form-group-feedback-right">
+													<input type="text" class="form-control form-control-sm" placeholder="Right icon, input small">
+													<div class="form-control-feedback form-control-feedback-sm">
+														<i class="icon-pin-alt"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Input with spinners</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control" placeholder="Left spinner">
+													<div class="form-control-feedback">
+														<i class="icon-spinner2 spinner"></i>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group form-group-feedback form-group-feedback-right">
+													<input type="text" class="form-control" placeholder="Right spinner">
+													<div class="form-control-feedback">
+														<i class="icon-spinner2 spinner"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Validation states</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-success">Valid state</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-success" placeholder="Valid state">
+										<span class="form-text text-success">Valid state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-success">Valid state with icon</label>
+									<div class="col-lg-10">
+										<div class="form-group-feedback form-group-feedback-right">
+											<input type="text" class="form-control border-success" placeholder="Valid state">
+											<div class="form-control-feedback text-success">
+												<i class="icon-checkmark-circle"></i>
+											</div>
+										</div>
+										<span class="form-text text-success">Valid state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-danger">Invalid state</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-danger" placeholder="Invalid state">
+										<span class="form-text text-danger">Invalid state helper</span>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-semibold text-danger">Invalid state with icon</label>
+									<div class="col-lg-10">
+										<div class="form-group-feedback form-group-feedback-right">
+											<input type="text" class="form-control border-danger" placeholder="Invalid state">
+											<div class="form-control-feedback text-danger">
+												<i class="icon-cancel-circle2"></i>
+											</div>
+										</div>
+										<span class="form-text text-danger">Invalid state helper</span>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Text options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Light text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control font-weight-light" placeholder="Input with light text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Semibold text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control font-weight-semibold" placeholder="Input with semibold text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Bold text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control font-weight-bold" placeholder="Input with bold text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Capitalized text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control text-capitalize" placeholder="Input with capitalized text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Centered text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control text-center" placeholder="Input with centered text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Right aligned text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control text-right" placeholder="Input with right aligned text">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Uppercase text</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control text-uppercase" placeholder="Input with uppercase text">
+										<span class="form-text text-muted">Other text options work as well</span>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Field options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Tooltip on focus</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" data-popup="tooltip" data-trigger="focus" title="Tooltip on focus" placeholder="Click on input">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Tooltip on hover</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" data-popup="tooltip" title="Tooltip on hover" placeholder="Hover on input">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Rounded input</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control rounded-round" placeholder="Rounded input">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">Roundless input</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control rounded-0" placeholder="Roundless input">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Fixed input sizing</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-3">
+												<input type="text" class="form-control" placeholder=".col-3">
+											</div>
+
+											<div class="col-4">
+												<input type="text" class="form-control" placeholder=".col-4">
+											</div>
+
+											<div class="col-5">
+												<input type="text" class="form-control" placeholder=".col-5">
+											</div>
+										</div>
+										<span class="form-text text-muted">Available in 12 columns sizes since it's based on 12 columns grid</span>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Sizing options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-form-label-lg col-lg-2">Large size</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control form-control-lg" placeholder=".col-form-label-lg .form-control-lg">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Default size</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control" placeholder=".col-form-label .form-control">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-form-label-sm col-lg-2">Small size</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control form-control-sm" placeholder=".col-form-label-sm .form-control-sm">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Inputs only</label>
+									<div class="col-lg-10">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input class="form-control form-control-lg" type="text" placeholder="Large input height">
+												</div>
+
+												<div class="form-group">
+													<input class="form-control" type="text" placeholder="Default input height">
+												</div>
+
+												<div class="form-group">
+													<input class="form-control form-control-sm" type="text" placeholder="Small input height">
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group">
+													<select class="form-control form-control-lg">
+					                                    <option value="opt1">Large select height</option>
+					                                    <option value="opt2">Option 2</option>
+					                                    <option value="opt3">Option 3</option>
+					                                    <option value="opt4">Option 4</option>
+					                                    <option value="opt5">Option 5</option>
+					                                    <option value="opt6">Option 6</option>
+					                                    <option value="opt7">Option 7</option>
+					                                    <option value="opt8">Option 8</option>
+					                                </select>
+												</div>
+
+												<div class="form-group">
+													<select class="form-control">
+					                                    <option value="opt1">Default select height</option>
+					                                    <option value="opt2">Option 2</option>
+					                                    <option value="opt3">Option 3</option>
+					                                    <option value="opt4">Option 4</option>
+					                                    <option value="opt5">Option 5</option>
+					                                    <option value="opt6">Option 6</option>
+					                                    <option value="opt7">Option 7</option>
+					                                    <option value="opt8">Option 8</option>
+					                                </select>
+												</div>
+
+												<div class="form-group">
+													<select class="form-control form-control-sm">
+					                                    <option value="opt1">Small select height</option>
+					                                    <option value="opt2">Option 2</option>
+					                                    <option value="opt3">Option 3</option>
+					                                    <option value="opt4">Option 4</option>
+					                                    <option value="opt5">Option 5</option>
+					                                    <option value="opt6">Option 6</option>
+					                                    <option value="opt7">Option 7</option>
+					                                    <option value="opt8">Option 8</option>
+					                                </select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Color options</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Text color</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control text-violet" value="Custom text color">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Border color</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-teal border-1" placeholder="Custom border color">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Background color</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control bg-slate-600 border-slate-600 border-1" placeholder="Custom background color">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Select color</label>
+									<div class="col-lg-10">
+										<select class="form-control bg-indigo-400 border-indigo-400">
+		                                    <option value="opt1">Custom select color</option>
+		                                    <option value="opt2">Option 2</option>
+		                                    <option value="opt3">Option 3</option>
+		                                    <option value="opt4">Option 4</option>
+		                                    <option value="opt5">Option 5</option>
+		                                    <option value="opt6">Option 6</option>
+		                                    <option value="opt7">Option 7</option>
+		                                    <option value="opt8">Option 8</option>
+		                                </select>
+									</div>
+								</div>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2">Styled select</label>
+		                        	<div class="col-lg-10">
+			                            <select class="form-control form-control-uniform-custom">
+			                                <option value="opt1">Custom styled select color</option>
+			                                <option value="opt2">Option 2</option>
+			                                <option value="opt3">Option 3</option>
+			                                <option value="opt4">Option 4</option>
+			                                <option value="opt5">Option 5</option>
+			                                <option value="opt6">Option 6</option>
+			                                <option value="opt7">Option 7</option>
+			                                <option value="opt8">Option 8</option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">File input color</label>
+									<div class="col-lg-10">
+										<input type="file" class="form-control-uniform-custom">
+									</div>
+								</div>
+							</fieldset>/-->
+
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Datos extras (Formulario)</legend>
 
 								<div class="form-group row">
 									<label class="col-form-label col-md-2">Fecha y Hora</label>
@@ -1381,45 +1981,45 @@
 									</div>
 								</div>
 
-								<div class="form-group row">
+								<!--<div class="form-group row">
 									<label class="col-form-label col-md-2">Fecha</label>
 									<div class="col-md-10">
 										<input class="form-control" type="date" name="date">
 										<span class="form-text text-muted">Utilizando <code>Tipo de entrada="Fecha"</code></span>
 									</div>
-								</div>
+								</div>/-->
 
-								<div class="form-group row">
+								<!--<div class="form-group row">
 									<label class="col-form-label col-md-2">Mes</label>
 									<div class="col-md-10">
 										<input class="form-control" type="month" name="month">
 										<span class="form-text text-muted">Utilizando <code>Tipo de entrada="Mes"</code></span>
 									</div>
-								</div>
+								</div>/-->
 
-								<div class="form-group row">
+								<!--<div class="form-group row">
 									<label class="col-form-label col-md-2">Tiempo</label>
 									<div class="col-md-10">
 										<input class="form-control" type="time" name="time">
 										<span class="form-text text-muted">Utilizando <code>Tipo de entrada="Tiempo"</code></span>
 									</div>
-								</div>
+								</div>/-->
 
-								<div class="form-group row">
+								<!--<div class="form-group row">
 									<label class="col-form-label col-md-2">Semana</label>
 									<div class="col-md-10">
 										<input class="form-control" type="week" name="week">
 										<span class="form-text text-muted">Utilizando <code>Tipo de entrada="Semana"</code></span>
 									</div>
-								</div>
+								</div>/-->
 
-								<div class="form-group row">
+								<!--<div class="form-group row">
 									<label class="col-form-label col-md-2">Número</label>
 									<div class="col-md-10">
 										<input class="form-control" type="number" name="number">
 										<span class="form-text text-muted">Utilizando <code>Tipo de entrada="Número"</code></span>
 									</div>
-								</div>
+								</div>/-->
 
 								<div class="form-group row">
 									<label class="col-form-label col-md-2">Correo Electronico</label>
@@ -1437,13 +2037,13 @@
 									</div>
 								</div>
 
-								<div class="form-group row">
+								<!--<div class="form-group row">
 									<label class="col-form-label col-md-2">Buscar</label>
 									<div class="col-md-10">
 										<input class="form-control" type="search" name="search">
 										<span class="form-text text-muted">Utilizando <code>Tipo de entrada="Buscar"</code></span>
 									</div>
-								</div>
+								</div>/-->
 
 								<div class="form-group row">
 									<label class="col-form-label col-md-2">Telefono</label>
@@ -1459,16 +2059,16 @@
 										<input class="form-control" type="color" name="color">
 										<span class="form-text text-muted">Utilizando <code>Tipo de entrada="Color"</code></span>
 									</div>
-								</div>/-->
+								</div>
 
-								<!--<div class="form-group row">
+								<div class="form-group row">
 									<label class="col-form-label col-md-2">Distancia</label>
 									<div class="col-md-10">
 										<input class="form-control" type="range" name="range" min="0" max="10">
 										<span class="form-text text-muted">Utilizando <code>Tipo de entrada="Distancia"</code></span>
 									</div>
-								</div>/-->
-							</fieldset>
+								</div>
+							</fieldset>/-->
 
 							<div class="text-right">
 								<button type="submit" class="btn btn-primary">Enviar <i class="icon-paperplane ml-2"></i></button>
@@ -1478,502 +2078,1067 @@
 				</div>
 				<!-- /form inputs -->
 
-				<!-- Basic options -->
+				<!-- Checkboxes -->
 				<!--
-				<div class="mb-3">
-					<h6 class="mb-0 font-weight-semibold">
-						Basic options
-					</h6>
-					<span class="text-muted d-block">Examples with basic picker options</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Basic color picker</h6>
-							<p class="mb-3 text-muted">Color picker with default options</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-basic" value="#20BF7E" data-fouc>
-							</div>
-						</div>
+            	<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Checkboxes</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Custom button text</h6>
-							<p class="mb-3 text-muted">Specify custom text for each button</p>
+                	<div class="card-body">
+        				<p class="mb-3">The HTML input element <code>&lt;input type=checkbox></code> is an input element to enter an array of different values. The <code>value</code> attribute is used to define the value submitted by the checkbox. The <code>checked</code> attribute is used to indicate whether this item is selected. The <code>indeterminate</code> attribute is used to indicate that the checkbox is in an indeterminate state (on most platforms, this draws a horizontal line across the checkbox).</p>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-basic" data-cancel-text="No way" data-choose-text="Yes baby" value="#20BF7E" data-fouc>
-							</div>
-						</div>
+        				<div class="row">
+        					<div class="col-md-6">
+								<div class="form-group">
+									<label class="font-weight-semibold">Left stacked default</label>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" checked>
+											Checked default
+										</label>
+									</div>
+
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input">
+											Unchecked default
+										</label>
+									</div>
+
+									<div class="form-check disabled">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" checked disabled>
+											Disabled default
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="d-block font-weight-semibold">Left inline default</label>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" checked>
+											Checked default
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input">
+											Unchecked default
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group pt-2">
+									<label class="font-weight-semibold">Left stacked styled</label>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input-styled" checked data-fouc>
+											Checked styled
+										</label>
+									</div>
+
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input-styled" data-fouc>
+											Unchecked styled
+										</label>
+									</div>
+
+									<div class="form-check disabled">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input-styled" disabled data-fouc>
+											Disabled styled
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group mb-3 mb-md-2">
+									<label class="d-block font-weight-semibold">Left inline styled</label>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input-styled" checked data-fouc>
+											Checked styled
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input-styled" data-fouc>
+											Unchecked styled
+										</label>
+									</div>
+								</div>
+        					</div>
+
+        					<div class="col-md-6">
+								<div class="form-group">
+									<label class="font-weight-semibold">Right stacked default</label>
+									<div class="form-check form-check-right">
+										<label class="form-check-label">
+											Checked default
+											<input type="checkbox" class="form-check-input" checked>
+										</label>
+									</div>
+
+									<div class="form-check form-check-right">
+										<label class="form-check-label">
+											Unchecked default
+											<input type="checkbox" class="form-check-input">
+										</label>
+									</div>
+
+									<div class="form-check form-check-right disabled">
+										<label class="form-check-label">
+											Disabled default
+											<input type="checkbox" class="form-check-input" checked disabled>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="d-block font-weight-semibold">Right inline default</label>
+									<div class="form-check form-check-inline form-check-right">
+										<label class="form-check-label">
+											Checked default
+											<input type="checkbox" class="form-check-input" checked>
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-right">
+										<label class="form-check-label">
+											Unchecked default
+											<input type="checkbox" class="form-check-input">
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group pt-2">
+									<label class="d-block font-weight-semibold">Right stacked styled</label>
+
+									<div class="form-check form-check-right">
+										<label class="form-check-label">
+											Checked styled
+											<input type="checkbox" class="form-check-input-styled" checked data-fouc>
+										</label>
+									</div>
+
+									<div class="form-check form-check-right">
+										<label class="form-check-label">
+											Unchecked styled
+											<input type="checkbox" class="form-check-input-styled" data-fouc>
+										</label>
+									</div>
+
+									<div class="form-check form-check-right disabled">
+										<label class="form-check-label">
+											Disabled styled
+											<input type="checkbox" class="form-check-input-styled" checked disabled data-fouc>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group mb-3 mb-md-2">
+									<label class="d-block font-weight-semibold">Right inline styled</label>
+									<div class="form-check form-check-inline form-check-right">
+										<label class="form-check-label">
+											Checked styled
+											<input type="checkbox" class="form-check-input-styled" checked data-fouc>
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-right">
+										<label class="form-check-label">
+											Unchecked styled
+											<input type="checkbox" class="form-check-input-styled" data-fouc>
+										</label>
+									</div>
+								</div>
+        					</div>
+    					</div>
+					</div>
+				</div>/-->
+				<!-- /checkboxes -->
+
+
+				<!-- Radio buttons -->
+				<!--
+            	<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Radio buttons</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Hide picker buttons</h6>
-							<p class="mb-3 text-muted">Display only color picker area</p>
+                	<div class="card-body">
+        				<p class="mb-3">Radio button is an element that can be turned on and off. Radio buttons are almost always grouped together in groups. Only one radio button within the same <code>radiogroup</code> may be selected at a time. The user can switch which radio button is turned on by selecting it with the mouse or keyboard. Other radio buttons in the same group are turned off. A label, specified with the <code>label</code> attribute may be added beside the radio button.</p>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-basic" data-show-buttons="false" value="#20BF7E" data-fouc>
+        				<div class="row">
+        					<div class="col-md-6">
+								<div class="form-group">
+									<label class="font-weight-semibold">Left stacked default</label>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="unstyled-radio-left" checked>
+											Selected default
+										</label>
+									</div>
+
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="unstyled-radio-left">
+											Unselected default
+										</label>
+									</div>
+
+									<div class="form-check disabled">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" checked disabled>
+											Disabled default
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="d-block font-weight-semibold">Left inline default</label>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="radio-unstyled-inline-left" checked>
+											Selected default
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="radio-unstyled-inline-left">
+											Unselected default
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group pt-2">
+									<label class="font-weight-semibold">Left stacked styled</label>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input-styled" name="stacked-radio-left" checked data-fouc>
+											Selected styled
+										</label>
+									</div>
+
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input-styled" name="stacked-radio-left" data-fouc>
+											Unselected styled
+										</label>
+									</div>
+
+									<div class="form-check disabled">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input-styled" disabled data-fouc>
+											Disabled styled
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group mb-3 mb-md-2">
+									<label class="d-block font-weight-semibold">Left inline styled</label>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input-styled" name="radio-inline-left" checked data-fouc>
+											Selected styled
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input-styled" name="radio-inline-left" data-fouc>
+											Unselected styled
+										</label>
+									</div>
+								</div>
+        					</div>
+
+        					<div class="col-md-6">
+								<div class="form-group">
+									<label class="font-weight-semibold">Right stacked default</label>
+									<div class="form-check form-check-right">
+										<label class="form-check-label">
+											Selected default
+											<input type="radio" class="form-check-input" name="unstyled-radio-right" checked>
+										</label>
+									</div>
+
+									<div class="form-check form-check-right">
+										<label class="form-check-label">
+											Unselected default
+											<input type="radio" class="form-check-input" name="unstyled-radio-right">
+										</label>
+									</div>
+
+									<div class="form-check form-check-right disabled">
+										<label class="form-check-label">
+											Disabled default
+											<input type="radio" class="form-check-input" checked disabled>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="d-block font-weight-semibold">Right inline default</label>
+									<div class="form-check form-check-inline form-check-right">
+										<label class="form-check-label">
+											Selected default
+											<input type="radio" class="form-check-input" name="radio-unstyled-inline-right" checked>
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-right">
+										<label class="form-check-label">
+											Unselected default
+											<input type="radio" class="form-check-input" name="radio-unstyled-inline-right">
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group pt-2">
+									<label class="font-weight-semibold">Right stacked styled</label>
+									<div class="form-check form-check-right">
+										<label class="form-check-label">
+											Selected styled
+											<input type="radio" class="form-check-input-styled" name="stacked-radio-right" checked data-fouc>
+										</label>
+									</div>
+
+									<div class="form-check form-check-right">
+										<label class="form-check-label">
+											Unselected styled
+											<input type="radio" class="form-check-input-styled" name="stacked-radio-right" data-fouc>
+										</label>
+									</div>
+
+									<div class="form-check form-check-right disabled">
+										<label class="form-check-label">
+											Disabled styled
+											<input type="radio" class="form-check-input-styled" checked disabled data-fouc>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group mb-3 mb-md-2">
+									<label class="d-block font-weight-semibold">Right inline styled</label>
+									<div class="form-check form-check-inline form-check-right">
+										<label class="form-check-label">
+											Selected styled
+											<input type="radio" class="form-check-input-styled" name="radio-inline-right" checked data-fouc>
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline form-check-right">
+										<label class="form-check-label">
+											Unselected styled
+											<input type="radio" class="form-check-input-styled" name="radio-inline-right" data-fouc>
+										</label>
+									</div>
+								</div>
+        					</div>
+        				</div>
+					</div>
+				</div>/-->
+				<!-- /radio buttons -->
+
+
+				<!-- Custom Bootstrap inputs -->
+				<!--
+            	<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Custom Bootstrap inputs</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+                	<div class="card-body">
+        				<p class="mb-3">For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control. Custom checkboxes can also utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
+
+        				<div class="row">
+        					<div class="col-md-6">
+								<div class="form-group">
+									<label class="d-block font-weight-semibold">Left stacked checkboxes</label>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_stacked_unchecked" checked>
+										<label class="custom-control-label" for="custom_checkbox_stacked_unchecked">Custom checked</label>
+									</div>
+
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_stacked_checked">
+										<label class="custom-control-label" for="custom_checkbox_stacked_checked">Custom unchecked</label>
+									</div>
+
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_stacked_checked_disabled" checked disabled>
+										<label class="custom-control-label" for="custom_checkbox_stacked_checked_disabled">Custom checked disabled</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="d-block font-weight-semibold">Left inline checkboxes</label>
+									<div class="custom-control custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_inline_unchecked" checked>
+										<label class="custom-control-label" for="custom_checkbox_inline_unchecked">Custom checked</label>
+									</div>
+
+									<div class="custom-control custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_inline_checked">
+										<label class="custom-control-label" for="custom_checkbox_inline_checked">Custom unchecked</label>
+									</div>
+								</div>
+
+								<div class="form-group pt-2">
+									<label class="d-block font-weight-semibold">Left stacked radios</label>
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="custom-stacked-radio" id="custom_radio_stacked_unchecked" checked>
+										<label class="custom-control-label" for="custom_radio_stacked_unchecked">Custom selected</label>
+									</div>
+
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" name="custom-stacked-radio" id="custom_radio_stacked_checked">
+										<label class="custom-control-label" for="custom_radio_stacked_checked">Custom unselected</label>
+									</div>
+
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" id="custom_radio_stacked_checked_disabled" checked disabled>
+										<label class="custom-control-label" for="custom_radio_stacked_checked_disabled">Custom selected disabled</label>
+									</div>
+								</div>
+
+								<div class="form-group mb-3 mb-md-2">
+									<label class="d-block font-weight-semibold">Left inline radios</label>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" class="custom-control-input" name="custom-inline-radio" id="custom_radio_inline_unchecked" checked>
+										<label class="custom-control-label" for="custom_radio_inline_unchecked">Custom selected</label>
+									</div>
+
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" class="custom-control-input" name="custom-inline-radio" id="custom_radio_inline_checked">
+										<label class="custom-control-label" for="custom_radio_inline_checked">Custom unselected</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="d-block font-weight-semibold">Right stacked checkboxes</label>
+									<div class="custom-control custom-control-right custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_stacked_right_checked" checked>
+										<label class="custom-control-label position-static" for="custom_checkbox_stacked_right_checked">Custom checked</label>
+									</div>
+
+									<div class="custom-control custom-control-right custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_stacked_right_unchecked">
+										<label class="custom-control-label position-static" for="custom_checkbox_stacked_right_unchecked">Custom unchecked</label>
+									</div>
+
+									<div class="custom-control custom-control-right custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_stacked_right_checked_disabled" checked disabled>
+										<label class="custom-control-label position-static" for="custom_checkbox_stacked_right_checked_disabled">Custom checked disabled</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="d-block font-weight-semibold">Right inline checkboxes</label>
+									<div class="custom-control custom-control-right custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_inline_right_checked" checked>
+										<label class="custom-control-label position-static" for="custom_checkbox_inline_right_checked">Custom checked</label>
+									</div>
+
+									<div class="custom-control custom-control-right custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="custom_checkbox_inline_right_unchecked">
+										<label class="custom-control-label position-static" for="custom_checkbox_inline_right_unchecked">Custom unchecked</label>
+									</div>
+								</div>
+
+								<div class="form-group pt-2">
+									<label class="d-block font-weight-semibold">Right stacked radios</label>
+									<div class="custom-control custom-control-right custom-radio">
+										<input type="radio" class="custom-control-input" name="custom-stacked-radio-right" id="custom_radio_stacked_right_checked" checked>
+										<label class="custom-control-label position-static" for="custom_radio_stacked_right_checked">Custom selected</label>
+									</div>
+
+									<div class="custom-control custom-control-right custom-radio">
+										<input type="radio" class="custom-control-input" name="custom-stacked-radio-right" id="custom_radio_stacked_right_unchecked">
+										<label class="custom-control-label position-static" for="custom_radio_stacked_right_unchecked">Custom unselected</label>
+									</div>
+
+									<div class="custom-control custom-control-right custom-radio">
+										<input type="radio" class="custom-control-input" id="custom_radio_stacked_right_checked_disabled" checked disabled>
+										<label class="custom-control-label position-static" for="custom_radio_stacked_right_checked_disabled">Custom selected disabled</label>
+									</div>
+								</div>
+
+								<div class="form-group mb-3 mb-md-2">
+									<label class="d-block font-weight-semibold">Right stacked radios</label>
+									<div class="custom-control custom-control-right custom-radio custom-control-inline">
+										<input type="radio" class="custom-control-input" name="custom-inline-radio-right" id="custom_radio_inline_right_checked" checked>
+										<label class="custom-control-label position-static" for="custom_radio_inline_right_checked">Custom selected</label>
+									</div>
+
+									<div class="custom-control custom-control-right custom-radio custom-control-inline">
+										<input type="radio" class="custom-control-input" name="custom-inline-radio-right" id="custom_radio_inline_right_unchecked">
+										<label class="custom-control-label position-static" for="custom_radio_inline_right_unchecked">Custom unselected</label>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Disable color picker</h6>
-							<div class="mb-3 text-muted form-check form-check-switchery form-check-switchery-double">
-								<label class="form-check-label">
-									Disable
-									<input type="checkbox" class="form-input-switchery">
-									Enable
-								</label>
+    				</div>
+				</div>/-->
+				<!-- /custom Bootstrap inputs -->
+
+
+				<!-- Colors -->
+				<!--
+            	<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Color options</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+                	<div class="card-body">
+        				<p class="mb-3">Besides default color, both checkboxes and radio buttons support 5 additional contextual color classes and other custom colors from color system. Colors are adapted to use in different background colors of parent elements - dropdown menus, active list states, input group addons - all checkboxes and radios are white on dark backgrounds. To use, simply add <code>background</code> and <code>text</code> color classes to Uniform's <code>wrapperClass</code> options.</p>
+
+                		<div class="row">
+	                		<div class="col-md-6">
+								<div class="form-group mb-3 mb-md-2">
+									<label class="font-weight-semibold">Checkboxes</label>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input-styled-primary" checked data-fouc>
+													Primary checkbox
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input-styled-danger" checked data-fouc>
+													Danger checkbox
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input-styled-success" checked data-fouc>
+													Success checkbox
+												</label>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input-styled-warning" checked data-fouc>
+													Warning checkbox
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input-styled-info" checked data-fouc>
+													Info checkbox
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input-styled-custom" checked data-fouc>
+													Custom color
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-disabled" value="#20BF7E" data-fouc>
+							<div class="col-md-6">
+								<div class="form-group mb-3 mb-md-2">
+									<label class="font-weight-semibold">Radio buttons</label>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="radio-styled-color" class="form-check-input-styled-primary" checked data-fouc>
+													Primary radio
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="radio-styled-color" class="form-check-input-styled-danger" data-fouc>
+													Danger radio
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="radio-styled-color" class="form-check-input-styled-success" data-fouc>
+													Success radio
+												</label>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="radio-styled-color" class="form-check-input-styled-warning" data-fouc>
+													Warning radio
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="radio-styled-color" class="form-check-input-styled-info" data-fouc>
+													Info radio
+												</label>
+											</div>
+
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="radio" name="radio-styled-color" class="form-check-input-styled-custom" data-fouc>
+													Custom color
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
+    				</div>
+				</div>/-->
+				<!-- /colors -->
+
+
+				<!-- Switchery toggles -->
+				<!--
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Switchery toggles</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Container color</h6>
-							<p class="mb-3 text-muted">Custom container color class</p>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-6">
+								<h6 class="font-weight-semibold">Default switchers</h6>
+								<p class="mb-3">You can add as many switches as you like, as long as their corresponding checkboxes have the same class. Select them and make new instance of the Switchery class for every of them.</p>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-container-class" value="#20BF7E" data-fouc>
+								<div class="form-check form-check-switchery">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery" checked data-fouc>
+										Checked switch
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery" data-fouc>
+										Unchecked switch
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery disabled">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery" checked disabled data-fouc>
+										Checked disabled
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery disabled">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery" disabled data-fouc>
+										Unchecked disabled
+									</label>
+								</div>
+
+
+								<h6 class="font-weight-semibold pt-3">Switcher colors</h6>
+								<p class="mb-3">You can change the default color of the switch to fit your design perfectly. According to the color system, any of its color can be applied to the switchery. Custom colors are also supported.</p>
+
+								<div class="form-check form-check-switchery">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery-primary" checked data-fouc>
+										Switch in <span class="font-weight-semibold">primary</span> context
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery-danger" checked data-fouc>
+										Switch in <span class="font-weight-semibold">danger</span> context
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery-info" checked data-fouc>
+										Switch in <span class="font-weight-semibold">info</span> context
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery-warning" checked data-fouc>
+										Switch in <span class="font-weight-semibold">warning</span> context
+									</label>
+								</div>
+
+
+								<h6 class="font-weight-semibold pt-3">Left inline</h6>
+								<p class="mb-3">Switchery component also supports default option for <strong>left</strong> and <strong>right</strong> inline alignment. Just add <code>.form-check-inline</code> class to <code>.form-check-switchery</code> container. Default alignment is <strong>left</strong>.</p>
+
+								<div class="form-check form-check-switchery form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery" checked data-fouc>
+										First input
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery" checked data-fouc>
+										Second input
+									</label>
+								</div>
 							</div>
-						</div>
-					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-primary text-center">
-							<h6 class="m-0 font-weight-semibold">Replacer color</h6>
-							<p class="mb-3 text-muted">Custom replacer color class</p>
+							<div class="col-md-6">
+								<h6 class="font-weight-semibold pt-3 pt-md-0">Sticked to the right</h6>
+								<p class="mb-3">Sometimes it's very useful to have switches on the right side of the container. Just add <code>.form-check-right</code> class to the <code>&lt;.form-check></code> container for the very right side switcher alignment.</p>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-replacer-class" value="#20BF7E" data-fouc>
+								<div class="form-check form-check-right form-check-switchery">
+									<label class="form-check-label">
+										Checked switch
+										<input type="checkbox" class="form-check-input-switchery" checked data-fouc>
+									</label>
+								</div>
+
+								<div class="form-check form-check-right form-check-switchery">
+									<label class="form-check-label">
+										Unchecked switch
+										<input type="checkbox" class="form-check-input-switchery" data-fouc>
+									</label>
+								</div>
+
+								<div class="form-check form-check-right form-check-switchery disabled">
+									<label class="form-check-label">
+										Checked disabled
+										<input type="checkbox" class="form-check-input-switchery" checked disabled data-fouc>
+									</label>
+								</div>
+
+								<div class="form-check form-check-right form-check-switchery disabled">
+									<label class="form-check-label">
+										Unchecked disabled
+										<input type="checkbox" class="form-check-input-switchery" disabled data-fouc>
+									</label>
+								</div>
+
+
+								<h6 class="font-weight-semibold pt-3">Multiple labels</h6>
+								<p class="mb-3">Switchery can be used with single label or with multiple labels. To use, add <code>.switchery-double</code> class to the container. All sizing options are available for this switchery type as well.</p>
+
+								<div class="form-check form-check-switchery form-check-switchery-double">
+									<label class="form-check-label">
+										Enable
+										<input type="checkbox" class="form-check-input-switchery" checked data-fouc>
+										Disable
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery form-check-switchery-double">
+									<label class="form-check-label">
+										Enable
+										<input type="checkbox" class="form-check-input-switchery" data-fouc>
+										Disable
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery form-check-switchery-double disabled">
+									<label class="form-check-label">
+										Enable
+										<input type="checkbox" class="form-check-input-switchery" checked disabled data-fouc>
+										Disable
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery form-check-switchery-double disabled">
+									<label class="form-check-label">
+										Enable
+										<input type="checkbox" class="form-check-input-switchery" disabled data-fouc>
+										Disable
+									</label>
+								</div>
+
+
+								<h6 class="font-weight-semibold pt-3">Right inline</h6>
+								<p class="mb-3">You can also reverse inline alignment to <code>right</code> - just add default <code>.form-check-right</code> to any <code>.form-check</code> container and all inputs will be adjusted automatically.</p>
+
+								<div class="form-check form-check-switchery form-check-inline form-check-right">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery" checked data-fouc>
+										First input
+									</label>
+								</div>
+
+								<div class="form-check form-check-switchery form-check-inline form-check-right">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input-switchery" checked data-fouc>
+										Second input
+									</label>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /basic options -->
+				<!-- /switchery toggles -->
 
 
-				<!-- Picker additions -->
+				<!-- Bootstrap switch -->
 				<!--
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Picker additions
-					</h6>
-					<span class="text-muted d-block">Show additional picker elements</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Show initial color</h6>
-							<p class="mb-3 text-muted">Show color that was initially set</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-initial" value="#E63E3E" data-fouc>
-							</div>
-						</div>
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Bootstrap switch</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Show input field</h6>
-							<p class="mb-3 text-muted">Add input for free form typing</p>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Switch states</h6>
+									<p>By default Bootstrap Switch supports standard attributes for checkboxes such as <code>disabled</code>, <code>checked</code> and <code>readonly</code> or use <code>true</code> or <code>false</code> in plugin options.</p>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" value="#E63E3E" data-fouc>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label">
+													<input type="checkbox" class="form-check-input form-check-input-switch" data-on-text="On" data-off-text="Off" checked>
+													Checked switch
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left disabled">
+												<label class="form-check-label">
+													<input type="checkbox" data-on-text="On" data-off-text="Off" class="form-check-input form-check-input-switch" checked disabled>
+													Checked disabled
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label">
+													<input type="checkbox" data-on-text="On" data-off-text="Off" class="form-check-input form-check-input-switch" readonly checked>
+													Checked readonly
+												</label>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label">
+													<input type="checkbox" data-on-text="On" data-off-text="Off" class="form-check-input form-check-input-switch">
+													Unchecked switch
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left disabled">
+												<label class="form-check-label">
+													<input type="checkbox" data-on-text="On" data-off-text="Off" class="form-check-input form-check-input-switch" disabled>
+													Unchecked disabled
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label">
+													<input type="checkbox" data-on-text="On" data-off-text="Off" class="form-check-input form-check-input-switch" readonly>
+													Unchecked readonly
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="mb-4">
+									<h6 class="font-weight-semibold">Switch colors</h6>
+									<p>You can change the default color of the switch by choosing one of 6 predefined classes and use them in <code>data-on-color</code> and <code>data-off-color</code> attributes.</p>
+
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" class="form-check-input form-check-input-switch" data-on-text="On" data-off-text="Off" data-on-color="default" data-off-color="danger" checked>
+													Default color
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" class="form-check-input form-check-input-switch" data-on-text="On" data-off-text="Off" data-on-color="primary" data-off-color="default" checked>
+													Primary color
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" class="form-check-input form-check-input-switch" data-on-text="On" data-off-text="Off" data-on-color="danger" data-off-color="default" checked>
+													Danger color
+												</label>
+											</div>
+										</div>
+
+										<div class="col-sm-6">
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" class="form-check-input form-check-input-switch" data-on-text="On" data-off-text="Off" data-on-color="success" data-off-color="default" checked>
+													Success color
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" class="form-check-input form-check-input-switch" data-on-text="On" data-off-text="Off" data-on-color="warning" data-off-color="default" checked>
+													Warning color
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" class="form-check-input form-check-input-switch" data-on-text="On" data-off-text="Off" data-on-color="info" data-off-color="default" checked>
+													Info color
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Show alpha channel</h6>
-							<p class="mb-3 text-muted">Allow alpha transparency selection</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Switch sizes</h6>
+									<p>Default height is equal to input field height, but you can also choose one of 4 available sizes (large, small and mini) by changing <code>data-size</code> attribute.</p>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-alpha" value="#E63E3E" data-fouc>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" class="form-check-input-switch" data-on-text="On" data-off-text="Off" data-size="large" checked>
+													Large switch
+												</label>
+											</div>
+
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" data-on-text="On" data-off-text="Off" class="form-check-input-switch" data-size="small" checked>
+													Small switch
+												</label>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" data-on-text="On" data-off-text="Off" class="form-check-input-switch" checked>
+													Default switch
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Clear selection</h6>
-							<p class="mb-3 text-muted">Reset current color selection</p>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<h6 class="font-weight-semibold">Label options</h6>
+									<p>Labels support any text or icon via <code>data-on-text</code> and <code>data-off-text</code> attributes. If no custom text specified, switch will display default on/off text.</p>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-clear" value="#E63E3E" data-fouc>
-							</div>
-						</div>
-					</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" data-off-color="danger" data-on-text="Yes" data-off-text="No" class="form-check-input-switch" checked>
+													Default text
+												</label>
+											</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Input and initial</h6>
-							<p class="mb-3 text-muted">Combining different elements</p>
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" data-on-color="warning" data-off-color="info" data-on-text="<i class='icon-link'></i>" data-off-text="<i class='icon-unlink'></i>" class="form-check-input-switch" checked>
+													Icons only
+												</label>
+											</div>
+										</div>
 
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-input-initial" value="#E63E3E" data-fouc>
-							</div>
-						</div>
-					</div>
+										<div class="col-md-6">
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" data-on-color="danger" data-off-color="primary" data-on-text="Enable" data-off-text="Disable" class="form-check-input-switch" checked>
+													Enable/Disable
+												</label>
+											</div>
 
-					<div class="col-md-4">
-						<div class="card card-body border-top-danger text-center">
-							<h6 class="m-0 font-weight-semibold">Full leatured</h6>
-							<p class="mb-3 text-muted">Full featured picker example</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-full" value="#E63E3E" data-fouc>
+											<div class="form-check form-check-switch form-check-switch-left">
+												<label class="form-check-label d-flex align-items-center">
+													<input type="checkbox" data-on-color="success" data-off-color="danger" data-on-text="Online" data-off-text="Offline" class="form-check-input-switch" checked>
+													Online/Offline
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>/-->
-				<!-- /picker additions -->
-
-
-				<!-- Color palettes -->
-				<!--
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Color palettes
-					</h6>
-					<span class="text-muted d-block">Add a color palette to the picker</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Show color palette</h6>
-							<p class="mb-3 text-muted">Display recently used colors</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette" value="#27ADCA" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Show palette only</h6>
-							<p class="mb-3 text-muted">Show palette and nothing else</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-only" value="#27ADCA" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Toggle palette only</h6>
-							<p class="mb-3 text-muted">Toggle picker next to the palette</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-toggle" value="#27ADCA" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Selection palette</h6>
-							<p class="mb-3 text-muted">Keep track of selected colors</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-selection" value="#27ADCA" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Limit selections</h6>
-							<p class="mb-3 text-muted">Palette colors are limited to 3</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-limit" value="#27ADCA" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-success text-center">
-							<h6 class="m-0 font-weight-semibold">Hide after select</h6>
-							<p class="mb-3 text-muted">Hide picker after color select</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-palette-hide" value="#27ADCA" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /color palettes -->
-
-
-				<!-- Color formats -->
-				<!--
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Color formats
-					</h6>
-					<span class="text-muted d-block">Display different color formats</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">HEX color format</h6>
-							<p class="mb-3 text-muted">Display colors in HEX format</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="hex" value="#f75d1c" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">HEX3 color format</h6>
-							<p class="mb-3 text-muted">Display colors in HEX3 format</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="hex3" value="#f75d1c" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">HSL color format</h6>
-							<p class="mb-3 text-muted">Display colors in HSL format</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="HSL" value="#f75d1c" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">RGB color format</h6>
-							<p class="mb-3 text-muted">Display colors in RGB format</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="rgb" value="#f75d1c" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">HTML color names</h6>
-							<p class="mb-3 text-muted">HTML color names support</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="name" value="orangered" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-warning text-center">
-							<h6 class="m-0 font-weight-semibold">Mix color formats</h6>
-							<p class="mb-3 text-muted">Change formats in the input</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-show-input" data-preferred-format="name" value="#f75d1c" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /color formats -->
-
-
-				<!-- Picker events -->
-				<!--
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Picker events
-					</h6>
-					<span class="text-muted d-block">Basic usage of the picker events</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Change event</h6>
-							<p class="mb-3 text-muted">Called as the input changes</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-change" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="change-result"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Move event</h6>
-							<p class="mb-3 text-muted">Called as the user moves around</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-move" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="move-result"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Hide event</h6>
-							<p class="mb-3 text-muted">Called after the picker is hidden</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-hide" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="hide-result"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Show event</h6>
-							<p class="mb-3 text-muted">Called after the picker is opened</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-show" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="show-result"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Dragstart event</h6>
-							<p class="mb-3 text-muted">Called as the drag event starts</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-dragstart" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="dragstart-result"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-info text-center">
-							<h6 class="m-0 font-weight-semibold">Dragstop event</h6>
-							<p class="mb-3 text-muted">Called as the drag event stops</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-event-dragstop" value="#45818e" data-fouc>
-								<div class="mt-3 hidden" id="dragstop-result"></div>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /picker events -->
-
-
-				<!-- Flat pickers -->
-				<!--
-				<div class="mb-3 mt-2">
-					<h6 class="mb-0 font-weight-semibold">
-						Flat pickers
-					</h6>
-					<span class="text-muted d-block">Display a full size color picker</span>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Basic flat picker</h6>
-							<p class="mb-3 text-muted">Basic full size color picker</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Flat color palette</h6>
-							<p class="mb-3 text-muted">Display both palette and picker</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-palette" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Set picker color</h6>
-							<p class="mb-3 text-muted">Custom flat color picker color</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-custom" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Show input field</h6>
-							<p class="mb-3 text-muted">Add input for free form typing</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-input" data-preferred-format="hex" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Full featured</h6>
-							<p class="mb-3 text-muted">Full featured flat picker</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-full" data-preferred-format="hex" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card card-body border-top-teal text-center">
-							<h6 class="m-0 font-weight-semibold">Show initial color</h6>
-							<p class="mb-3 text-muted">Show color that was initially set</p>
-
-							<div class="d-inline-block">
-								<input type="text" class="form-control colorpicker-flat-initial" value="#45818e" data-fouc>
-							</div>
-						</div>
-					</div>
-				</div>/-->
-				<!-- /flat pickers -->
+				<!-- /bootstrap switch -->
 
 			</div>
 			<!-- /content area -->
@@ -2003,11 +3168,11 @@
 			</div>/-->
 			<!-- /footer -->
 
-		</div>
-		<!-- /main content -->
+		<!--</div>/-->
+		<!-- /content wrapper -->
 
-	</div>
-	<!-- /page content -->
+	<!--</div>/-->
+	<!-- /page container -->
 
 </body>
 </html>
