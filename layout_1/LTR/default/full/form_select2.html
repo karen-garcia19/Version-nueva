@@ -558,19 +558,19 @@
 								<li class="nav-item"><a href="components_progress.html" class="nav-link">Progress</a></li>
 								<li class="nav-item"><a href="components_breadcrumbs.html" class="nav-link">Breadcrumbs</a></li>
 								<li class="nav-item"><a href="components_media.html" class="nav-link">Media objects</a></li>
-								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>
+								<li class="nav-item"><a href="components_scrollspy.html" class="nav-link">Scrollspy</a></li>/-->
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-puzzle2"></i> <span>Content styling</span></a>
+							<a href="#" class="nav-link"><i class="icon-user-plus"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
-								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
+								<!--<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
 								<li class="nav-item"><a href="content_page_footer.html" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="content_cards.html" class="nav-link">Cards</a></li>
-								<li class="nav-item"><a href="content_cards_content.html" class="nav-link">Card content</a></li>
-								<li class="nav-item"><a href="content_cards_layouts.html" class="nav-link">Card layouts</a></li>
-								<li class="nav-item"><a href="content_cards_header.html" class="nav-link">Card header elements</a></li>
+								<li class="nav-item-divider"></li>/-->
+								<li class="nav-item"><a href="content_cards.html" class="nav-link">Listado</a></li>
+								<li class="nav-item"><a href="content_cards_content.html" class="nav-link">Agregar</a></li>
+								<li class="nav-item"><a href="content_cards_layouts.html" class="nav-link">Editar</a></li>
+								<!--<li class="nav-item"><a href="content_cards_header.html" class="nav-link">Card header elements</a></li>
 								<li class="nav-item"><a href="content_cards_footer.html" class="nav-link">Card footer elements</a></li>
 								<li class="nav-item"><a href="content_cards_draggable.html" class="nav-link">Draggable cards</a></li>
 								<li class="nav-item-divider"></li>
@@ -579,17 +579,17 @@
 								<li class="nav-item"><a href="content_helpers.html" class="nav-link">Helper classes</a></li>
 								<li class="nav-item"><a href="content_helpers_flex.html" class="nav-link">Flex utilities</a></li>
 								<li class="nav-item"><a href="content_syntax_highlighter.html" class="nav-link">Syntax highlighter</a></li>
-								<li class="nav-item"><a href="content_grid.html" class="nav-link">Grid system</a></li>
+								<li class="nav-item"><a href="content_grid.html" class="nav-link">Grid system</a></li>/-->
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-gift"></i> <span>Extra components</span></a>
+							<a href="#" class="nav-link"><i class="icon-stack"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Extra components">
-								<li class="nav-item"><a href="extra_pnotify.html" class="nav-link">PNotify notifications</a></li>
-								<li class="nav-item"><a href="extra_jgrowl_noty.html" class="nav-link">jGrowl and Noty notifications</a></li>
-								<li class="nav-item"><a href="extra_sweetalert.html" class="nav-link">SweetAlert notifications</a></li>
+								<li class="nav-item"><a href="extra_pnotify.html" class="nav-link">Listado de tutorias</a></li>
+								<li class="nav-item"><a href="extra_jgrowl_noty.html" class="nav-link">Agregar tutorias</a></li>
+								<li class="nav-item"><a href="extra_sweetalert.html" class="nav-link">Editar tutorias</a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="extra_sliders_noui.html" class="nav-link">NoUI sliders</a></li>
+								<!--<li class="nav-item"><a href="extra_sliders_noui.html" class="nav-link">NoUI sliders</a></li>
 								<li class="nav-item"><a href="extra_sliders_ion.html" class="nav-link">Ion range sliders</a></li>
 								<li class="nav-item"><a href="extra_trees.html" class="nav-link">Dynamic tree views</a></li>
 								<li class="nav-item"><a href="extra_context_menu.html" class="nav-link">Context menu</a></li>
@@ -1286,14 +1286,13 @@
 					</div>
 
 					<div class="card-body">
-						The <code>No omitir ningun paso</strong>
+				   
 					</div>
 
 					<table class="table datatable-basic">
 						<thead>
 							<tr>
-								<th>edición</th>
-								<th>edición 2</th>
+								<th>Editar empleados</th>
 								<th>Nombre del empleado</th>
 								<th>Apellido</th>
 								<th>Clave</th>
@@ -1305,8 +1304,14 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Marta</td>
 								<td>López</td>
 								<th>12345</th>
@@ -1330,8 +1335,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Jackelyn</td>
 								<td>Juarez</td>
 								<th>12354</th>
@@ -1355,8 +1366,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Aura</td>
 								<td>Gómez</td>
 								<th>12543</th>
@@ -1380,8 +1397,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Natalie</td>
 								<td>Alvarez</td>
 								<th>13254</th>
@@ -1405,8 +1428,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Sharon</td>
 								<td>Aquino</td>
 								<th>23154</th>
@@ -1430,8 +1459,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Maximo</td>
 								<td>Martinez</td>
 								<th>32541</th>
@@ -1455,8 +1490,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Silvia</td>
 								<td>Rodriguez</td>
 								<th>54213</th>
@@ -1480,8 +1521,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Lizi</td>
 								<td>Godinez</td>
 								<th>52134</th>
@@ -1505,8 +1552,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Kendy</td>
 								<td>Ornelas</td>
 								<th>26598</th>
@@ -1530,8 +1583,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Chantal</td>
 								<td>Morado</td>
 								<th>65492</th>
@@ -1555,8 +1614,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Delma</td>
 								<td>Bondas</td>
 								<th>54216</th>
@@ -1580,8 +1645,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Rolando</td>
 								<td>Salmos</td>
 								<th>51264</th>
@@ -1605,8 +1676,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Coral</td>
 								<td>Wong</td>
 								<th>25896</th>
@@ -1630,8 +1707,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Maximiliano</td>
 								<td>Morato</td>
 								<th>89654</th>
@@ -1655,8 +1738,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Borrar<i class="icon-play3 ml-2"></i></button></td>
-								<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar<i class="icon-play3 ml-2"></i></button></td>
+								<td><div class="list-icons">
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal">
+					                			<i class="icon-pencil7"></i>
+				                			</a>
+					                		<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal">
+					                			<i class="icon-trash"></i>
+				                			</a>
+					                	</div></td>
 								<td>Laura</td>
 								<td>Silva</td>
 								<th>25468</th>
@@ -1683,6 +1772,312 @@
 					</table>
 				</div>
 				<!-- /basic datatable -->
+
+				<!-- Edit modal -->
+				<div id="edit_modal" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-transparent">
+								<h5 class="modal-title">Editar empleados</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+									        <td>Nombre del empleado</td>
+									        <td>Apellido</td>
+									        <td>Clave</td>
+									        <td>Departamento</td>
+									        <td>Antiguedad</td>
+									        <td>Estado</td>
+									        <td>Acciones</td>
+											<th class="col-xs-1">Acciones</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td><input type="text" class="form-control" value=""></td>
+											<td class="text-center">
+												<div class="list-icons">
+							                		<a href="#" class="list-icons-item"><i class="icon-plus3 font-size-base"></i></a>
+							                		<a href="#" class="list-icons-item"><i class="icon-cross2 font-size-base"></i></a>
+							                	</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="modal-footer bg-transparent">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar cambios</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /edit modal -->
+
+
+	            <!-- Remove modal -->
+				<div id="remove_modal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Confirmar acción</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+
+								Esta seguro que quiere remover lo solicitado?
+							
+								
+
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Si, Remover</button>
+								<button type="button" class="btn btn-light" data-dismiss="modal">No, Gracias</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /remove modal -->
 
 				<!-- Select2 selects -->
 				<!--
